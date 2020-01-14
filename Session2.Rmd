@@ -1,0 +1,936 @@
+---
+title: "Hertie School/SCRIPTS Data Science Workshop Series"
+subtitle: "Session 2: Modern data management with R"
+author:
+- Therese Anders^[Instructor, Hertie School/SCRIPTS, anders@hertie-school.org.]
+- Allison Koh^[Teaching Assistant, Hertie School, kohallison3@gmail.com.]
+date: January 17, 2020
+output: pdf_document
+---
+
+# Data wrangling with `dplyr`
+
+## Introduction
+Data cleaning and reshaping is one of the tasks that we end up spending the most time on. Today, we will be introducing the `dplyr` library. Together with `stringr` (string operations using regular expressions) and `tidyr` these packages offer functionality for virtually any data cleaning and reshaping task in `R`.
+
+For an overview of the most common functions inside `dplyr`, please refer to the RStudio data wrangling cheat sheet https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf. 
+
+## Functions in `dplyr`
+`dplyr` does not accept tables or vectors, just data frames (similar to `ggplot2`)! `dplyr` uses a strategy called "Split - Apply - Combine". Some of the key functions include:
+
+* `select()`: Subset columns.
+* `filter()`: Subset rows.
+* `arrange()`: Reorders rows.
+* `mutate()`: Add columns to existing data.
+* `summarise()`: Summarizing data set.
+
+First, lets dowload the package and call it using the `library()` function.
+```{r, message = F, warning=F}
+# install.packages("dplyr")
+library(dplyr)
+```
+
+Today, we will be working with a data set from the
+
+`hflights` package. The data set contains all flights from the Houston IAH and HOU airports in 2011. Install the package `hflights`, load it into the library, extract the data frame into a new object called `raw` and inspect the data frame.
+
+**NOTE:** The `::` operator specifies that we want to use the *object* `hflights` from the *package* `hflights`. In the case below, this explicit programming is not necessary. However, it is useful when functions or  objects are contained in multiple packages to avoid confusion. A classic example is the `select()` function that is contained in a number of packages besides `dplyr`.
+
+```{r}
+# install.packages("hflights")
+library(hflights)
+raw <- hflights::hflights
+str(raw)
+```
+
+
+## Using `select()` and introducing the Piping Operator `%>%`
+Using the so-called **piping operator** will make the `R` code faster and more legible, because we are not saving every output in a separate data frame, but passing it on to a new function. First, let's use only a subsample of variables in the data frame, specifically the year of the flight, the airline, as well as the origin airport, the destination, and the distance between the airports.
+
+Notice a couple of things in the code below:
+
+* We can assign the output to a new data set.
+* We use the piping operator to connect commands and create a single flow of operations.
+* We can use the select function to rename variables.
+* Instead of typing each variable, we can select sequences of variables.
+* Note that the `everything()` command inside `select()` will select all variables.
+
+```{r}
+data <-  raw %>%
+  dplyr::select(Month,
+                DayOfWeek,
+                Airline = UniqueCarrier, #Renaming the variable
+                Time = ActualElapsedTime, #Renaming the variable
+                Origin:Cancelled) #Selecting a number of columns. 
+```
+
+Suppose, we didn't really want to select the `Cancelled` variable. We can use `select()` to drop variables.
+```{r}
+data <- data %>%
+  dplyr::select(-Cancelled)
+```
+
+## Introducting `filter()`
+There are a number of key operations when manipulating observations (rows).
+
+* `x < y`
+* `x <= y`
+* `x == y`
+* `x != y`
+* `x >= y`
+* `x > y`
+* `x %in% c(a,b,c)` is `TRUE` if `x` is in the vector `c(a, b, c)`.
+
+Suppose, we wanted to filter all the flights that have their destination in the greater Los Angeles area, specifically Los Angeles (LAX), Ontario (ONT), John Wayne (SNA), Bob Hope (BUR), and Long Beach (LGB) airports.
+```{r, warning = F}
+airports <- c("LAX", "ONT", "SNA", "BUR", "LGB")
+la_flights <- data %>%
+  filter(Dest %in% airports)
+```
+
+**Caution**: The following command does not return the flights to LAX or ONT!
+```{r}
+head(la_flights)
+la_flights_alt <- data %>%
+  filter(Dest == c("LAX", "ONT"))
+head(la_flights_alt)
+```
+
+Why? We are basically returning all values for which the following is `TRUE` (using the correct output of the `la_flights` data frame:
+
+`Dest[1] == LAX`
+
+`Dest[2] == ONT`
+
+`Dest[3] == LAX`
+
+`Dest[4] == ONT` ...
+
+## Helper functions
+`dplyr` has a number of helper functions--and that is where the magic lies. These can be used with either `select()` or `filter()`. Here are some useful functions:
+
+* `starts_with()`
+* `ends_with()`
+* `contains()`
+* `matches()`: Every name that matches "X", which can be a regular expression (we will talk about regular expressions in session 5). 
+* `one_of()`: Every name that appears in x, which should be a character vector.
+
+For example, let's create a data frame with all variables that contain the word "Time".
+```{r}
+testframe <- raw %>%
+  select(contains("Time"))
+head(testframe)
+```
+
+## Introducting `mutate()`
+Currently, we have two taxi time variables in our data set: `TaxiIn` and `TaxiOut`. I care about total taxi time, and want to add the two together. Also, people hate sitting in planes while it is not in the air. To see how much time is spent taxiing versus flying, we create a variable which measures the proportion of taxi time of total time of flight.
+```{r}
+la_flights <- la_flights %>%
+  mutate(TaxiTotal = TaxiIn + TaxiOut,
+         TaxiProp = TaxiTotal/Time)
+```
+
+Suppose, I only wanted to fly on weekends. Therefore, I create another variable that codes whether the flight is on a weekend or not and filter the data by this variable. Here, we introduce the `ifelse()` function that is tremendously helpful in data wrangling exercises. The syntax of `ifelse()` is as follows: 
+
+`ifelse(condition, if TRUE this, if FALSE this)`.
+
+```{r}
+la_flights <- la_flights %>%
+  mutate(Weekend = ifelse(DayOfWeek %in% c(1,7), 1, 0)) %>%
+  filter(Weekend == 1)
+```
+
+
+## Introducting `summarise()` and `arrange()`
+One of the most powerful `dplyr` features is the `summarise()` function, especially in combination with `group_by()`.
+
+First, in a simple example, lets compute the average flight time from Houston to Los Angeles by each day of the week. Also, I want to know what the maximum total taxi time is for each day of the weak. Note, that because there are missing values, we need to tell `R` what to do with them. 
+```{r}
+weekday_time <- la_flights %>%
+  group_by(DayOfWeek) %>%
+  summarise(AverageTime = mean(Time, na.rm = T),
+            MaxTaxiTotal = max(TaxiTotal, na.rm = T))
+```
+
+For legibility, lets reorder the output in ascending order using `arrange()`, with `MaxTaxiTotal` as a tie breaker.
+```{r}
+weekday_time <- la_flights %>%
+  group_by(DayOfWeek) %>%
+  summarise(AverageTime = mean(Time, na.rm = T),
+            MaxTaxiTotal = max(TaxiTotal, na.rm = T)) %>%
+  arrange(AverageTime, MaxTaxiTotal) #Default is ascending order
+```
+
+Now, suppose, I was flying from Houston to Los Angeles, and wanted to know which airline operates the most flights for this route before booking.
+
+Here, we will be using the operator `n()` to tell dplyr to count all the observations for the groups specified in `group_by()`. After computing the result, I would like to arrange the output from highest number of flights, to lowest number.
+```{r}
+carriers <- la_flights %>%
+  group_by(Airline) %>%
+  summarise(NoFlights = n()) %>%
+  arrange(desc(NoFlights)) #desc() for descending order. 
+head(carriers)
+```
+
+So if I want to have the highest selection of flights, I should book with Continental Airlines (at least back in 2011).
+
+## Putting it all together: The power of piping
+In this example, I am starting all the way from the original `hflights` data set to demonstrate the power of the piping operator.
+
+```{r}
+carriers_new <-  raw %>%
+  select(Month,
+         DayOfWeek,
+         Airline = UniqueCarrier,
+         Time = ActualElapsedTime,
+         Origin:TaxiOut) %>%
+  filter(Dest %in% c("LAX", "ONT", "SNA", "BUR", "LGB")) %>%
+  mutate(TaxiTotal = TaxiIn + TaxiOut,
+         TaxiProp = TaxiTotal/Time,
+         Weekend = ifelse(DayOfWeek %in% c(1,7), 1, 0)) %>%
+  filter(Weekend == 1) %>%
+  group_by(Airline) %>%
+  summarise(NoFlights = n()) %>%
+  arrange(desc(NoFlights))
+ head(carriers_new) 
+```
+
+
+## Saving files
+Finally, lets save the output of our code. This time, we would like to save it in the .dta format. Remember to load the `foreign()` library before saving.
+```{r, warning = F}
+library(foreign)
+write.dta(carriers_new, "carriers_houston_la.dta")
+```
+
+# Merging data
+## The data
+In today's workshop we will be using data on military expenditures from two publicly available sources: The World Bank Development Indicators (WDI), and the Correlates of War Project's (COW) National Material Capabilities Data Version 4.0 starting in 1914. The data has been cleaned after downloading it from the original sources.
+
+The WDI data contains the following variables:
+
+* `ccode`: COW country code (added using the `countrycode` package).
+* `country`: Country name.
+* `year`: Year.
+* `milex_gdp`: Military expenditure as \% of GDP.
+* `gdp`: GDP in current USD.
+
+The COW data contains the following variables:
+
+* `ccode`: COW country code.
+* `year`: Year.
+* `milex`: Military expenditure in current USD.
+
+First, let's load the data and look at the temporal coverage.
+```{r}
+wdi <- read.csv("wdi_cleaned.csv")
+summary(wdi$year)
+cow <- read.csv("cow_cleaned.csv")
+summary(cow$year)
+```
+
+**Exercise 1** Suppose, we are interested in absolute military expenditures. Add a new variable to the WDI data set called `milex` that codes military expenditures in USD using functions from the `dplyr` package and piping.
+
+```{r, echo = F, warning = F, message = F}
+library(dplyr)
+wdi <- wdi %>%
+  mutate(milex = milex_gdp*gdp)
+head(wdi)
+```
+
+
+## A primer on data merging using base `R` functions
+In principle, we can merge data using the `cbind()` ("column bind") and `rbind()` ("row bind") functions, that we are already familiar with.
+```{r}
+vec1 <- c(1, 2, 3)
+vec2 <- c("a", "a", "b")
+cbind(vec1, vec2)
+rbind(vec1, vec2)
+```
+
+However, this requires the data to align in its dimensions. In addition, for `cbind()` the ordering of the rows has to be the exact same to achieve correct merging; for `rbind()` the ordering of the columns has to be equal to achieve the right output.
+```{r}
+dat1 <- cbind(vec1, vec2)
+vec3 <- c(T, F, T, T)
+cbind(dat1, vec3) # The fourth observation in vec3 is omitted
+obs <- c("c", 4)
+rbind(dat1, obs)
+```
+
+As a side note: The `bind_rows()` function in the `dplyr` package is the smart cousin of `rbind()`. Given that two dataframes have an equal number of columns, it can merge them based on the variable name; the ordering of the columns does not matter.
+
+## Using dplyr for merging
+Luckily, the `dplyr` package in `R` contains a number of functions that allow us to merge data in "smarter" ways. Please refer to the [Data Wrangling Cheat Sheet](https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf) for an overview of the functions `dplyr` has available.
+
+Suppose, we have two data frames: `x` (here WDI) and `y` (here COW). The basic syntax for data merging with `dplyr` is the following:
+
+`output <- join(A, B, by = "variable")`
+
+We will focus on the following four join functions:
+
+* `full_join()`: Join data from `x` and `y` upon retaining all rows and values. This is the maximum join possible. Neither `x` nor `y` is the "master."
+* `inner_join()`: Join only those rows that appear in both `x` and `y`. Neither `x` nor `y` is the "master."
+* `left_join()`: Join only those rows from `y` that appear in `x`, retaining all data in `x`. Here, `x` is the "master."
+* `right_join()`: Join only those tows from `x` that appear in `y`, retaining all data in `y`. Here, `y` is the "master."
+
+### `full_join()`
+Suppose we wanted to keep the maximum amount of data in our new merged data set, we would use the `full_join()` function to merge the WDI and COW data.
+```{r}
+full_wrong <- full_join(wdi, cow, by = "ccode")
+```
+
+Take a look at the data frame! There are a couple of things to notice:
+
+1. There are a number of duplicate column names in our data. `dplyr` automatically added a suffix to those instances; `x` for the WDI  data (the first data set we passed to the function) and `y` for the COW data (the second data set passed to the function). We will rename these variables later on to keep track from which data set they originate.
+2. We have over 500,000 observations even though our original datasets `wdi` and `cow` only have approximately 10,000 observations each. Why do you think this is the case? Do you notice something weird about the `year` variable(s)?
+
+The reason for the high number of observations is that we asked `dplyr` to join the data sets based on the `ccode` variable only. This matches each observation in dataset `x` to each observation in dataset `y` as long as they have the same `ccode`. However, the rows in our data are not uniquely identified by the ccode variable. Since `wdi` and `cow` are panel data sets, each observation is uniquely identified by the combination of country code and year. We need to pass this information to the `full_join()` function to correctly match up the observations in our data.
+
+In reality, `full_join()` and the other join functions from `dplyr` are smarter than that and will often identify which columns to match on based on duplicate column names. However, in our particular case, we run into problems because we have more duplicate column names that unique identifiers for the data; see the message that `R` outputs when running the command without specifying by which variables to merge.
+```{r}
+full_alsowrong <- full_join(wdi, cow)
+```
+
+Now, before we do the correct full join, lets also rename the variables in our original data set to keep track of the data set from which the indicator originates. In the next session, we will learn how to do this with string operations, but for now, lets use dplyr's `select()` function.
+
+```{r}
+names(wdi)
+wdi <- wdi %>%
+  select(ccode:year,
+         milex_gdp_wdi = milex_gdp,
+         gdp_wdi = gdp,
+         milex_wdi = milex,
+         everything())
+names(cow)
+cow <- cow %>%
+  select(ccode:year,
+         milex_cow = milex)
+```
+
+We are ready to join! Notice that we use a vector to specify multiple inputs that define our unique observations.
+```{r}
+merged_full <- full_join(wdi, cow, by = c("ccode", "year")) %>% 
+  arrange(ccode, year)
+head(merged_full)
+nrow(merged_full)
+```
+
+### `inner_join()`
+Suppose, instead of retaining as much data as possible, we only wanted to keep data for which we have observations in both data sets. Note that this merging is only done based on the variables that we specify to uniquely identify each observation. `NA` values in all other columns are retained. Please refer to the *Data Wrangling Cheat Sheet* for methods that will select based on matching values beyond the unique identifiers (see for example `intersect()` and `setdiff()`).
+```{r}
+merged_inner <- inner_join(wdi, cow, by = c("ccode", "year")) %>% 
+  arrange(ccode, year)
+head(merged_inner)
+nrow(merged_inner)
+```
+
+### `left_join()` and `right_join()`
+Suppose, we had an existing master data set and wanted to add data to this master without adding new rows, just new columns. This could for example be the case if we had a spcific time frame that we wanted to study, and only want to merge data which matches this time frame.[^1] 
+
+[^1]: Another example is the case when we have a master data set that reflects the system membership of all countries which have COW country codes. We do not want to add observations from the other data sets that do not have COW country codes (for example data from Greenland or Puerto Rico). This example is for illustration only. When cleaning the WDI data, I have already removed the observations that do not have a COW code (such as Greenland or Puerto Rico).
+
+Here, suppose we wanted to make the WDI our master data set and merge data from the COW data onto this master. The WDI has a much smaller temporal coverage than the COW. For the sake of saving memory space, we only want the temporal coverage of the WDI reflected in the merged data. We can show that the WDI and the merged data frame have the same number of observations (rows).
+```{r}
+merged_left <- left_join(wdi, cow, by = c("ccode", "year"))
+nrow(wdi) == nrow(merged_left)
+```
+
+**Exercise 2** How would you achieve the exact same result using the `right_join()` function?
+```{r, echo = F}
+merged_right <- right_join(cow, wdi, by = c("ccode", "year"))
+nrow(wdi) == nrow(merged_right)
+```
+
+# Data re-shaping with `tidyr`
+Another important task in data management is data re-shaping. Often, data does not come in the format that we need for data merging, data visualization, statistical analysis, or vectorized programming. In general, we want data in the following format:
+
+1. Each variable forms a column.
+2. Each observation forms a row.[^2]
+3. For panel data, the unit (e.g. country) and time (e.g. year) identifier form columns.
+
+[^2]: Hadley Wickham (2014, "Tidy Data" in *Journal of Statistical Analysis*) adds another condition, namely that "Each type of observational unit forms a table." We will not go into this here, but I can highly recommend you read Wickham's piece if you want to dive deeper into tidying data.
+
+The `tidyr` package offers two main functions for data reshaping:
+
+* `gather()`: Shaping data from wide to long.
+* `spread()`: Shaping data from long to wide.
+
+## Wide versus long data
+For **wide** data formats, each unit's responses are in a single row. For example:
+
+| Country | Area | Pop1990 | Pop1991 |
+|---------|------|---------|---------|
+| A       | 300  | 56      | 58      |
+| B       | 150  | 40      | 45      |
+
+For **long** data formats, each row denotes the observation of a unit at a given point in time. For example:
+
+| Country | Year | Area | Pop |
+|---------|------|------|-----|
+| A       | 1990 | 300  | 56  |
+| A       | 1991 | 300  | 58  |
+| B       | 1990 | 150  | 40  |
+| B       | 1991 | 150  | 45  |
+
+
+## `gather()`
+We use the `gather()` function to reshape data from wide to long. In general, the syntax of the data is as follows:
+
+`new_df <- gather(old_df, key, value, columns to gather)`
+
+We will be working with the `merged_left` data set. Suppose, we wanted to have a single column for military expenditures, and another column identifying the data set that the data comes from.
+
+Gathering the military expenditure variables in this way will result in duplicate rows for each country-year. Whether or not this data format is desirable depends on the intended use for the data. Most statistical analysis methods require the data to have a single row per observation (for example country-year). However, some data visualization methods fare better when each concept (for example the variable `milex`) is captured in a single column with additional columns specifying supplementary attributes of the observation (see below).
+
+Below, note that since `tidyr` and `dplyr` are sibling packages from the "tidyverse," we can use them seamlessly in the same pipe (here using `arrange()` from `dplyr` to illustrate the duplicate observations per country-year).
+```{r, warning = F, message = F}
+library(tidyr)
+merged_long <- merged_left %>%
+  gather(data_origin, # name for categorical name indicator
+         milex, # values
+         milex_wdi:milex_cow) %>% # variables to be reshaped
+  arrange(ccode, year) 
+# Creating averages by year
+merged_long_averages <- merged_long %>%
+  group_by(year, data_origin) %>%
+  filter(!is.na(milex)) %>%
+  summarize(milex = mean(milex))
+```
+
+We can use this format to plot the miliary expenditure for each of the data sets over time. Here, I use the `ggplot2` package (also from the "tidyverse") to show how to create over-time plots that use the properties of "tidy" data, namely the fact that a specific feature is represented with a single column (here `milex`), with additional columns specifying supplementary properties of this feature (here `data_origin`). Please note that these are both very basic graphs. For more customization of `ggplot2` graphs, see the [introductory workshop on data visualization with  `ggplot2`](https://github.com/thereseanders/Workshop-Intro-to-ggplot2).
+
+```{r, fig.width= 5, fig.height=3, warning = F}
+library(ggplot2)
+ggplot(merged_long, 
+       aes(x = year, y = milex, color = data_origin)) +
+  geom_point(alpha = 0.2)
+ggplot(merged_long_averages, 
+       aes(x = year, y = milex, color = data_origin)) +
+  geom_line()
+```
+
+## `spread()`
+Suppose we wanted to revert our operation (or generall shape data from a long to a wide format), we can use `tidyr`'s `spread()` function. The syntax is similar to `gather()`.
+
+`new_df <- spread(old_df, key, value)`,
+
+where `key` refers to the colum which contains the values that are to be converted to column names and `value` specifies the column that contains the value which is to be stored in the newly created columns.
+
+```{r}
+head(merged_long, 3)
+merged_wide <- spread(merged_long, data_origin, milex) 
+```
+
+---
+title: 'SPEC Lab `R` Workshop Series: Session 5'
+author: "Therese Anders"
+output: 
+  pdf_document: 
+    number_sections: yes
+---
+
+# Plan for today
+
+1. String operations with the `stringr` library
+2. Regular expressions
+3. Homework exercise
+
+
+# String operations
+String operations play a large role in the data cleaning component of data management, as well as in data gathering tasks such as web scraping. All string operations work on objects of the class **character**. Base `R` has a number of string operations, but they are often not user-friendly. The `stringr` package provides a comprehensive library of string operations. As part of the "tidyverse," we can use `stringr` functions together with other funtions from the `dplyr` and `tidyr` packages within the same pipe.
+
+## Basic string operations
+The simplest string operation is base `R`'s `paste()` command. It simply concatenates two strings, by default with a space. We can also specify a custom expression to concatenate the characters with the `sep = ` parameter. 
+```{r}
+paste("My", "string")
+paste("My", "string", sep = "_")
+paste("My", "string", sep = "pretty")
+```
+
+In data management, we most often use the `paste()` function when combining the values of two variables.
+```{r}
+countries <- c("a", "b", "c")
+years <- c(1990, 1990, 2000)
+paste(countries, years, sep = "_")
+```
+
+## Pattern matching using `stringr`
+Pattern matching is the work horse of string operations. Here, we focus on pattern matching functions that are most useful for the data management of data that is already organized in some kind of structure, such as vectors or data frames. There are many other string operation functions, such as `str_locate()` and `str_locate_all()` that are most useful for data cleaning and reorganization of unstructured data. Here, we will cover the following `stringr` functions:
+
+* `str_sub()`: Extract substrings from a character vector by indices.
+* `str_extract()`: Extract substrings from a character vector by matched pattern.
+* `str_detect()`: Returns `TRUE` or `FALSE` if the pattern in matched in the input string.
+* `str_replace()`: Replaces a matched pattern with a new pattern.
+
+### `str_sub()`
+Since the  `str_sub()` function operates with indices, is most useful when all elements of a vector (or some other data object of interest) have the same pattern. It extracts the information that matches the indices specified by the user. The general syntax is as follows.
+
+`str_sub(pattern, start = , end = )`
+
+```{r, warning = F, message = F}
+library(stringr)
+locations <- c("CA Los Angeles", "NV Las Vegas", "CA San Diego")
+locations_state <- str_sub(locations, start = 1, end = 2)
+locations_state
+```
+
+We can also specify open intervals. For example, if we wanted to extract only the cities, we could extract all characters starting at the fourth position.
+```{r}
+locations_city <- str_sub(locations, 4)
+locations_city
+```
+
+### `str_extract()`
+Think of `str_extract()` as the smarter sibling of `str_sub()`. Rather than just extracting characters based on indices, it extracts characters based on matched patterns. Together with the regular expression operations we introduce below, this is very powerful in extracting information. Here is the syntax for `str_extract()`:
+
+`str_extract(string, pattern)`
+
+```{r}
+locations_state2 <- str_extract(locations, "CA")
+locations_state2
+```
+
+
+### `str_detect()`
+Think of `str_detect()` as a logical operator. It returns `TRUE` if the pattern is matched and `FALSE` otherwise. The function has the following syntax:
+
+`str_detect(string, pattern)`
+
+```{r}
+str_detect(locations, "L")
+str_detect(locations, "Los")
+```
+
+### `str_replace()`
+`str_replace()` is very helpful in data management tasks, in particular when re-coding variables. As an example, suppose we wanted to replace the state abbreviations with the full state names. The syntax of the function is as follows:
+
+`str_replace(string, pattern, replacement)`
+
+```{r}
+locations_fullname <- str_replace(locations, "CA", "California") %>%
+  str_replace("NV", "Nevada")
+locations_fullname
+```
+
+## Regular Expressions
+String operations are useful, but their true potential is realized when used in combination with regular expressions. Regular expressions help us to define search patterns. This obliviates the need to type out entire character strings in pattern matching. Regular expressions are like a language that is understood by more than just one program. With small changes, you would be able to use the regular expressions discussed here in other programming languages, such as Python.
+
+Suppose, our strings weren't as well organized as before. How would you extract the state from the elements of the following character vector?
+```{r}
+locs <- c("CA Los Angeles", "Las NV Vegas", "San Diego CA")
+```
+
+Even though the elements of the character vector aren't as ordered any more, there is still a pattern! State abbreviations always have two letters and they are always capitalized. Below, we will learn a number of regular expression that will help us state this pattern ("two letters, capitalized") in a language that `R` understands.
+
+Note that unless otherwise specified, regular expressions are case sensitive. The following patterns are examples for specifying the substantive content of the pattern.
+
+* `^`: String **starts with** following pattern..
+* `$`: String **ends with** preceding pattern.
+* `[ ]`: or.
+* `[a-z]`: Any letter.
+* `[0-9]`: Any digit.
+
+There is also a number of regular expressions that are used to specify the quantity of matches.
+
+* `?`: Preceding pattern is optional (matched 0 or 1 times).
+* `*`: Preceding pattern is matched 0 or more times.
+* `+`: Preceding pattern is matched at least once.
+* `{n}`: Preceding pattern is matched exactly`n` times.
+* `{n, m}`: Preceding pattern is matched at least `n` times and up to `m` times.
+* `{n,}`: Preceding pattern is matched at least `n` times.
+
+So in our example above, we could use the following regular expression to extract the state names:
+```{r}
+str_extract(locs, "[A-Z]{2}")
+```
+
+
+### Examples for regular expressions
+```{r}
+fruits <- c("apple", "banana", "pineapple", "cherries4")
+```
+
+**Exercise 1** What is the output of the following command?
+```{r, results = "hide"}
+str_detect(fruits, "a")
+```
+
+**Exercise 2** What is the output of the following command?
+```{r, results = "hide"}
+str_detect(fruits, "^a")
+```
+
+**Exercise 3** How would you ask `R` to print out `TRUE` for all elements of the `fruits` vector that end with the letter `e`?
+```{r, echo = F}
+str_detect(fruits, "e$")
+```
+
+**Exercise 4** What is the output of the following command?
+```{r, results = "hide"}
+str_detect(fruits, "[ie]")
+```
+
+**Exercise 5** How would you extract the number from the last element of the `fruits` vector?
+```{r, echo = F}
+str_extract(fruits[length(fruits)], "[0-9]")
+```
+
+We can use regular expressions to create more complex queries. Suppose, we wanted to know which strings start with an `a` and end with an `e`.
+```{r}
+str_detect(fruits, "^a[a-z]*e$")
+```
+
+**Exercise 6** What do you think is the output of the following command?
+```{r, results = "hide"}
+str_detect(fruits, "a[a-z]*e$")
+```
+
+### Escape character
+Regular expressions can also be used to match special characters. Note, however, that since some special characters have a special meaning in `R`, we sometimes have to use a so-called **escape character**, i.e. a backslash, to specify these patterns within regular expressions. For example, since the open square bracket `[` is part of the regular expression for `OR`, in order to match a `[` in the text, you need to type `\\[` to get the desired output.
+```{r}
+test <- "a []"
+#str_detect(test, "[") # This throws and error.
+str_detect(test, "\\[") # This correctly recognized the pattern.
+```
+
+
+### Application: Phone Numbers
+Suppose, we have data on contact information and wanted to extract only the values that match phone numbers. Unfortunately, phone numbers come in different formats, but there are a number of common patterns.
+
+**What are common patterns for phone numbers you guys can think of?**
+
+```{r}
+phone <- c("123 456 7890",
+           "(123) 456 7890",
+           "123-456-7890")
+```
+
+We cannot use simple indices any longer to extract the phone numbers from this vector. The lengths of the elements differ!
+```{r}
+nchar(phone[1])
+nchar(phone[2])
+```
+
+Lets write a regular expression that outputs `TRUE` for all of these phone numbers.
+```{r}
+str_detect(phone, "[(]?[0-9]{3}[)]?[ -]{1}[0-9]{3}[ -]{1}[0-9]{3}")
+```
+
+**Exercise 7** How would you alter this if I gave you the following number format and asked you to match it as well? `123.456.7890`
+```{r, echo = F}
+str_detect("123.456.7890", "[()]?[0-9]{3}[)]?[ -.]{1}[0-9]{3}[ -.]{1}[0-9]{3}")
+```
+
+
+### Application: Creating a data frame
+Why do we need this? Suppose I gave you a long string of data and asked you to clean the data and give be a data set of phone numbers and ZIP codes. You could make your life **a lot** easier if you know regular expressions.
+
+Load the file `data.RData` and implicitly print out at its content, a vector called `vec`.
+```{r, warning = F, message = F}
+load("data.RData")
+vec
+# First, lets get the phone numbers (since we already have a parser)
+phone <- str_extract(vec, "[()]?[0-9]{3}[)]?[ -.]{1}[0-9]{3}[ -.]{1}[0-9]{3}")
+phone
+# Second, get ZIP codes
+zip <- str_extract(vec, "[0-9]{5}")
+zip
+# Lastly, lets get the IDs
+id <- str_extract(vec, "[0-9]+:")
+id
+id <- str_replace(id, ":", "")
+id
+# Putting it all into one data frame
+df <- data.frame(id, phone, zip)
+print(df)
+# Now cleaning it
+# Assumptions: 
+# a) no one has two zip codes or phone numbers,
+# b) No id is missing.
+library(dplyr)
+library(tidyr)
+df_cleaned <- df %>%
+  gather(indicator, value, phone:zip) %>%
+  na.omit() %>%
+  spread(indicator, value)
+df_cleaned
+```
+
+
+\newpage
+# Homework
+In this homework, you will be working with an sample data that I scraped from Wikipedia, using the `rvest` package. In this workshop, we do not cover webscraping, but if you are interested in how to do it, you can find the code I used below. Note that since Wikipedia constantly changes, it is possible that the `xpath` specified below might not be accurate at a later point in time.
+```{r, message = F, warning = F}
+library(rvest) #Webscraping package
+library(stringr) #String methods, aka regular expressions etc.
+url <- "https://en.wikipedia.org/wiki/List_of_U.S._states_by_population_density"
+tbl <- url %>% 
+  read_html() %>% #This is from the rvest package
+  html_nodes(xpath = '//*[@id="mw-content-text"]/div/table[1]') %>% #xpath from Wikipedia
+  html_table() #Put it all into a table.
+tbl <- tbl[[1]] #rvest saves it as a table inside list, we want only the table.
+write.csv(tbl, "hw5_data.csv", row.names = F)
+```
+
+**Tasks**
+
+1. Load the data called `hw5_data.csv`.
+2. Use string operations to remove all `.` from the variable names. Pass the new names to the data frame (i.e. rename the variables).
+3. Variables should not start with a letter. This is why `R` automatically attached a leading `X` to the variable `2015.population`. Use string operations to remove both the `X` and the `2015` from this variable name. Then, use the `paste()` function to attach `_2015` to the variable name.
+4. Convert all variable names to lower case. Use the `tolower()` function.
+5. Use the `str()` function to investigate the structure of the data set. Convert any factor variables to characters before using string operations on them! You can do this manually or google how to convert multiple columns at once.
+6. Remove any of the "—" in the population density rank variable and replace it with a missing value.
+7. Try converting the variables `population_2015`, `landareami2`, and `landareakm2` to numeric. Why do you think this fails? How can you fix this? Fix it and convert all variables, except the `state` variable to numeric!
+
+**Hints**:
+
+* Read up on the difference between `str_replace()` and `str_replace_all()` (for 2.).
+* Note that `.` is a special character. It is a wild card. This means that it can be used as a place holder for anything, a number, letter, special character, or white space. Use escape characters to remove the `.` in 2.
+
+**Bonus**
+If you get tired of manually converting variables from factor to character or from character to numeric, google how to make your life easier! There are multiple ways to do this, but none of them is straighforward. Don't worry if you cannot figure it out. We will go over a solution that uses loops in the next session.
+
+
+```{r, echo = F, results="hide", message=F, warning = F}
+# 1)
+data <- read.csv("hw5_data.csv")
+# 2) 
+names(data)
+names(data) <- str_replace_all(names(data), "\\.*", "")
+# 3) 
+names(data)
+names(data)[7] <- paste(str_replace(names(data)[7], "X[0-9]{4}", ""), "2015", sep = "_")
+# 4) 
+names(data) <- tolower(names(data))
+names(data)
+# 5) 
+str(data)
+data <- data %>%
+  mutate_if(is.factor, as.character)
+# 6)
+data <- data %>%
+  mutate(popdensrank50states = replace(popdensrank50states, str_detect(popdensrank50states, "—"), NA))
+# 7) 
+data <- data %>%
+  mutate(population_2015 = str_replace_all(population_2015, ",", ""),
+         landareami2 = str_replace_all(landareami2, ",", ""),
+         landareakm2 = str_replace_all(landareakm2, ",", ""))
+for(i in 2:ncol(data)){
+  data[,i] <- as.numeric(data[,i])
+}
+```
+
+You should get the following output when running `str(data)`:
+```{r, warning = F, message=F}
+str(data)
+```
+
+# `for` Loops in `R`
+Loops are a staple of programming. Loops allow us to automate our code, and are particularily useful when you find yourself doing a task over and over again. While in practice, we try to vectorize our operations as much as possible (see the solution above where we convert factors to characters), being comfortable with loops is crucial for many programming tasks.
+
+## Basic loop structure
+General syntax of a for loop:
+
+`for(iterator in iterations){function/output}`
+
+Lets write a loop that prints out the numbers 1 through 10.
+```{r}
+for(i in 1:10){
+  print(i)
+}
+```
+
+Suppose, the numbers we wanted to print out are part of a vector. We can use loops to iterate through this vector.
+```{r}
+vec <- seq(11, 20, 1)
+for(k in vec){
+  print(k)
+}
+```
+
+**Exercise 1** What do you think does the following output do?
+```{r, results= 'hide'}
+for(l in 5:length(vec)){
+  print(l)
+}
+```
+
+Of course, we can use loops to automate more complex tasks. For example, we could use it to change a batch of variables to `character()`. To try this, re-load the data from session 5.
+```{r}
+data_new <- read.csv("hw5_data.csv")
+str(data_new)
+test1 <- data_new
+for(l in 1:ncol(test1)){
+  test1[,l] <- as.character(test1[,l])
+}
+str(test1)
+```
+
+As a more sophisticated version, we could convert only those variables that are factors (not numerical variables like  `Density.Pop....km2..`) to characters, using an `if` statement.
+```{r}
+test2 <- data_new
+for(k in 1:ncol(test2)){
+  if(is.factor(test2[,k])){
+    test2[,k] <- as.character(test2[,k])
+  }
+}
+str(test2)
+```
+
+# Data cleaning in `R`
+In this example, we will use our new data management skills to clean a data set for inclusion in SPEC's [IPE data resource](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/X093TV). The data are figures on US Foreign Direct Investment (FDI) from the Bureau of Economic Analysis. Here are the data cleaning tasks that we are going to do:
+
+1. Recode missing values.
+2. Delete the header and footer.
+3. Add COW country codes.
+4. Drop observations from combined countries. Drop duplicated observations from Poland, Bahamas, Hungary, Czech Republic, Russia, Jamaica, Trinidad and Tobago, Guatemala, and conflicted observations from Serbia/Yugoslavia, Russia/USSR, Zaire/Congo, Timor-Leste, Micronesia, and Samoa.
+5. Reshape data to long format.
+
+
+To start, lets read the data and take a look at it using the `View()` in RStudio.
+```{r, warning=F, message = F}
+library(foreign)
+library(tidyverse)
+fdi <- read.csv("fdidata.csv", 
+                stringsAsFactors = F)
+```
+
+## Recoding missing values
+The original data specifies a number of different ways of how missing values are coded, specifically `n.s.`, `(*)`, `--`, `---`, `----`, and `(D)`. In principle, we could recode the missing values with the following command.
+
+`fdi[fdi == "(D)" | fdi == "n.s." | fdi == "(*)" | fdi == "----" | fdi == "---" | fdi == "--"] <- NA`
+
+However, we could also make our life easier by specifying all possible values for `NA` when reading the data.
+```{r}
+fdi_nona <- read.csv("fdidata.csv", 
+                      stringsAsFactors = F,
+                      na.strings = c("(D)", "n.s.", "(*)", "----", "---", "--"))
+```
+
+## Dropping header and footer
+There are a number of ways we could drop the header and footer. In principle, we could just inspect the data frame and manually delete all the rows that belong to the header or footer. However, there is a pattern here: The header and footer rows do not have entries in the second column. Note that when the value of the second column is `NA`, `R` would also drop that row. Therefore, we have to account for both, rows that have a non-empty value or `NA` in the second column, when selecting the rows to eliminate.
+```{r}
+empty <- fdi_nona[,2] == ""
+head(empty, 10)
+fdi_new <- fdi_nona[empty %in% c(NA, F),]
+```
+
+Subsequently, we want to turn the second row into the column names and drop the first and second rows.
+```{r}
+names(fdi_new) <- unname(fdi_new[2,])
+fdi_new <- fdi_new[-c(1,2),]
+```
+
+## Stripping white space and dropping irrelevant observations
+After renaming the first column of our new dataframe to `country`, lets look at the observations (i.e. countries that we have in this data set). Use the `View()` function or the Environment menu to inspect the values of the variable `country`.
+```{r}
+names(fdi_new)[1] <- "country"
+head(fdi_new$country)
+```
+
+The first thing to notice is that many elements of the `country` variable have leading whitespace (i.e. spaces or tabs). This is a problem when trying to attach countrycodes later on. We will use operations from the `stringr` package to get rid of this leading whitespace. Note that we do **not** want to remove all white space, because country names such as `Czech Republic` would not be recognized by the `countrycode` package any longer if we stripped the character value from all whitespace. We will use `stringr`'s `str_trim()` function to remove leading (and trailing) whitespace from all elements of the variable `country`.
+```{r}
+fdi_new$country[5]
+```
+
+Second, there are a number of observations in the `country` variable that do not contain proper country names, such as `Other`, `Other Western Hemisphere`, or `Latin America and Other Western Hemisphere`. We can use regular expressions to drop these observations.
+```{r}
+nrow(fdi_new)
+fdi_new_sub <- fdi_new %>%
+  mutate(country = str_trim(country)) %>%
+  filter(!str_detect(country, "[Oo]ther"))
+nrow(fdi_new_sub)
+```
+
+## Adding COW country codes
+Next, we will use the [`countrycode`](https://cran.r-project.org/web/packages/countrycode/countrycode.pdf) package to add COW country codes to the data. Note, that this does not work perfect here--some countrynames are not matched. For demonstration purposes we will simply drop observations that were not matched. In reality, we might have to add some country codes manually, or use a more sophisticated algorithm to attach country codes. Note that the countrycode package allows you to specify custom country dictionaries, for example if you needed to attach Gleditsch-Ward rather than COW countrycodes.
+```{r, warning=F, message=F}
+# install.packages("countrycode")
+library(countrycode)
+fdi_new_sub <- fdi_new_sub %>%
+  mutate(ccode = countrycode(country, "country.name", "cown"))
+```
+
+We can inspect the values that did not receive a COW code. The algorithm works as expected (Serbia does not have its own countrycode in the COW system). All the un-matched countries are either not fully sovereign regions (based on the COW system), continents, or smaller island nations that are not considered part of the international system, according to COW. We therefore drop all observations that did not receive a `ccode` coding.
+```{r}
+fdi_new_sub$country[is.na(fdi_new_sub$ccode)] 
+fdi_new_sub <- filter(fdi_new_sub, !is.na(ccode))
+```
+
+## Handling duplicates
+Before re-shaping our data, we need to check for duplicates. `R` provides a number of built-in functions to execute this task. Here, we will write a snipped of custom code using `dplyr` to show which observations (based on the `ccode` variable) have duplicates and how many.
+```{r}
+dupes <- fdi_new_sub %>%
+  group_by(ccode) %>%
+  summarise(count = n()) %>%
+  filter(count > 1)
+```
+
+We have quite a few duplicate observations. In reality, we would want to go through each of these observations and inspect whether they are "true" duplicates, or whether they are produced in the process of attaching COW codes. Here, we will only go through two examples.
+
+First, let us look at all the duplicates with COW code 200 (United Kingdom). If we inspect all the observations, we see that we have one "true" UK observations, and a number of other observations that contain the word "United Kingdom," but do not refere to the mainland. What to do with these duplicates is a substantive question that needs to be decided by the researcher. Here, for the purpose of demonstation, we will assume that all the observation belong to the UK and sum over them (taking into account the NA values).
+```{r}
+ccode200 <- fdi_new_sub %>%
+  filter(ccode == 200)
+```
+
+Second, let us look at the cuplicates with COW code 365 (Russia). We can see that these are not "true" duplicates, that is no value is observed in two rows in the same year. We can therefore simply "melt" these three variables together to create one row for ccode 365.
+```{r}
+ccode365 <- fdi_new_sub %>%
+  filter(ccode == 365)
+```
+
+Depending on the type of duplicate, we might want to apply different functions to each instance of duplication. For simplicity, here we simply sum over all duplicates, excluding missing values. This will achieve the desired transformation for both the UK and the Russia duplicates. Note that before summing, we will have to convert our values to class `numeric`. Note also that upon applying the `summarise_if()` command, we loose the information on the `country` variable that contains the name of the country. There are ways to retain this information (for example by subsequently attaching the countryname with the `countrycode` package, see below).
+```{r, warning=F, message = F}
+for(i in 2:ncol(fdi_new_sub)){
+  fdi_new_sub[,i] <- as.numeric(fdi_new_sub[,i])
+}
+str(fdi_new_sub)
+fdi_new_sub_nodupes_alt <- fdi_new_sub %>%
+  group_by(ccode) %>%
+  summarise_if(is.numeric, funs(sum(., na.rm = T)))
+```
+
+Unfortunately, this last version returns 0 for columns that have all `NA` values. We will therefore write a custom `function` to pass to the `summarise_if()` wrapper. The general syntax of a function is the following.
+
+`functionname <- function(operand){operation, return value}`.
+
+Within the function we use an `if...else` statement. The `if...else` statement specifies a conditional operation with the following general syntax:
+
+`if(condition is true){output} else {output}`.
+
+```{r}
+func_sum <- function(x){
+  if(all(is.na(x))){
+    return(NA)
+  } else {
+    return(sum(x, na.rm = T))
+  }
+}
+fdi_new_sub_nodupes <- fdi_new_sub %>%
+  group_by(ccode) %>%
+  summarise_if(is.numeric, funs(func_sum))
+```
+
+## Reshaping
+The original data is in wide format. To make it compatible with the IPE data resource (and most other panel data sets) we need to reshape it into the long format, with one column indicating the country, another indicator accounting for the year, and lastly a column capturing the values of the respective indicator. In this case, the entire dataframe of the original data captures only one variable, namely "Outward FDI stocks from the US in USD (millions), all industries, BEA [OFS]." For simplicity, we will call this variable `outward_fdi_all`.
+```{r}
+fdi_long <- fdi_new_sub_nodupes %>%
+  # re-shape to long format
+  gather(year, outward_fdi_all, 2:ncol(fdi_new_sub_nodupes)) %>%
+  # Re-attach country names using countrycode package
+  mutate(countryname = countrycode(ccode, "cown", "country.name"))
+```
+
+The result is a clean data frame that can now be merged into the IPE data resource.
+```{r}
+head(fdi_long)
+```
+
+# Sources {-}
+Correlates of War (COW) National Material Capabilities Data Version 4.0. http://www.correlatesofwar.org/data-sets/downloadable-files/national-material-capabilities-v4-0 (accessed Oct 2016).
+
+The World Bank: World Development Indicators. https://datacatalog.worldbank.org/dataset/world-development-indicators (accessed Oct 2016).
+
+U.S. Bureau of Economic Analysis, "U.S. Direct Investment Abroad, U.S. Direct Investment Position Abroad on a Historical-Cost Basis," http://www.bea.gov/international/di1usdbal.htm (accessed Jun 21 2016).
+© 2020 GitHub, Inc.
