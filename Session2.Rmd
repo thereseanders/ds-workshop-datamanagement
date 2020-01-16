@@ -16,14 +16,41 @@ RStudio has a number of great cheat sheets available online: https://rstudio.com
 
 
 ## The data
+
+For this exercise, we will be using data from Five Thirty Eight's [Presidential Endorsement Tracker](https://fivethirtyeight.com/methodology/how-our-presidential-endorsement-tracker-works/), which records endorsements of American presidential primary candidates from current/former government officials and high-ranked political party members (i.e. members of the Democratic National Convention). For this dataset, an endorsement is defined as a "public display or pronouncement of support that articulates or strongly implies that a candidate is an endorser's current No. 1 choice for president". This means that there is only one endorsement linked to each endorser, and that they can change over the course of the primary season. In the case of ambiguities, Five Thirty Eight reaches out to offices of the candidates and endorsers for a clarification. 
+
+In this model, endorsements are "ranked" by their perceived relative value based on their current/former position. For the 2020 Democratic Presidential Primaries, it comprises of the following: 
+
+1. Current and former presidents and vice presidents (10 points).
+2. Current party leaders: Nancy Pelosi (House speaker), Steny Hoyer (House majority leader), James Clyburn (House majority whip), Chuck Schumer (Senate minority leader), Dick Durbin (Senate minority whip) and Tom Perez (Democratic National Committee chair) (10 points).
+3. Current governors, including governor equivalents from the U.S. territories and Washington, D.C.1 (8 points).
+4. Current U.S. Senators (6 points).
+5. Past presidential and vice presidential nominees (5 points).
+6. Former party leaders2 (5 points).
+7. Former 2020 presidential candidates who appeared in at least one debate and have since dropped out (5 points).
+8. Current U.S. representatives, including non-voting delegates from U.S. territories (3 points).
+9. Mayors of cities with at least 300,000 people (3 points).
+10. Officials holding statewide or territory-wide elected office, excluding positions (e.g. commissioners) that are held by multiple people at once (2 points).
+11. State and territorial legislatures’ majority and minority leaders (2 points).3
+12. Other DNC members (1 point).
+
+The dataset contains the following variables: 
+
+* `endorser`: individual who is endorsing a presidential candidate 
+* `position`: endorser's position in government 
+* `state`: origin state of endorser 
+* `endorsee`: presidential candidate endorsed 
+* `endorser.party`: political party of the endorser
+* `points`: # of "endorsement points" attributed to the endorser (see above for more details)
+* `drop`: Has the candidate dropped out of the race? (1=yes)
+* `drop_date`: date that the candidate dropped out 
+
 ```{r}
 library(foreign)
 raw <- read.csv("538_presidential_endorsements.csv",
                stringsAsFactors = FALSE)
 str(raw)
 ```
-
-
 
 ## Functions in `dplyr`
 `dplyr` uses a strategy called "Split - Apply - Combine". Some of the key functions include:
@@ -57,16 +84,14 @@ Notice a couple of things in the code below:
 ```{r}
 # Explicitly selecting variables one-by-one
 df_sub1 <- raw %>%
-  dplyr::select(year,
-                position,
+  dplyr::select(position,
                 endorsee)
 
 # Selecting multiple variables at once
 df_sub2 <- raw %>%
-  dplyr::select(year,
-                position,
+  dplyr::select(position,
                 endorsee,
-                source:points) #Selecting a number of columns. 
+                points:drop_date) #Selecting a number of columns. 
 names(df_sub2)
 # Later we will also learn a few additional tricks using helper functions
 ```
@@ -175,19 +200,10 @@ Suppose I only wanted to look at endorsements for candidates who are still in th
 `ifelse(condition, if TRUE this, if FALSE this)`.
 
 ```{r}
-drop <- c("Kamala Harris",
-          "Cory Booker",
-          "Beto O'Rourke",
-          "Julian Castro",
-          "Jay Inslee",
-          "Steve Bullock",
-          "Kirsten Gillibrand",
-          "John Hickenlooper",
-          "Eric Swalwell")
+df3 <- df2 %>% 
+  dplyr::mutate(drop_date = case_when(endorsee == "Cory Booker" ~ "2020-01-13"))
 
-df3 <- df2 %>%
-  dplyr::mutate(dropped = ifelse(endorsee %in% drop, 1, 0)) %>%
-  dplyr::filter(dropped == 0)
+table(df$endorsee)
 ```
 
 
