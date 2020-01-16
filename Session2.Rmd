@@ -300,8 +300,8 @@ First, let's load the data from both waves.
 ```{r}
 library(haven)
 # load datasets 
-w38.df <- haven::read_sav("ATP_W38.sav")
-w39.df <- haven::read_sav("ATP_W39.sav")
+w38.df <- haven::read_dta("ATP_W38.dta")
+w39.df <- haven::read_dta("ATP_W39.dta")
 ```
 
 Then, let's investigate some of the variables used in each dataset. 
