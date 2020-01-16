@@ -44,8 +44,8 @@ The dataset contains the following variables:
 * `endorser.party`: political party of the endorser
 * `source`: link to endorsement (if online)
 * `points`: # of "endorsement points" attributed to the endorser (see above for more details)
-* `drop`: Has the candidate dropped out of the race? (1=yes)
-* `drop_date`: date that the candidate dropped out 
+* `drop`: Has the candidate dropped out of the race? (1 = yes)
+* `drop_date`: date that the candidate dropped out (This variable is not part of `fivethirtyeight. Allison coded this variable for us. Thank you!).
 
 ```{r}
 library(foreign)
@@ -353,22 +353,21 @@ by_e_s <- df_new %>%
             count_endorsement = n()) #counts the number of observations
 ```
 
-Hm, this is pretty hard to see. Let's visualize it.[^4]
+Hm, this is pretty hard to see. Let's visualize it.[^3]
 
-[^4]: This would be a lot easier using `ggplot2` by the way. We will cover data visualization with `ggplot2` in the next workshop. Stay tuned!
+[^3]: This would be a lot easier using `ggplot2` by the way. We will cover data visualization with `ggplot2` in the next workshop. Stay tuned!
 ```{r}
 {plot(density(by_e_s$av_pts[by_e_s$super == 1]),
      col = "red")
 lines(density(by_e_s$av_pts[by_e_s$super == 0]))}
 ```
 
-
 ### Quick note on `group_by()` + `summarize()` vs. `group_by()` + `mutate()`
 Above, we create grouped data summaries. Notice that only the variables we explicitly specify are retained when first grouping the data and then running `summarize()`. 
 
-Sometimes, we want to create grouped variables but retain the remainder of the dataframe. To do so , we can also use `group_by()` with `mutate()`. However, this is not appropriate in all situations. For example, if we created a `count_endorsement` variable for each row, someone looking at our dataframe could interpret this as each candidate having received that many endorsements from a particular endorsee.[^3]
+Sometimes, we want to create grouped variables but retain the remainder of the dataframe. To do so , we can also use `group_by()` with `mutate()`. However, this is not appropriate in all situations. For example, if we created a `count_endorsement` variable for each row, someone looking at our dataframe could interpret this as each candidate having received that many endorsements from a particular endorsee.[^4]
 
-[^3]: Not the best example, but you get the point...
+[^4]: Not the best example, but you get the point...
 ```{r}
 pleasedont <- df_new %>%
   filter(!is.na(endorsee)) %>%
@@ -469,7 +468,6 @@ The Wave 39 data contains the following variables:
 * `F_PARTY_FINAL`: Party affiliation 
 
 First, let's load the data from both waves. 
-
 ```{r}
 library(haven)
 # load datasets 
@@ -477,7 +475,14 @@ w38.df <- haven::read_dta("ATP_W38.dta")
 w39.df <- haven::read_dta("ATP_W39.dta")
 ```
 
-Then, let's investigate some of the variables used in each dataset. 
+Let us take a look at the data sets. Notice that we can see the question below the variable name.
+```{r}
+# View(w38.df)
+```
+
+Where does this information come from? We can use the `attributes()` function to get a better idea.[^5]
+
+[^5]: The "%10.0g" is the state encoding for different variable types, see https://www.stata.com/manuals13/dformat.pdf.
 
 ```{r}
 attributes(w38.df$VTPLAN_W38)
@@ -486,17 +491,23 @@ attributes(w38.df$F_PARTY_FINAL)
 attributes(w38.df$F_IDEO)
 ```
 
-**Exercise 1** Suppose we would like to investigate differences between Democrats and Republicans in the Wave 39 data. Add new variables called `dem` and `rep` that code these party affiliations using functions from the `dplyr` package and piping.
+**Exercise 1** Suppose we would like to investigate differences between Democrats and Republicans in the Wave 39 data. Add a new variable called `party_cat` that is coded `dem` if the respondent is affiliated with the Democrats, `rep` if the respondent is affiliated with the Republicans, `ind` if they are independent, and `other` for the remaining cases. Check that you get the same numbers as below by using the `table()` function.
 
-```{r, echo = F, warning = F, message = F}
-library(dplyr)
+Bonus points if you figure out how to express this is percentages of the total number of respondents!
+```{r, echo = F, warning = F}
+attributes(w39.df$F_PARTY_FINAL)
 w39.df <- w39.df %>%
-  dplyr::mutate(DEM = ifelse(F_PARTY_FINAL==2,1,0),
-                REP = ifelse(F_PARTY_FINAL==1,1,0))
-head(w39.df)
+  mutate(party_cat = case_when(
+    F_PARTY_FINAL == "2" ~ "dem",
+    F_PARTY_FINAL == "1" ~ "rep",
+    F_PARTY_FINAL == "3" ~ "ind",
+    T ~ "other"
+  ))
+table(w39.df$party_cat)
+table(w39.df$party_cat)/nrow(w39.df)*100
 ```
 
-## A primer on data merging using base `R` functions
+## A super quick primer on data merging using base `R` functions
 In principle, we can merge data using the `cbind()` ("column bind") and `rbind()` ("row bind") functions, that we are already familiar with.
 ```{r}
 vec1 <- c(1, 2, 3)
@@ -516,12 +527,12 @@ rbind(dat1, obs)
 
 As a side note: The `bind_rows()` function in the `dplyr` package is the smart cousin of `rbind()`. Given that two dataframes have an equal number of columns, it can merge them based on the variable name; the ordering of the columns does not matter.
 
-## Using dplyr for merging
-Luckily, the `dplyr` package in `R` contains a number of functions that allow us to merge data in "smarter" ways. Please refer to the [Data Wrangling Cheat Sheet](https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf) for an overview of the functions `dplyr` has available.
+## Using `dplyr` for merging
+Luckily, the `dplyr` package in `R` contains a number of functions that allow us to merge data in "smarter" ways.
 
-Suppose, we have two data frames: `x` (here WDI) and `y` (here COW). The basic syntax for data merging with `dplyr` is the following:
+Suppose, we have two data frames: `x` (here w38.df) and `y` (here w39.df). The basic syntax for data merging with `dplyr` is the following:
 
-`output <- join(A, B, by = "variable")`
+`output <- whichjoin(A, B, by = "variable")`
 
 We will focus on the following four join functions:
 
@@ -533,55 +544,55 @@ We will focus on the following four join functions:
 ### `full_join()`
 Suppose we wanted to keep the maximum amount of data in our new merged data set. We would use the `full_join()` function to merge the Wave 38 and Wave 39 data. 
 ```{r}
-full_wrong <- dplyr::full_join(w38.df, w39.df, by = "F_PARTY_FINAL")
+full_wrong <- full_join(w38.df, w39.df, by = "F_PARTY_FINAL")
 nrow(full_wrong)
-full_wrong
 ```
 
 A couple of things to notice:
 
-1. There are a couple of duplicate column names in our data. `dplyr` automatically added a suffix to those instances; x for the Wave 38 data (the first data set we passed to the function) and y for the Wave 39 data (the second data set passed to the function). We will rename these variables later on to keep track from which data set they originate.
+1. There are a number of duplicate column names in our data. `dplyr` automatically added a suffix to those instances; x for the Wave 38 data (the first data set we passed to the function) and y for the Wave 39 data (the second data set passed to the function). We will rename these variables later on to keep track from which data set they originate.
 2. We have over 30 million observations even though our original datasets only have approximately 10,000 observations each. Why do you think this is the case? Do you notice something weird about the `QKEY` variable?
 
 The reason for the high number of observations is that we asked `dplyr` to join the data sets based on the `F_PARTY_FINAL` variable only. This matches each observation in dataset x to each observation in dataset y as long as they have the same party affiliation. However, the rows in our data are not uniquely identified by the `F_PARTY_FINAL` variable. Since we are working with panel data sets, each observation is uniquely identified by the variable `QKEY` to track which respondents participated in multiple waves. We need to pass this information to the `full_join()` function to correctly match up the observations in our data.
 
-In some cases, `full_join()` and the other join functions from dplyr can often identify which columns to match on based on duplicate column names. However, in our particular case, we run into problems because we have more duplicate column names that unique identifiers for the data; see the message that R outputs when running the command without specifying by which variables to merge.
+`full_join()` and the other join functions from dplyr can identify which columns to match on based on duplicate column names. However, in our particular case, we run into problems because we have more duplicate column names that unique identifiers for the data; see the message that R outputs when running the command without specifying by which variables to merge. Ideology and/or party affiliation per respondent could have changed across the two waves! We do not want to join based on them!
 
 ```{r}
-full_alsowrong <- dplyr::full_join(w38.df, w39.df)
+full_alsowrong <- full_join(w38.df, w39.df)
 nrow(full_alsowrong)
 ```
 
 Before we do the correct `full_join()`, let's change the name of variables that are not unique identifiers in each dataset. To do this, we can use the `select()` function. 
 
 ```{r}
+names(w38.df)
 w38.df <- w38.df %>% 
-  select(QKEY:VTPLAN_W38,
-         F_PARTY_FINAL_W38 = F_PARTY_FINAL,
-         F_IDEO_W38 = F_IDEO)
+  dplyr::select(QKEY:VTPLAN_W38,
+                F_PARTY_FINAL_W38 = F_PARTY_FINAL,
+                F_IDEO_W38 = F_IDEO)
 names(w38.df)
 ```
 
+Notice that below, we silently drop the `party_cat` variable by not including it within out `select()` statement.
 ```{r}
 w39.df <- w39.df %>% 
-  select(QKEY:VOTED_ATP_W39,
-         F_PARTY_FINAL_W39 = F_PARTY_FINAL, 
-         F_IDEO_W39 = F_IDEO)
+  dplyr::select(QKEY:VOTED_ATP_W39,
+                F_PARTY_FINAL_W39 = F_PARTY_FINAL, 
+                F_IDEO_W39 = F_IDEO)
 names(w39.df)
 ```
 
 Now we are ready to join! 
-
 ```{r}
 merged_full <- full_join(w38.df, w39.df, by = "QKEY")
-head(merged_full)
+names(merged_full)
 nrow(merged_full)
 ```
 
 ### `inner_join()`
-Suppose, instead of retaining as much data as possible, we only wanted to keep data for which we have observations in both data sets. Note that this merging is only done based on the variables that we specify to uniquely identify each observation. `NA` values in all other columns are retained. Please refer to the *Data Wrangling Cheat Sheet* for methods that will select based on matching values beyond the unique identifiers (see for example `intersect()` and `setdiff()`).
+Suppose, instead of retaining as much data as possible, we only wanted to keep data for which we have *observations* in both data sets. Note that this merging is only done based on the variables that we specify to uniquely identify each observation. Please refer to the *Data Wrangling Cheat Sheet* for methods that will select based on matching values beyond the unique identifiers (see for example `intersect()` and `setdiff()`).
 ```{r}
-merged_inner <- inner_join(w38.df, w39.df, by = "QKEY", na.rm = T) 
+merged_inner <- inner_join(w38.df, w39.df, by = "QKEY") 
 head(merged_inner)
 nrow(merged_inner)
 ```
@@ -605,10 +616,10 @@ nrow(w38.df) == nrow(merged_right)
 Another important task in data management is data re-shaping. Often, data does not come in the format that we need for data merging, data visualization, statistical analysis, or vectorized programming. In general, we want data in the following format:
 
 1. Each variable forms a column.
-2. Each observation forms a row[^2].
+2. Each observation forms a row[^6].
 3. For panel data, the unit (e.g. country) and time (e.g. year) identifier form columns.
 
-[^2]: Hadley Wickham (2014, "Tidy Data" in *Journal of Statistical Analysis*) adds another condition, namely that "Each type of observational unit forms a table." We will not go into this here, but I can highly recommend you read Wickham's piece if you want to dive deeper into tidying data.
+[^6]: Hadley Wickham (2014, "Tidy Data" in *Journal of Statistical Analysis*) adds another condition, namely that "Each type of observational unit forms a table." We will not go into this here, but I can highly recommend you read Wickham's piece if you want to dive deeper into tidying data.
 
 The `tidyr` package offers two main functions for data reshaping:
 
@@ -636,13 +647,74 @@ For **long** data formats, each row denotes the observation of a unit at a given
 ## `pivot_longer()`
 We use the `pivot_longer()` function to reshape data from wide to long. In general, the syntax of the data is as follows:
 
-`new_df <- pivot_longer(old_df, columns to transform, names_to = "name", values_to = "value")`
+`new_df <- pivot_longer(old_df, columns to transform, names_to = "name", values_to = "value")`[^7]
 
-We will be working with the `merged_inner` data set. Suppose we wanted to have a single column for military expenditures, and another column identifying the data set that the data comes from.
+[^7]: If we use the function in a pipe, we do not need to specify the `old_df` parameter. `tidyr` automatically knows to use the lastest version of the data frame in the pipe.
 
-Gathering the military expenditure variables in this way will result in duplicate rows for each country-year. Whether or not this data format is desirable depends on the intended use for the data. Most statistical analysis methods require the data to have a single row per observation (for example country-year). However, some data visualization methods fare better when each concept (for example the variable `milex`) is captured in a single column with additional columns specifying supplementary attributes of the observation (see below).
+We will be working with the `merged_inner` data set. Suppose instead of having a separate column for the mutual variables for each wave, we wanted to create a new column called `wave` that codes the wave of the survey.
 
-Below, note that since `tidyr` and `dplyr` are sibling packages from the "tidyverse," we can use them seamlessly in the same pipe (here using `group_by()`, `summarize()`, `mutate()`, and `filter()` from `dplyr`).
+Let's start with a simple example and first only work with a subset of the `merged_inner` data frame that contains the `QKEY`, `POL1DT_W38`, and `POL1DT_W39` variables. Below, note that since `tidyr` and `dplyr` are sibling packages from the "tidyverse," we can use them seamlessly in the same pipe (here using `group_by()`, `summarize()`, `mutate()`, and `filter()` from `dplyr`).
+```{r}
+names(merged_inner)
+df_long_small <- merged_inner %>%
+  
+  dplyr::select(QKEY,
+                contains("POL1DT")) %>%
+  
+  pivot_longer(names_to = "wave",
+               values_to = "trump_approval",
+               cols = -QKEY) # Everything except the QKEY
+
+# We could have also written cols = c("POL1DT_W38", "POL1DT_W39")
+
+head(df_long_small)
+```
+
+Ok, now that we know how this works, lets try this with all variables that are present in both data frames.[^8]
+
+[^8]: Please note that if you were to try this for all variables in this dataframe, `R` throws an error that essentially complains because the factor levels (i.e. haven labels) don't have the same values across variables. This is a know issue (see https://github.com/tidyverse/haven/issues/477) that will hopefully be fixed by the `haven` developing team soon. For now, a workaround would be to change the variable types to factor (and/or character), rather than `haven_labelled`. 
+
+```{r}
+df_long <- merged_inner %>%
+  pivot_longer(names_to = "variable",
+               values_to = "value",
+               cols = -QKEY)
+  
+attributes(merged_inner$POL1DT_W38)
+attributes(merged_inner$VTPLAN_W38)
+```
+
+
+
+OK, it worked but the data frame could be more informative. Let's use our data wrangling skills to recode the `wave` variable. 
+```{r}
+df_long_small <- merged_inner %>%
+  
+  dplyr::select(QKEY,
+                contains("POL1DT")) %>%
+  
+  pivot_longer(names_to = "wave",
+               values_to = "trump_approval",
+               cols = -QKEY) %>%
+  mutate(wave_num = case_when(
+    wave == "POL1DT_W38" ~ "38",
+    wave == "POL1DT_W39" ~ "39"
+  ))
+```
+
+
+
+
+Transforming the data in this way will result in duplicate rows for each respondent. Whether or not this data format is desirable depends on the intended use for the data. 
+```{r}
+library(tidyr)
+table(names(merged_inner))
+merged_long <- merged_inner
+```
+
+
+
+
 ```{r, warning = F, message = F}
 library(tidyr)
 merged_long <- merged_inner %>%
