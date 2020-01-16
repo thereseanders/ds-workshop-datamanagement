@@ -18,12 +18,15 @@ RStudio has a number of great cheat sheets available online: https://rstudio.com
 ## The data
 ```{r}
 library(foreign)
-df <- read.csv("538_presidential_endorsements.csv")
-str(df)
+raw <- read.csv("538_presidential_endorsements.csv",
+               stringsAsFactors = FALSE)
+str(raw)
 ```
 
+
+
 ## Functions in `dplyr`
-`dplyr` does not accept tables or vectors---just data frames! `dplyr` uses a strategy called "Split - Apply - Combine". Some of the key functions include:
+`dplyr` uses a strategy called "Split - Apply - Combine". Some of the key functions include:
 
 * `select()`: Subset columns.
 * `filter()`: Subset rows.
@@ -34,10 +37,11 @@ str(df)
 First, lets download the package and call it using the `library()` function.
 ```{r, message = F, warning=F}
 # install.packages("dplyr")
+library(dplyr)
 ```
 
 ## Using `select()` and introducing the Piping Operator `%>%`
-Using the so-called **piping operator** from the `magrittr` package will make the `R` code faster and more legible, because we are not saving every output in a separate data frame, but passing it on to a new function. First, let's use only a subsample of variables in the data frame, specifically the year of the flight, the airline, as well as the origin airport, the destination, and the distance between the airports.
+Using the so-called **piping operator** will make the `R` code faster and more legible, because we are not saving every output in a separate data frame, but passing it on to a new function. First, let's use only a subsample of variables in the data frame.
 
 Notice a couple of things in the code below:
 
@@ -47,26 +51,54 @@ Notice a couple of things in the code below:
 * Instead of typing each variable, we can select sequences of variables.
 * Note that the `everything()` command inside `select()` will select all variables.
 
-**NOTE:** The `::` operator specifies that we want to use the *object* `select()` from the *package* `dplyr`. This explicit programming is useful when functions or  objects are contained in multiple packages to avoid confusion. 
+**NOTE:** The `::` operator specifies that we want to use the *object* `select()` from the *package* `dplyr`. This explicit programming is useful when functions or  objects are contained in multiple packages to avoid confusion. In practice, I now always write `dplyr::select()` because I have come across a few instances where code broke because `select` was part of another package. 
 
+### Selecting variables with `select()`
 ```{r}
-library(magrittr)
-
-df1 <- df %>%
+# Explicitly selecting variables one-by-one
+df_sub1 <- raw %>%
   dplyr::select(year,
                 position,
-                endorsement.points = points, #Renaming the variable
-                state:source) #Selecting a number of columns. 
+                endorsee)
+
+# Selecting multiple variables at once
+df_sub2 <- raw %>%
+  dplyr::select(year,
+                position,
+                endorsee,
+                source:points) #Selecting a number of columns. 
+names(df_sub2)
+# Later we will also learn a few additional tricks using helper functions
 ```
 
+### Explicitly dropping variables with `select()`
 Suppose, we didn't really want to select the `source` variable. We can use `select()` to drop variables.
 ```{r}
-df1 <- df1 %>%
+df_sub3 <- raw %>%
   dplyr::select(-source)
 ```
 
+### Reordering variables with `select()`
+```{r}
+df_sub3 <- raw %>%
+  dplyr::select(year,
+                endorsee,
+                endorser,
+                points)
+```
+
+### Renaming variables with `select()`
+We can also use `select()` to rename variables. Below, we need to use the `everything()` function if we don't want to drop the remaining variables in the process
+```{r}
+names(df)
+df <- raw %>%
+  dplyr::select(endorser_party = endorser.party,
+                everything())
+```
+
+
 ## Introducting `filter()`
-There are a number of key operations when manipulating observations (rows).
+While `select()` operates on columns, `filter()` operates on observations (rows). We always use `filter()` in combination with logical statements. First, let's briefly review the most commonly used logical statements from last week.  
 
 * `x < y`
 * `x <= y`
@@ -74,7 +106,20 @@ There are a number of key operations when manipulating observations (rows).
 * `x != y`
 * `x >= y`
 * `x > y`
-* `x %in% c(a,b,c)` is `TRUE` if `x` is in the vector `c(a, b, c)`.
+* `x %in% c(a, b, c)` is `TRUE` if `x` is in the vector `c(a, b, c)`.
+
+There are two more important logical statements we frequently use in data wrangling.
+* `is.na()`
+* `!is.na()`
+
+First, let's take a look at the `endorser_party` variable we created above using the `table()` function. Unsurprisingly, most endorsements come from Democrats.
+
+Who the non-Democrat endorsers are. We can use `filter()` to do so.
+```{r}
+table(df$endorser_party) 
+df_nondem <- df %>%
+  filter(endorser_party != "D")
+```
 
 Suppose, we wanted to filter all the endorsements that come from states that will take part in [Super Tuesday](https://www.uspresidentialelectionnews.com/2020-presidential-primary-schedule-calendar/super-tuesday-2020/). Registered Democrats from these states will vote for the Democratic nominee, who will be on the ballot for the 2020 Presidential Election. 
 
@@ -82,17 +127,25 @@ The states that will hold primary elections on this year's Super Tuesday (March 
 
 ```{r, warning = F}
 super_tuesday <- c("AL", "AR", "CA", "CO", "ME", "MA", "MN", "NC", "OK", "TN", "TX", "UT", "VT", "VA")
-df2 <- df1 %>%
-  dplyr::filter(state %in% super_tuesday)
+df_super <- df %>%
+  filter(state %in% super_tuesday)
 ```
 
-The following also returns all entries from states that will hold primaries on Super Tuesday.  
+Wait, what do we need `%in%` for? Couldn't we just use `==`? Lets use a smaller example to illustrate why this isn't the case. Below, lets select only the following states: California (CA) and Texas (TX).
 ```{r}
-head(df1)
-df1_alt <- df1 %>%
-  dplyr::filter(state == c("AL", "AR", "CA", "CO", "ME", "MA", "MN", "NC", "OK", "TN", "TX", "UT", "VT", "VA"))
-head(df1_alt)
+head(df$state)
+test1 <- df %>%
+  filter(state %in% c("CA", "TX"))
+nrow(test1)
+head(test1$state)
+
+test2 <- df %>%
+  filter(state == c("CA", "TX"))
+nrow(test2)
+head(test2$state)
 ```
+
+What does `R` do? Well it does a vector matching operation. From the variable `df$state` (`"MD" "NY" "CA" "DE" "TX" "CA"`) it test is the first element "CA", is the second element "TX", is the third element "CA", the fourth element "TX", and so on. Only if the return for each of these checks is `TRUE` does it select the respective row (observation).
 
 ## Helper functions
 `dplyr` has a number of helper functions--and that is where the magic lies. These can be used with either `select()` or `filter()`. Here are some useful functions:
@@ -100,7 +153,6 @@ head(df1_alt)
 * `starts_with()`
 * `ends_with()`
 * `contains()`
-* `matches()`: Every name that matches "X", which can be a regular expression (more on that later).
 * `one_of()`: Every name that appears in x, which should be a character vector.
 
 For example, let's create a data frame with all variables that contain the word "endorse".
@@ -137,6 +189,15 @@ df3 <- df2 %>%
   dplyr::mutate(dropped = ifelse(endorsee %in% drop, 1, 0)) %>%
   dplyr::filter(dropped == 0)
 ```
+
+
+Ok, so there are a number of rows for which the `endorsee` variable is `NA`. That is weird. Lets check out how many cases we have in which the `endorsee` variable is `NA`.
+```{r}
+table(is.na(df$endorsee))
+```
+
+That is most of our observations! So `fivethirtyeight` appears to have already listed people it expects to announce an endorsement before they even did so! 
+
 
 ## Introducting `summarise()` and `arrange()`
 One of the most powerful `dplyr` features is the `summarise()` function, especially in combination with `group_by()`.
