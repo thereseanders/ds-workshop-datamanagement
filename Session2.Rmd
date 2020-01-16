@@ -183,6 +183,8 @@ What does `R` do? Well it does a vector matching operation. From the variable `d
 
 
 ## Introducting `mutate()`
+We can use the `mutate()` function to create new variables or change existing ones. 
+
 Suppose we want to rescale the `points` variable to run from 0 to 1. Since the original variable is scaled from 1 (least valuable endorsement) to 10 (most valuable endorsement; former presidents and vice presidents; current party leaders), we can create a new variable `points_rescaled` by dividing the original variable by 10. 
 ```{r}
 df_new <- df %>%
@@ -209,22 +211,32 @@ df3 <- df2 %>%
   dplyr::filter(dropped == 0)
 ```
 
+**Exercise** What is the difference in the output of the following two lines of code?
 
+`mutate(us_state = state)`
 
+`select(us_state = state)`
 
 ## Introducting `summarise()` and `arrange()`
-One of the most powerful `dplyr` features is the `summarise()` function, especially in combination with `group_by()`.
+One of the most powerful `dplyr` features is the `summarise()` function,[^1] especially in combination with `group_by()`.
 
-First, let's compute the total number of endorsements by endorsee in the Super Tuesday states. Here, we will be using the operator `n()` to tell dplyr to count all the observations for the groups specified in `group_by()`. Also, suppose we want to know the average endorsement points attributed to each candidate. Anothter interesting variable would be the total endorsement points for each candidate to get an idea of the influence of each candidate's endorsements.
+[^1]: Note that both the British and American English versions of `summarise()` and `summarize()` work!
+
+First, let's compute the average endorsement points that each candidate got. We will work with the data frame that drops missing values in the `endorser` variable.
+
+number of endorsements by endorsee in the Super Tuesday states. Here, we will be using the operator `n()` to tell dplyr to count all the observations for the groups specified in `group_by()`. Also, suppose we want to know the average endorsement points attributed to each candidate. Anothter interesting variable would be the total endorsement points for each candidate to get an idea of the influence of each candidate's endorsements.
 
 Note that, because there are missing values, we need to tell `R` what to do with them. 
 ```{r}
 by_endorsee <- df3 %>%
-  dplyr::group_by(endorsee) %>%
-  dplyr::summarise(n.endorsement=dplyr::n(),
-            average.endorsement.points = mean(endorsement.points, na.rm = T),
-            total.endorsement.points = sum(endorsement.points))
+  group_by(endorsee) %>%
+  summarize(av_endorsement = mean(points, na.rm = T),
+            tot_endorsement = sum(points),
+            n_endorsement = n())
 ```
+
+
+
 
 To get an idea of where each candidate stands among politicians from the Super Tuesday states, lets reorder the output in descending order using `arrange()`.
 ```{r}
