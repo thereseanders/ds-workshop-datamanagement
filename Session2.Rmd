@@ -36,11 +36,13 @@ In this model, endorsements are "ranked" by their perceived relative value based
 
 The dataset contains the following variables: 
 
+* `year`: year endorsement took place 
 * `endorser`: individual who is endorsing a presidential candidate 
 * `position`: endorser's position in government 
 * `state`: origin state of endorser 
 * `endorsee`: presidential candidate endorsed 
 * `endorser.party`: political party of the endorser
+* `source`: link to endorsement (if online)
 * `points`: # of "endorsement points" attributed to the endorser (see above for more details)
 * `drop`: Has the candidate dropped out of the race? (1=yes)
 * `drop_date`: date that the candidate dropped out 
@@ -91,7 +93,7 @@ df_sub1 <- raw %>%
 df_sub2 <- raw %>%
   dplyr::select(position,
                 endorsee,
-                points:drop_date) #Selecting a number of columns. 
+                source:drop_date) #Selecting a number of columns. 
 names(df_sub2)
 # Later we will also learn a few additional tricks using helper functions
 ```
@@ -182,30 +184,25 @@ What does `R` do? Well it does a vector matching operation. From the variable `d
 
 For example, let's create a data frame with all variables that contain the word "endorse".
 ```{r}
-library(tidyselect)
-
-test <- df2 %>%
+test <- df %>%
   dplyr::select(contains("endorse"))
 ```
 
 ## Introducting `mutate()`
-Suppose we want to rescale the `endorsement.points` variable to run from 0 to 1. Since the original variable is scaled from 1 (least valuable endorsement) to 10 (most valuable endorsement; former presidents and vice presidents; current party leaders), we can create a new variable `endorsement.points.rescaled` by dividing the original variable by 10. 
+Suppose we want to rescale the `points` variable to run from 0 to 1. Since the original variable is scaled from 1 (least valuable endorsement) to 10 (most valuable endorsement; former presidents and vice presidents; current party leaders), we can create a new variable `endorsement.points.rescaled` by dividing the original variable by 10. 
 ```{r}
-df2 <- df2 %>%
-  dplyr::mutate(endorsement.points.rescaled = endorsement.points/10)
+df2 <- df %>%
+  dplyr::mutate(points_rescaled = points/10)
 ```
 
-Suppose I only wanted to look at endorsements for candidates who are still in the race. I can create a binary variable that codes whether a candidate has dropped out of the race. Here, we introduce the `ifelse()` function that is tremendously helpful in data wrangling exercises. The syntax of `ifelse()` is as follows: 
+Suppose I only wanted to look at endorsements for candidates who are still in the race, but it is not updated to include the candidate who most recently dropped out of the race (Cory Booker). I can create a new binary variable that codes that this candidate has recently dropped out of the race. Here, we introduce the `ifelse()` function that is tremendously helpful in data wrangling exercises. The syntax of `ifelse()` is as follows: 
 
 `ifelse(condition, if TRUE this, if FALSE this)`.
 
 ```{r}
 df3 <- df2 %>% 
-  dplyr::mutate(drop_date = case_when(endorsee == "Cory Booker" ~ "2020-01-13"))
-
-table(df$endorsee)
+  dplyr::mutate(drop_new = ifelse(endorsee == "Cory Booker", 1, 0))
 ```
-
 
 Ok, so there are a number of rows for which the `endorsee` variable is `NA`. That is weird. Lets check out how many cases we have in which the `endorsee` variable is `NA`.
 ```{r}
@@ -442,8 +439,8 @@ Another important task in data management is data re-shaping. Often, data does n
 
 The `tidyr` package offers two main functions for data reshaping:
 
-* `gather()`: Shaping data from wide to long.
-* `spread()`: Shaping data from long to wide.
+* `pivot_longer()`: Shaping data from wide to long.
+* `pivot_wider()`: Shaping data from long to wide.
 
 ## Wide versus long data
 For **wide** data formats, each unit's responses are in a single row. For example:
@@ -463,12 +460,12 @@ For **long** data formats, each row denotes the observation of a unit at a given
 | B       | 1991 | 150  | 45  |
 
 
-## `gather()`
-We use the `gather()` function to reshape data from wide to long. In general, the syntax of the data is as follows:
+## `pivot_longer()`
+We use the `pivot_longer()` function to reshape data from wide to long. In general, the syntax of the data is as follows:
 
-`new_df <- gather(old_df, key, value, columns to gather)`
+`new_df <- pivot_longer(old_df, columns to transform, names_to = "name", values_to = "value")`
 
-We will be working with the `merged_inner` data set. Suppose, we wanted to have a single column for military expenditures, and another column identifying the data set that the data comes from.
+We will be working with the `merged_inner` data set. Suppose we wanted to have a single column for military expenditures, and another column identifying the data set that the data comes from.
 
 Gathering the military expenditure variables in this way will result in duplicate rows for each country-year. Whether or not this data format is desirable depends on the intended use for the data. Most statistical analysis methods require the data to have a single row per observation (for example country-year). However, some data visualization methods fare better when each concept (for example the variable `milex`) is captured in a single column with additional columns specifying supplementary attributes of the observation (see below).
 
@@ -486,10 +483,13 @@ merged_long <- merged_inner %>%
                 key, # values
                 c(3:4), # variables to be reshaped
                 na.rm = T)
+
+merged_long1 <- merged_inner %>% 
+  tidyr::pivot_longer(-F_IDEO_W39, names_to = "variable", values_to = "count")
 merged_long
 ```
 
-We can use this format to compare pre- and post-election attitudes about Donald Trump by political ideology among the panel respondents (Note: without applying survey weights, this is not a representative estimate). Here, I use the `ggplot2` package (also from the "tidyverse") to show how to create bar graphs that use the properties of "tidy" data, namely the fact that a specific feature is represented with a single column (here `F_IDEO_W39`), with additional columns specifying supplementary properties of this feature (here `variable`). Note that `F_IDEO_W39`==1 indicates "very conservative", while `F_IDEO_W39`==5 indicates "very liberal".
+We can use this format to compare pre- and post-election attitudes about Donald Trump by political ideology among the panel respondents (Note: without applying survey weights, this is *not* a representative estimate). Here, I use the `ggplot2` package (also from the "tidyverse") to show how to create bar graphs that use the properties of "tidy" data, namely the fact that a specific feature is represented with a single column (here `F_IDEO_W39`), with additional columns specifying supplementary properties of this feature (here `variable`). Note that `F_IDEO_W39`==1 indicates "very conservative", while `F_IDEO_W39`==5 indicates "very liberal".
 
 ```{r, fig.width= 5, fig.height=3, warning = F}
 library(ggplot2)
@@ -498,8 +498,8 @@ ggplot(merged_long,
   geom_bar(stat = "identity", position = "dodge2")
 ```
 
-## `spread()`
-Suppose we wanted to revert our operation (or generall shape data from a long to a wide format), we can use `tidyr`'s `spread()` function. The syntax is similar to `gather()`.
+## `pivot_wider()`
+Suppose we wanted to revert our operation (or generall shape data from a long to a wide format), we can use `tidyr`'s `pivot_wider()` function. The syntax is similar to `pivot_longer()`.
 
 `new_df <- spread(old_df, key, value)`,
 
@@ -507,7 +507,7 @@ where `key` refers to the colum which contains the values that are to be convert
 
 ```{r}
 head(merged_long, 3)
-merged_wide <- spread(merged_long, variable, key) 
+merged_wide <- pivot_wider(merged_long, variable, key) 
 merged_wide
 ```
 
