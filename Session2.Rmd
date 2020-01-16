@@ -8,8 +8,8 @@ date: January 17, 2020
 output: pdf_document
 ---
 
- 
-# Introduction
+# `dplyr` 
+## Introduction
 Transforming and combining data from different sources into formats suitable for statistical analysis and visualization lies at the heart of the data science workflow. In many data science applications, an estimated 50% to 80% of a project is spent on data collection, cleaning, and wrangling. Today, we will be introducing the `dplyr`, `tidyr`, and `lubridate` packages. Together with `stringr` (string operations using regular expressions), these packages offer functionality for the majority of data cleaning and reshaping task in `R`.
 
 RStudio has a number of great cheat sheets available online: https://rstudio.com/resources/cheatsheets/. Check out the "Data transformation with `dplyr` cheat sheet!
@@ -96,6 +96,27 @@ df <- raw %>%
                 everything())
 ```
 
+### Helper functions
+`dplyr` has a number of helper functions --- and that is where the magic lies. These can be used with either `select()` or `filter()`. Here are some useful functions:
+
+* `starts_with()`
+* `ends_with()`
+* `contains()`
+* `matches()`: More general than `contains()` because it allows for regular expressions. We won't do an example here because we will go over regular expressions in another session.
+
+For example, let's create a data frame with all variables that contain the word "endorse".
+```{r}
+df_endorse <- df %>%
+  dplyr::select(contains("endorse"))
+names(df_endorse)
+```
+
+Ot we could select all variables that start with the letter "p".
+```{r}
+df_startsp <- df %>%
+  dplyr::select(starts_with("p"))
+names(df_startsp)
+```
 
 ## Introducting `filter()`
 While `select()` operates on columns, `filter()` operates on observations (rows). We always use `filter()` in combination with logical statements. First, let's briefly review the most commonly used logical statements from last week.  
@@ -114,13 +135,26 @@ There are two more important logical statements we frequently use in data wrangl
 
 First, let's take a look at the `endorser_party` variable we created above using the `table()` function. Unsurprisingly, most endorsements come from Democrats.
 
-Who the non-Democrat endorsers are. We can use `filter()` to do so.
+Who are the non-Democrat endorsers? We can use `filter()` to do so.
 ```{r}
 table(df$endorser_party) 
 df_nondem <- df %>%
   filter(endorser_party != "D")
 ```
 
+Ok, so there are a number of rows for which the `endorsee` variable is `NA`. That is weird. Lets check out how many cases we have in which the `endorsee` variable is `NA`.
+```{r}
+table(is.na(df$endorsee))
+```
+
+That is most of our observations! So `fivethirtyeight` appears to have already listed people it expects to announce an endorsement before they even did so! We can use filter to create a new data frame that only contains observations for which an endorsement actually happened using `is.na()` (or more specifically the negation `!is.na()`).
+```{r}
+df_nona <- df %>%
+  filter(!is.na(endorsee))
+```
+
+
+### Filtering for multiple values at once
 Suppose, we wanted to filter all the endorsements that come from states that will take part in [Super Tuesday](https://www.uspresidentialelectionnews.com/2020-presidential-primary-schedule-calendar/super-tuesday-2020/). Registered Democrats from these states will vote for the Democratic nominee, who will be on the ballot for the 2020 Presidential Election. 
 
 The states that will hold primary elections on this year's Super Tuesday (March 3, 2020) are Alabama (AL), Arkansas (AR), California (CA), Colorado (CO), Maine (ME), Massachussets (MA), Minnesota (MN), North Carolina (NC), Oklahoma (OK), Tennessee (TN), Texas (TX), Utah (UT), Vermont (VT), and Virginia (VA). 
@@ -147,27 +181,14 @@ head(test2$state)
 
 What does `R` do? Well it does a vector matching operation. From the variable `df$state` (`"MD" "NY" "CA" "DE" "TX" "CA"`) it test is the first element "CA", is the second element "TX", is the third element "CA", the fourth element "TX", and so on. Only if the return for each of these checks is `TRUE` does it select the respective row (observation).
 
-## Helper functions
-`dplyr` has a number of helper functions--and that is where the magic lies. These can be used with either `select()` or `filter()`. Here are some useful functions:
-
-* `starts_with()`
-* `ends_with()`
-* `contains()`
-* `one_of()`: Every name that appears in x, which should be a character vector.
-
-For example, let's create a data frame with all variables that contain the word "endorse".
-```{r}
-library(tidyselect)
-
-test <- df2 %>%
-  dplyr::select(contains("endorse"))
-```
 
 ## Introducting `mutate()`
-Suppose we want to rescale the `endorsement.points` variable to run from 0 to 1. Since the original variable is scaled from 1 (least valuable endorsement) to 10 (most valuable endorsement; former presidents and vice presidents; current party leaders), we can create a new variable `endorsement.points.rescaled` by dividing the original variable by 10. 
+We can use the `mutate()` function to create new variables or change existing ones. 
+
+Suppose we want to rescale the `points` variable to run from 0 to 1. Since the original variable is scaled from 1 (least valuable endorsement) to 10 (most valuable endorsement; former presidents and vice presidents; current party leaders), we can create a new variable `points_rescaled` by dividing the original variable by 10. 
 ```{r}
-df2 <- df2 %>%
-  dplyr::mutate(endorsement.points.rescaled = endorsement.points/10)
+df_new <- df %>%
+  dplyr::mutate(points_rescaled = points/10)
 ```
 
 Suppose I only wanted to look at endorsements for candidates who are still in the race. I can create a binary variable that codes whether a candidate has dropped out of the race. Here, we introduce the `ifelse()` function that is tremendously helpful in data wrangling exercises. The syntax of `ifelse()` is as follows: 
@@ -190,28 +211,32 @@ df3 <- df2 %>%
   dplyr::filter(dropped == 0)
 ```
 
+**Exercise** What is the difference in the output of the following two lines of code?
 
-Ok, so there are a number of rows for which the `endorsee` variable is `NA`. That is weird. Lets check out how many cases we have in which the `endorsee` variable is `NA`.
-```{r}
-table(is.na(df$endorsee))
-```
+`mutate(us_state = state)`
 
-That is most of our observations! So `fivethirtyeight` appears to have already listed people it expects to announce an endorsement before they even did so! 
-
+`select(us_state = state)`
 
 ## Introducting `summarise()` and `arrange()`
-One of the most powerful `dplyr` features is the `summarise()` function, especially in combination with `group_by()`.
+One of the most powerful `dplyr` features is the `summarise()` function,[^1] especially in combination with `group_by()`.
 
-First, let's compute the total number of endorsements by endorsee in the Super Tuesday states. Here, we will be using the operator `n()` to tell dplyr to count all the observations for the groups specified in `group_by()`. Also, suppose we want to know the average endorsement points attributed to each candidate. Anothter interesting variable would be the total endorsement points for each candidate to get an idea of the influence of each candidate's endorsements.
+[^1]: Note that both the British and American English versions of `summarise()` and `summarize()` work!
+
+First, let's compute the average endorsement points that each candidate got. We will work with the data frame that drops missing values in the `endorser` variable.
+
+number of endorsements by endorsee in the Super Tuesday states. Here, we will be using the operator `n()` to tell dplyr to count all the observations for the groups specified in `group_by()`. Also, suppose we want to know the average endorsement points attributed to each candidate. Anothter interesting variable would be the total endorsement points for each candidate to get an idea of the influence of each candidate's endorsements.
 
 Note that, because there are missing values, we need to tell `R` what to do with them. 
 ```{r}
 by_endorsee <- df3 %>%
-  dplyr::group_by(endorsee) %>%
-  dplyr::summarise(n.endorsement=dplyr::n(),
-            average.endorsement.points = mean(endorsement.points, na.rm = T),
-            total.endorsement.points = sum(endorsement.points))
+  group_by(endorsee) %>%
+  summarize(av_endorsement = mean(points, na.rm = T),
+            tot_endorsement = sum(points),
+            n_endorsement = n())
 ```
+
+
+
 
 To get an idea of where each candidate stands among politicians from the Super Tuesday states, lets reorder the output in descending order using `arrange()`.
 ```{r}
