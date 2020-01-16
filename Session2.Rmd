@@ -8,14 +8,19 @@ date: January 17, 2020
 output: pdf_document
 ---
 
-# Modern data management with R 
+ 
+# Introduction
+Transforming and combining data from different sources into formats suitable for statistical analysis and visualization lies at the heart of the data science workflow. In many data science applications, an estimated 50% to 80% of a project is spent on data collection, cleaning, and wrangling. Today, we will be introducing the `dplyr`, `tidyr`, and `lubridate` packages. Together with `stringr` (string operations using regular expressions), these packages offer functionality for the majority of data cleaning and reshaping task in `R`.
 
-## Introduction
-Data cleaning and reshaping is one of the tasks that we end up spending the most time on. Today, we will be introducing the `dplyr` library. Together with `stringr` (string operations using regular expressions) and `tidyr`, these packages offer functionality for virtually any data cleaning and reshaping task in `R`.
+RStudio has a number of great cheat sheets available online: https://rstudio.com/resources/cheatsheets/. Check out the "Data transformation with `dplyr` cheat sheet!
 
-a selection of commonly used functions from the `tidyverse`. First, we will provide an overview of `haven` for reading and writing data formats used by other statistical packages. 
 
-For an overview of the most common functions inside `dplyr`, please refer to the RStudio data wrangling cheat sheet https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf. 
+## The data
+```{r}
+library(foreign)
+df <- read.csv("538_presidential_endorsements.csv")
+str(df)
+```
 
 ## Functions in `dplyr`
 `dplyr` does not accept tables or vectors---just data frames! `dplyr` uses a strategy called "Split - Apply - Combine". Some of the key functions include:
@@ -29,11 +34,6 @@ For an overview of the most common functions inside `dplyr`, please refer to the
 First, lets download the package and call it using the `library()` function.
 ```{r, message = F, warning=F}
 # install.packages("dplyr")
-```
-
-```{r}
-df <- read.csv("538_presidential_endorsements.csv")
-str(df)
 ```
 
 ## Using `select()` and introducing the Piping Operator `%>%`
@@ -199,7 +199,6 @@ write.dta(df_new, "super_tuesday_endorsements.dta")
 # Merging data
 
 ## The data 
-
 In `R`, the package `haven` allows us to access read and write various data formats. Currently, it supports Stata, SPSS and SAS files. Value labels from imported data are translated into a new `labelled()` class, which preserves the original semantics. In addition to some of the functions that can be used to explore the dimensions of any data frame, we can also explore the substantive descriptions of variables. 
 
 For this exercise, we will be working with data from the Pew Research Center's *American Trends Panel* (ATP), which is a nationally representative panel of randomly selected U.S. adults. First, we will load the data from the 38th and 39th wave of the panel. The data has been cleaned after downloading from the original sources and subsetted to only include U.S. citizens and respondents who participated in both surveys.
@@ -433,278 +432,6 @@ where `key` refers to the colum which contains the values that are to be convert
 head(merged_long, 3)
 merged_wide <- spread(merged_long, variable, key) 
 merged_wide
-```
-
-# String operations
-String operations play a large role in the data cleaning component of data management, as well as in data gathering tasks such as web scraping. All string operations work on objects of the class **character**. Base `R` has a number of string operations, but they are often not user-friendly. The `stringr` package provides a comprehensive library of string operations. As part of the "tidyverse," we can use `stringr` functions together with other funtions from the `dplyr` and `tidyr` packages within the same pipe.
-
-## Basic string operations
-The simplest string operation is base `R`'s `paste()` command. It simply concatenates two strings, by default with a space. We can also specify a custom expression to concatenate the characters with the `sep = ` parameter. 
-```{r}
-paste("My", "string")
-paste("My", "string", sep = "_")
-paste("My", "string", sep = "pretty")
-```
-
-In data management, we most often use the `paste()` function when combining the values of two variables.
-```{r}
-countries <- c("a", "b", "c")
-years <- c(1990, 1990, 2000)
-paste(countries, years, sep = "_")
-```
-
-## Pattern matching using `stringr`
-Pattern matching is the work horse of string operations. Here, we focus on pattern matching functions that are most useful for the data management of data that is already organized in some kind of structure, such as vectors or data frames. There are many other string operation functions, such as `str_locate()` and `str_locate_all()` that are most useful for data cleaning and reorganization of unstructured data. Here, we will cover the following `stringr` functions:
-
-* `str_sub()`: Extract substrings from a character vector by indices.
-* `str_extract()`: Extract substrings from a character vector by matched pattern.
-* `str_detect()`: Returns `TRUE` or `FALSE` if the pattern in matched in the input string.
-* `str_replace()`: Replaces a matched pattern with a new pattern.
-
-### `str_sub()`
-Since the  `str_sub()` function operates with indices, is most useful when all elements of a vector (or some other data object of interest) have the same pattern. It extracts the information that matches the indices specified by the user. The general syntax is as follows.
-
-`str_sub(pattern, start = , end = )`
-
-```{r, warning = F, message = F}
-library(stringr)
-locations <- c("CA Los Angeles", "NV Las Vegas", "CA San Diego")
-locations_state <- str_sub(locations, start = 1, end = 2)
-locations_state
-```
-
-We can also specify open intervals. For example, if we wanted to extract only the cities, we could extract all characters starting at the fourth position.
-```{r}
-locations_city <- str_sub(locations, 4)
-locations_city
-```
-
-### `str_extract()`
-Think of `str_extract()` as the smarter sibling of `str_sub()`. Rather than just extracting characters based on indices, it extracts characters based on matched patterns. Together with the regular expression operations we introduce below, this is very powerful in extracting information. Here is the syntax for `str_extract()`:
-
-`str_extract(string, pattern)`
-
-```{r}
-locations_state2 <- str_extract(locations, "CA")
-locations_state2
-```
-
-
-### `str_detect()`
-Think of `str_detect()` as a logical operator. It returns `TRUE` if the pattern is matched and `FALSE` otherwise. The function has the following syntax:
-
-`str_detect(string, pattern)`
-
-```{r}
-str_detect(locations, "L")
-str_detect(locations, "Los")
-```
-
-### `str_replace()`
-`str_replace()` is very helpful in data management tasks, in particular when re-coding variables. As an example, suppose we wanted to replace the state abbreviations with the full state names. The syntax of the function is as follows:
-
-`str_replace(string, pattern, replacement)`
-
-```{r}
-locations_fullname <- str_replace(locations, "CA", "California") %>%
-  str_replace("NV", "Nevada")
-locations_fullname
-```
-
-## Regular Expressions
-String operations are useful, but their true potential is realized when used in combination with regular expressions. Regular expressions help us to define search patterns. This obliviates the need to type out entire character strings in pattern matching. Regular expressions are like a language that is understood by more than just one program. With small changes, you would be able to use the regular expressions discussed here in other programming languages, such as Python.
-
-Suppose, our strings weren't as well organized as before. How would you extract the state from the elements of the following character vector?
-```{r}
-locs <- c("CA Los Angeles", "Las NV Vegas", "San Diego CA")
-```
-
-Even though the elements of the character vector aren't as ordered any more, there is still a pattern! State abbreviations always have two letters and they are always capitalized. Below, we will learn a number of regular expression that will help us state this pattern ("two letters, capitalized") in a language that `R` understands.
-
-Note that unless otherwise specified, regular expressions are case sensitive. The following patterns are examples for specifying the substantive content of the pattern.
-
-* `^`: String **starts with** following pattern..
-* `$`: String **ends with** preceding pattern.
-* `[ ]`: or.
-* `[a-z]`: Any letter.
-* `[0-9]`: Any digit.
-
-There is also a number of regular expressions that are used to specify the quantity of matches.
-
-* `?`: Preceding pattern is optional (matched 0 or 1 times).
-* `*`: Preceding pattern is matched 0 or more times.
-* `+`: Preceding pattern is matched at least once.
-* `{n}`: Preceding pattern is matched exactly`n` times.
-* `{n, m}`: Preceding pattern is matched at least `n` times and up to `m` times.
-* `{n,}`: Preceding pattern is matched at least `n` times.
-
-So in our example above, we could use the following regular expression to extract the state names:
-```{r}
-str_extract(locs, "[A-Z]{2}")
-```
-
-
-### Examples for regular expressions
-```{r}
-fruits <- c("apple", "banana", "pineapple", "cherries4")
-```
-
-**Exercise 1** What is the output of the following command?
-```{r, results = "hide"}
-str_detect(fruits, "a")
-```
-
-**Exercise 2** What is the output of the following command?
-```{r, results = "hide"}
-str_detect(fruits, "^a")
-```
-
-**Exercise 3** How would you ask `R` to print out `TRUE` for all elements of the `fruits` vector that end with the letter `e`?
-```{r, echo = F}
-str_detect(fruits, "e$")
-```
-
-**Exercise 4** What is the output of the following command?
-```{r, results = "hide"}
-str_detect(fruits, "[ie]")
-```
-
-**Exercise 5** How would you extract the number from the last element of the `fruits` vector?
-```{r, echo = F}
-str_extract(fruits[length(fruits)], "[0-9]")
-```
-
-We can use regular expressions to create more complex queries. Suppose, we wanted to know which strings start with an `a` and end with an `e`.
-```{r}
-str_detect(fruits, "^a[a-z]*e$")
-```
-
-**Exercise 6** What do you think is the output of the following command?
-```{r, results = "hide"}
-str_detect(fruits, "a[a-z]*e$")
-```
-
-### Escape character
-Regular expressions can also be used to match special characters. Note, however, that since some special characters have a special meaning in `R`, we sometimes have to use a so-called **escape character**, i.e. a backslash, to specify these patterns within regular expressions. For example, since the open square bracket `[` is part of the regular expression for `OR`, in order to match a `[` in the text, you need to type `\\[` to get the desired output.
-```{r}
-test <- "a []"
-#str_detect(test, "[") # This throws and error.
-str_detect(test, "\\[") # This correctly recognized the pattern.
-```
-
-
-### Application: Phone Numbers
-Suppose, we have data on contact information and wanted to extract only the values that match phone numbers. Unfortunately, phone numbers come in different formats, but there are a number of common patterns.
-
-**What are common patterns for phone numbers you guys can think of?**
-
-```{r}
-phone <- c("123 456 7890",
-           "(123) 456 7890",
-           "123-456-7890")
-```
-
-We cannot use simple indices any longer to extract the phone numbers from this vector. The lengths of the elements differ!
-```{r}
-nchar(phone[1])
-nchar(phone[2])
-```
-
-Lets write a regular expression that outputs `TRUE` for all of these phone numbers.
-```{r}
-str_detect(phone, "[(]?[0-9]{3}[)]?[ -]{1}[0-9]{3}[ -]{1}[0-9]{3}")
-```
-
-**Exercise 7** How would you alter this if I gave you the following number format and asked you to match it as well? `123.456.7890`
-```{r, echo = F}
-str_detect("123.456.7890", "[()]?[0-9]{3}[)]?[ -.]{1}[0-9]{3}[ -.]{1}[0-9]{3}")
-```
-
-
-### Application: Creating a data frame
-Why do we need this? Suppose I gave you a long string of data and asked you to clean the data and give be a data set of phone numbers and ZIP codes. You could make your life **a lot** easier if you know regular expressions.
-
-Load the file `data.RData` and implicitly print out at its content, a vector called `vec`.
-```{r, warning = F, message = F}
-# load("data.RData")
-# vec
-# # First, lets get the phone numbers (since we already have a parser)
-# phone <- str_extract(vec, "[()]?[0-9]{3}[)]?[ -.]{1}[0-9]{3}[ -.]{1}[0-9]{3}")
-# phone
-# # Second, get ZIP codes
-# zip <- str_extract(vec, "[0-9]{5}")
-# zip
-# # Lastly, lets get the IDs
-# id <- str_extract(vec, "[0-9]+:")
-# id
-# id <- str_replace(id, ":", "")
-# id
-# # Putting it all into one data frame
-# df <- data.frame(id, phone, zip)
-# print(df)
-# # Now cleaning it
-# # Assumptions: 
-# # a) no one has two zip codes or phone numbers,
-# # b) No id is missing.
-# library(dplyr)
-# library(tidyr)
-# df_cleaned <- df %>%
-#   gather(indicator, value, phone:zip) %>%
-#   na.omit() %>%
-#   spread(indicator, value)
-# df_cleaned
-```
-
-# `for` Loops in `R`
-Loops are a staple of programming. Loops allow us to automate our code, and are particularily useful when you find yourself doing a task over and over again. While in practice, we try to vectorize our operations as much as possible (see the solution above where we convert factors to characters), being comfortable with loops is crucial for many programming tasks.
-
-## Basic loop structure
-General syntax of a for loop:
-
-`for(iterator in iterations){function/output}`
-
-Lets write a loop that prints out the numbers 1 through 10.
-```{r}
-for(i in 1:10){
-  print(i)
-}
-```
-
-Suppose, the numbers we wanted to print out are part of a vector. We can use loops to iterate through this vector.
-```{r}
-vec <- seq(11, 20, 1)
-for(k in vec){
-  print(k)
-}
-```
-
-**Exercise 1** What do you think does the following output do?
-```{r, results= 'hide'}
-for(l in 5:length(vec)){
-  print(l)
-}
-```
-
-Of course, we can use loops to automate more complex tasks. For example, we could use it to change a batch of variables to `character()`. To try this, re-load the data from session 5.
-```{r}
-# data_new <- read.csv("hw5_data.csv")
-# str(data_new)
-# test1 <- data_new
-# for(l in 1:ncol(test1)){
-#   test1[,l] <- as.character(test1[,l])
-# }
-# str(test1)
-```
-
-As a more sophisticated version, we could convert only those variables that are factors (not numerical variables like  `Density.Pop....km2..`) to characters, using an `if` statement.
-```{r}
-# test2 <- data_new
-# for(k in 1:ncol(test2)){
-#   if(is.factor(test2[,k])){
-#     test2[,k] <- as.character(test2[,k])
-#   }
-# }
-# str(test2)
 ```
 
 # Sources {-}
