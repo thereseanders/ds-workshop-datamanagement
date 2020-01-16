@@ -117,7 +117,7 @@ df_sub3 <- raw %>%
 ### Renaming variables with `select()`
 We can also use `select()` to rename variables. Below, we need to use the `everything()` function if we don't want to drop the remaining variables in the process
 ```{r}
-names(df)
+names(raw)
 df <- raw %>%
   dplyr::select(endorser_party = endorser.party,
                 everything())
@@ -206,7 +206,9 @@ nrow(test2)
 head(test2$state)
 ```
 
-What does `R` do? Well it does a vector matching operation. From the variable `df$state` (`"MD" "NY" "CA" "DE" "TX" "CA"`) it test is the first element "CA", is the second element "TX", is the third element "CA", the fourth element "TX", and so on. Only if the return for each of these checks is `TRUE` does it select the respective row (observation).
+What does `R` do? Well it does a vector matching operation. From the variable `df$state` (`"MD" "NY" "CA" "DE" "TX" "CA"`) it test is the first element "CA", is the second element "TX", is the third element "CA", the fourth element "TX", and so on. Only if the return for each of these checks is `TRUE` does it select the respective row (observation). 
+
+So yes, if you want to filter for multiple values at once, you need to use `%in%`! 
 
 
 ## Introducting `mutate()`
@@ -214,17 +216,32 @@ We can use the `mutate()` function to create new variables or change existing on
 
 Suppose we want to rescale the `points` variable to run from 0 to 1. Since the original variable is scaled from 1 (least valuable endorsement) to 10 (most valuable endorsement; former presidents and vice presidents; current party leaders), we can create a new variable `points_rescaled` by dividing the original variable by 10. 
 ```{r}
-df_new <- df %>%
+table(df$points)
+df_rescaled <- df %>%
   dplyr::mutate(points_rescaled = points/10)
 ```
 
-Suppose I only wanted to look at endorsements for candidates who are still in the race, but it is not updated to include the candidate who most recently dropped out of the race (Cory Booker). I can create a new binary variable that codes that this candidate has recently dropped out of the race. Here, we introduce the `ifelse()` function that is tremendously helpful in data wrangling exercises. The syntax of `ifelse()` is as follows: 
+Suppose, rather than simply dropping all observations that are part of the Super Tuesday group, I wanted to add a binary variable that is `1` if the state has a primary on Super Tuesday and 0 if it doesn't.
 
-`ifelse(condition, if TRUE this, if FALSE this)`.
+Here, we use the `ifelse()` function that is tremendously helpful in data wrangling exercises. The syntax of `ifelse()` is as follows: 
+
+`ifelse(condition, value if TRUE, value if FALSE)`.
 
 ```{r}
-df3 <- df2 %>% 
-  dplyr::mutate(drop_new = ifelse(endorsee == "Cory Booker", 1, 0))
+df_new <- df %>%
+  mutate(super = ifelse(state %in% super_tuesday, 1, 0))
+```
+
+### Recoding variables
+We can also use `mutate()` to recode variables. Suppose I only wanted to look at endorsements for candidates who are still in the race, but it is not updated to include the candidate who most recently dropped out of the race (Cory Booker). We can use the `replace()` function inside `mutate()` to make this change.
+
+The syntax for `replace()` is similar to that of `ifelse()`:
+
+`mutate(variable = replace(variable, condition, value if TRUE))`
+
+```{r}
+df_recode <- df %>% 
+  mutate(drop = replace(drop, endorsee == "Cory Booker", 1))
 ```
 
 **Exercise** What is the difference in the output of the following two lines of code?
@@ -238,20 +255,15 @@ One of the most powerful `dplyr` features is the `summarise()` function,[^1] esp
 
 [^1]: Note that both the British and American English versions of `summarise()` and `summarize()` work!
 
-First, let's compute the average endorsement points that each candidate got. We will work with the data frame that drops missing values in the `endorser` variable.
-
-number of endorsements by endorsee in the Super Tuesday states. Here, we will be using the operator `n()` to tell dplyr to count all the observations for the groups specified in `group_by()`. Also, suppose we want to know the average endorsement points attributed to each candidate. Anothter interesting variable would be the total endorsement points for each candidate to get an idea of the influence of each candidate's endorsements.
-
-Note that, because there are missing values, we need to tell `R` what to do with them. 
+Let's compute the average  and total number of endorsement points that each candidate got. Note that, because there are missing values for the cases in which no endorsement has been made, we need to tell `R` what to do with them. 
 ```{r}
 by_endorsee <- df3 %>%
   group_by(endorsee) %>%
   summarize(av_endorsement = mean(points, na.rm = T),
-            tot_endorsement = sum(points),
-            n_endorsement = n())
+            tot_endorsement = sum(points))
 ```
 
-
+Suppose I wanted to know how many endorsers each candidate has. 
 
 
 To get an idea of where each candidate stands among politicians from the Super Tuesday states, lets reorder the output in descending order using `arrange()`.
