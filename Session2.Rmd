@@ -49,10 +49,12 @@ The dataset contains the following variables:
 * `drop`: Has the candidate dropped out of the race? (1 = yes)
 * `drop_date`: date that the candidate dropped out (This variable is not part of `fivethirtyeight. Allison coded this variable for us. Thank you!).
 
+Below, notice the additional parameters we give `read.csv()`. We covered `stringsAsFactors` last week: it prevents string variables from being imported as factors and instead defaults to character type. With `na.strings`, we can specify how the `NA` values are coded in our data.
 ```{r}
 library(foreign)
 raw <- read.csv("538_presidential_endorsements.csv",
-               stringsAsFactors = FALSE)
+               stringsAsFactors = FALSE,
+               na.strings = "")
 ```
 
 ## Functions in `dplyr`
@@ -465,7 +467,7 @@ dates2 <- c("01-17-2020", "01.17.2020", "1-17-2020")
 mdy(dates2)
 ```
 
-In our dataframe, we have a column for when a candidate dropped out of the race. Lets translate it into a lubridate date variable (even though it technically is already cleaned; for learning purposes).
+In our dataframe, we have a column for when a candidate dropped out of the race. Lets translate it into a lubridate date variable (even though it technically is already cleaned; for learning purposes). The items that failed to parse are `NA` values.
 ```{r}
 table(df_new$drop_date)
 head(table(df_new$endorse_date))
@@ -497,8 +499,8 @@ df_drop_duration <- df_new %>%
   filter(endorse_date == max(endorse_date)) %>%
   ungroup() %>%
   mutate(dur = interval(endorse_date, drop_date),
-         dur_days = dur/days(1)) %>%
-  arrange(dur_days)
+         dur_days = as.duration(dur)/ddays(1)) %>%
+  arrange(desc(dur_days))
 ```
 
 
