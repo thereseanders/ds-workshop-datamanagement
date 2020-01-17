@@ -498,8 +498,20 @@ df_drop_duration <- df_new %>%
   filter(endorse_date == max(endorse_date)) %>%
   ungroup() %>%
   mutate(dur = interval(endorse_date, drop_date),
-         dur_days = as.duration(dur)/ddays(1)) %>%
+         dur_days = dur/ddays(1)) %>%
   arrange(desc(dur_days))
+```
+
+**Exercise** How long have candidates that didn't drop out not received an endorsement today (17 January 2020)?
+```{r, echo = F}
+df_dur_endorse <- df_new %>%
+  filter(drop == 0) %>%
+  group_by(endorsee) %>%
+  filter(endorse_date == max(endorse_date)) %>%
+  ungroup() %>%
+  mutate(dur = interval(endorse_date, ymd("2020-01-17")),
+         dur_days = dur/ddays(1))
+df_dur_endorse[,c("endorsee", "dur_days")]
 ```
 
 
