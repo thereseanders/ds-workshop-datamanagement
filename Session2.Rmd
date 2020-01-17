@@ -33,18 +33,19 @@ In this model, endorsements are "ranked" by their perceived relative value based
 8. Current U.S. representatives, including non-voting delegates from U.S. territories (3 points).
 9. Mayors of cities with at least 300,000 people (3 points).
 10. Officials holding statewide or territory-wide elected office, excluding positions (e.g. commissioners) that are held by multiple people at once (2 points).
-11. State and territorial legislatures’ majority and minority leaders (2 points).3
+11. State and territorial legislatures’ majority and minority leaders (2 points).
 12. Other DNC members (1 point).
 
 The dataset contains the following variables: 
 
 * `date`: date endorsement took place 
-* `endorser`: individual who is endorsing a presidential candidate 
 * `position`: endorser's position in government 
 * `state`: origin state of endorser 
+* `endorser`: individual who is endorsing a presidential candidate 
 * `endorsee`: presidential candidate endorsed 
 * `endorser.party`: political party of the endorser
-* `source`: link to endorsement (if online)
+* `source`: link to endorsement (if applicable)
+* `category`: broader category of endorsee based on position (used to calculate points, see above)
 * `points`: # of "endorsement points" attributed to the endorser (see above for more details)
 * `drop`: Has the candidate dropped out of the race? (1 = yes)
 * `drop_date`: date that the candidate dropped out (This variable is not part of `fivethirtyeight. Allison coded this variable for us. Thank you!).
