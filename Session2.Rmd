@@ -6,6 +6,8 @@ author:
 - Allison Koh^[Teaching Assistant, Hertie School, kohallison3@gmail.com.]
 date: January 17, 2020
 output: pdf_document
+editor_options: 
+  chunk_output_type: inline
 ---
 
 # Data wrangling using `dplyr` 
@@ -593,9 +595,11 @@ We will focus on the following four join functions:
 
 ### `full_join()`
 Suppose we wanted to keep the maximum amount of data in our new merged data set. We would use the `full_join()` function to merge the Wave 38 and Wave 39 data. 
+
+**WARNING** Do not try to run this on RStudio! The data frame is too big and you will crash your session!!!
 ```{r}
-full_wrong <- full_join(w38.df, w39.df, by = "F_PARTY_FINAL")
-nrow(full_wrong)
+# full_wrong <- full_join(w38.df, w39.df, by = "F_PARTY_FINAL")
+# nrow(full_wrong)
 ```
 
 A couple of things to notice:
