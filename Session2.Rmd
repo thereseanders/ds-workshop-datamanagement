@@ -49,6 +49,7 @@ The dataset contains the following variables:
 * `drop`: Has the candidate dropped out of the race? (1 = yes)
 * `drop_date`: date that the candidate dropped out (This variable is not part of `fivethirtyeight. Allison coded this variable for us. Thank you!).
 
+
 Below, notice the additional parameters we give `read.csv()`. We covered `stringsAsFactors` last week: it prevents string variables from being imported as factors and instead defaults to character type. 
 ```{r}
 library(foreign)
@@ -446,6 +447,8 @@ Finally, lets save the output of our code. This time, we would like to save it i
 # write.dta(df_new, "highest_endorsements.dta")
 ```
 
+
+\newpage
 # Working with dates in `lubridate`
 Below, I give you a very *brief* primer on the `lubriate` package that makes working with dates much easier. 
 
@@ -528,7 +531,7 @@ wday(dob, label = T)
 ```
 
 
-
+\newpage
 # Merging data
 ## The data 
 In `R`, the package `haven` allows us to access read and write various data formats. Currently, it supports Stata, SPSS and SAS files. Value labels from imported data are translated into a new `labelled()` class, which preserves the original semantics. In addition to some of the functions that can be used to explore the dimensions of any data frame, we can also explore the substantive descriptions of variables. 
@@ -679,6 +682,7 @@ merged_right <- right_join(w39.df, w38.df, by = c("QKEY"))
 nrow(w38.df) == nrow(merged_right)
 ```
 
+\newpage
 # Data re-shaping with `tidyr`
 Another important task in data management is data re-shaping. Often, data does not come in the format that we need for data merging, data visualization, statistical analysis, or vectorized programming. In general, we want data in the following format:
 
