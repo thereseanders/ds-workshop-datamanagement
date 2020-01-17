@@ -839,7 +839,7 @@ sum(df_change$change, na.rm = T)/length(unique(df_change$QKEY))
 ## `pivot_wider()`
 Suppose we wanted to revert our operation (or generall shape data from a long to a wide format), we can use `tidyr`'s `pivot_wider()` function. The syntax is similar to `pivot_longer()`.
 
-`new_df <- spread(old_df, names_from = key, values_from = value)`,
+`new_df <- pivot_wider(old_df, names_from = key, values_from = value)`,
 
 where `key` refers to the colum which contains the values that are to be converted to column names and `value` specifies the column that contains the values which is to be stored in the newly created columns.
 
