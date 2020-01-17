@@ -8,7 +8,7 @@ date: January 17, 2020
 output: pdf_document
 ---
 
-# `dplyr` 
+# Data wrangling using `dplyr` 
 ## Introduction
 Transforming and combining data from different sources into formats suitable for statistical analysis and visualization lies at the heart of the data science workflow. In many data science applications, an estimated 50% to 80% of a project is spent on data collection, cleaning, and wrangling. Today, we will be introducing the `dplyr`, `tidyr`, and `lubridate` packages. Together with `stringr` (string operations using regular expressions), these packages offer functionality for the majority of data cleaning and reshaping task in `R`.
 
@@ -36,7 +36,7 @@ In this model, endorsements are "ranked" by their perceived relative value based
 
 The dataset contains the following variables: 
 
-* `year`: year endorsement took place 
+* `date`: date endorsement took place 
 * `endorser`: individual who is endorsing a presidential candidate 
 * `position`: endorser's position in government 
 * `state`: origin state of endorser 
@@ -51,7 +51,6 @@ The dataset contains the following variables:
 library(foreign)
 raw <- read.csv("538_presidential_endorsements.csv",
                stringsAsFactors = FALSE)
-str(raw)
 ```
 
 ## Functions in `dplyr`
@@ -108,7 +107,7 @@ df_sub3 <- raw %>%
 ### Reordering variables with `select()`
 ```{r}
 df_sub3 <- raw %>%
-  dplyr::select(year,
+  dplyr::select(date,
                 endorsee,
                 endorser,
                 points)
@@ -119,7 +118,8 @@ We can also use `select()` to rename variables. Below, we need to use the `every
 ```{r}
 names(raw)
 df <- raw %>%
-  dplyr::select(endorser_party = endorser.party,
+  dplyr::select(endorse_date = date,
+                endorser_party = endorser.party,
                 everything())
 ```
 
@@ -286,7 +286,8 @@ df_new <- raw %>%
   
   # Renaming endorser_party variable
   # selecting remainding variables minus source variable
-  dplyr::select(endorser_party = endorser.party,
+  dplyr::select(endorse_date = date,
+                endorser_party = endorser.party,
                 everything(),
                 -source) %>%
   
@@ -357,9 +358,9 @@ Hm, this is pretty hard to see. Let's visualize it.[^3]
 
 [^3]: This would be a lot easier using `ggplot2` by the way. We will cover data visualization with `ggplot2` in the next workshop. Stay tuned!
 ```{r}
-{plot(density(by_e_s$av_pts[by_e_s$super == 1]),
-     col = "red")
-lines(density(by_e_s$av_pts[by_e_s$super == 0]))}
+{plot(density(by_e_s$av_pts[by_e_s$super == 0]))
+lines(density(by_e_s$av_pts[by_e_s$super == 1]),
+      col = "red")}
 ```
 
 ### Quick note on `group_by()` + `summarize()` vs. `group_by()` + `mutate()`
@@ -376,7 +377,7 @@ pleasedont <- df_new %>%
   mutate(count_endorsement = n())
 ```
 
-## Introducing `arrange()`
+## Sorting with `arrange()`
 To get an idea of where each candidate stands, let's reorder the output using `arrange()`.
 ```{r}
 by_endorsee <- df_new %>%
@@ -419,7 +420,7 @@ by_endorsee <- df_new %>%
   arrange(desc(count_endorsement), desc(av_pts))
 ```
 
-### Introducing `slice()` 
+### Selecting rows using `slice()` 
 Suppose, we only wanted to know who the top 10 candidates were in terms of endorsements. We can use the `slice()` function for this.
 ```{r}
 by_endorsee_top10 <- df_new %>%
@@ -442,8 +443,78 @@ Finally, lets save the output of our code. This time, we would like to save it i
 # write.dta(df_new, "highest_endorsements.dta")
 ```
 
-# Merging data
+# Working with dates in `lubridate`
+Below, I give you a very *brief* primer on the `lubriate` package that makes working with dates much easier. 
 
+```{r}
+#install.packages("lubridate")
+library(lubridate)
+```
+
+Lubridate can consolidate different date formats. Take the following as an example. `ymd` stands for "the input is of the following order: year, month, day."
+```{r}
+dates <- c("2020-01-17", "2020.01.17", "2020-1-17")
+ymd(dates)
+```
+
+Of course, lubridate understands other formats as well and translates them into a common `ymd` format.
+```{r}
+dates2 <- c("01-17-2020", "01.17.2020", "1-17-2020")
+mdy(dates2)
+```
+
+In our dataframe, we have a column for when a candidate dropped out of the race. Lets translate it into a lubridate date variable (even though it technically is already cleaned; for learning purposes).
+```{r}
+table(df_new$drop_date)
+head(table(df_new$endorse_date))
+df_new <- df_new %>%
+  mutate(endorse_date = dmy(endorse_date),
+         drop_date = ymd(drop_date))
+```
+
+Now we can extract other variables from the date.
+```{r}
+df_new <- df_new %>%
+  mutate(endorse_year = year(endorse_date),
+         endorse_month = month(endorse_date)) 
+```
+
+Lets compute the endorsements per month that candidates dropped out of the race.
+```{r}
+df_drop_endorse <- df_new %>%
+  filter(drop == 1) %>%
+  group_by(endorse_year, endorse_month) %>%
+  summarise(count = n())
+```
+
+We can also compute the duration in days between the last endorsement and the candidate dropping out of the race using the `interval()` function. Notice the use of `ungroup()` here.
+```{r}
+df_drop_duration <- df_new %>%
+  filter(drop == 1) %>%
+  group_by(endorsee) %>%
+  filter(endorse_date == max(endorse_date)) %>%
+  ungroup() %>%
+  mutate(dur = interval(endorse_date, drop_date),
+         dur_days = dur/days(1)) %>%
+  arrange(dur_days)
+```
+
+
+**Exercise** How many days are you old? `lubridate` can tell you!
+```{r, echo = F}
+dob <- ymd("1987-1-19")
+today <- ymd("2020-01-17")
+interval(dob, today)/days(1)
+```
+
+What day of the week were you born?
+```{r}
+wday(dob, label = T)
+```
+
+
+
+# Merging data
 ## The data 
 In `R`, the package `haven` allows us to access read and write various data formats. Currently, it supports Stata, SPSS and SAS files. Value labels from imported data are translated into a new `labelled()` class, which preserves the original semantics. In addition to some of the functions that can be used to explore the dimensions of any data frame, we can also explore the substantive descriptions of variables. 
 
@@ -487,15 +558,14 @@ Where does this information come from? We can use the `attributes()` function to
 ```{r}
 attributes(w38.df$VTPLAN_W38)
 attributes(w39.df$VOTED_ATP_W39)
-attributes(w38.df$F_PARTY_FINAL)
-attributes(w38.df$F_IDEO)
+# attributes(w38.df$F_PARTY_FINAL)
+# attributes(w38.df$F_IDEO)
 ```
 
 **Exercise 1** Suppose we would like to investigate differences between Democrats and Republicans in the Wave 39 data. Add a new variable called `party_cat` that is coded `dem` if the respondent is affiliated with the Democrats, `rep` if the respondent is affiliated with the Republicans, `ind` if they are independent, and `other` for the remaining cases. Check that you get the same numbers as below by using the `table()` function.
 
 Bonus points if you figure out how to express this is percentages of the total number of respondents!
 ```{r, echo = F, warning = F}
-attributes(w39.df$F_PARTY_FINAL)
 w39.df <- w39.df %>%
   mutate(party_cat = case_when(
     F_PARTY_FINAL == "2" ~ "dem",
@@ -506,26 +576,6 @@ w39.df <- w39.df %>%
 table(w39.df$party_cat)
 table(w39.df$party_cat)/nrow(w39.df)*100
 ```
-
-## A super quick primer on data merging using base `R` functions
-In principle, we can merge data using the `cbind()` ("column bind") and `rbind()` ("row bind") functions, that we are already familiar with.
-```{r}
-vec1 <- c(1, 2, 3)
-vec2 <- c("a", "a", "b")
-cbind(vec1, vec2)
-rbind(vec1, vec2)
-```
-
-However, this requires the data to align in its dimensions. In addition, for `cbind()` the ordering of the rows has to be the exact same to achieve correct merging; for `rbind()` the ordering of the columns has to be equal to achieve the right output.
-```{r}
-dat1 <- cbind(vec1, vec2)
-vec3 <- c(T, F, T, T)
-cbind(dat1, vec3) # The fourth observation in vec3 is omitted
-obs <- c("c", 4)
-rbind(dat1, obs)
-```
-
-As a side note: The `bind_rows()` function in the `dplyr` package is the smart cousin of `rbind()`. Given that two dataframes have an equal number of columns, it can merge them based on the variable name; the ordering of the columns does not matter.
 
 ## Using `dplyr` for merging
 Luckily, the `dplyr` package in `R` contains a number of functions that allow us to merge data in "smarter" ways.
@@ -608,7 +658,7 @@ nrow(w38.df) == nrow(merged_left)
 
 **Exercise 2** How would you achieve the exact same result using the `right_join()` function?
 ```{r, echo = F}
-merged_right <- right_join(w38.df, w39.df, by = c("QKEY"))
+merged_right <- right_join(w39.df, w38.df, by = c("QKEY"))
 nrow(w38.df) == nrow(merged_right)
 ```
 
@@ -655,6 +705,7 @@ We will be working with the `merged_inner` data set. Suppose instead of having a
 
 Let's start with a simple example and first only work with a subset of the `merged_inner` data frame that contains the `QKEY`, `POL1DT_W38`, and `POL1DT_W39` variables. Below, note that since `tidyr` and `dplyr` are sibling packages from the "tidyverse," we can use them seamlessly in the same pipe (here using `group_by()`, `summarize()`, `mutate()`, and `filter()` from `dplyr`).
 ```{r}
+library(tidyr)
 names(merged_inner)
 df_long_small <- merged_inner %>%
   
@@ -670,95 +721,168 @@ df_long_small <- merged_inner %>%
 head(df_long_small)
 ```
 
-Ok, now that we know how this works, lets try this with all variables that are present in both data frames.[^8]
-
-[^8]: Please note that if you were to try this for all variables in this dataframe, `R` throws an error that essentially complains because the factor levels (i.e. haven labels) don't have the same values across variables. This is a know issue (see https://github.com/tidyverse/haven/issues/477) that will hopefully be fixed by the `haven` developing team soon. For now, a workaround would be to change the variable types to factor (and/or character), rather than `haven_labelled`. 
-
+Ok, now that we know how this works, let's try this with all variables. Unfortunately, `R` throws an error that essentially complains because the factor levels (i.e. `haven` labels) don't have the same values across variables. This is a know issue (see https://github.com/tidyverse/haven/issues/477) that will hopefully be fixed by the `haven` developing team soon. 
 ```{r}
-df_long <- merged_inner %>%
+# df_long_all <- merged_inner %>%
+#   
+#   pivot_longer(names_to = "variable",
+#                values_to = "value",
+#                cols = -QKEY)
+```
+For now, a workaround would be to change the variable types to factor using `haven`'s `as_factor()` function. Note that you can also use the `as_factor()` function on a single variable, rather than on an entire dataframe.
+```{r}
+df_long_all <- as_factor(merged_inner) %>%
+  
   pivot_longer(names_to = "variable",
                values_to = "value",
                cols = -QKEY)
-  
-attributes(merged_inner$POL1DT_W38)
-attributes(merged_inner$VTPLAN_W38)
 ```
 
+Ok, that is cool, but it doesn't really help us all that much because the original variable names aren't terribly informative. Below, we try this again, selecting only the variables that are common across both waves. First, we rename a few variables to make our life easier later on.[^9]
 
+[^9]: Once you learn regular expressions and string operations in a later session, this will be easier.
 
-OK, it worked but the data frame could be more informative. Let's use our data wrangling skills to recode the `wave` variable. 
 ```{r}
-df_long_small <- merged_inner %>%
+names(merged_inner)
+df_long <- as_factor(merged_inner) %>%
   
   dplyr::select(QKEY,
-                contains("POL1DT")) %>%
+                trump_w38 = POL1DT_W38,
+                trump_w39 = POL1DT_W39,
+                ideo_w38 = F_IDEO_W38,
+                ideo_w39 = F_IDEO_W39,
+                party_w38 = F_PARTY_FINAL_W38,
+                party_w39 = F_PARTY_FINAL_W39) %>%
   
-  pivot_longer(names_to = "wave",
-               values_to = "trump_approval",
-               cols = -QKEY) %>%
-  mutate(wave_num = case_when(
-    wave == "POL1DT_W38" ~ "38",
-    wave == "POL1DT_W39" ~ "39"
-  ))
+  pivot_longer(names_to = "variable",
+               values_to = "value",
+               cols = contains("trump"))
+
+## Please inspect the output to reason about what happened above!
+
+# Lets select all variables using a combination of multiple contains.
+# Note that this is for instructional purposes only,
+# in reality we would probably again use -QKEY
+df_long <- as_factor(merged_inner) %>%
+  
+  dplyr::select(QKEY,
+                trump_w38 = POL1DT_W38,
+                trump_w39 = POL1DT_W39,
+                ideo_w38 = F_IDEO_W38,
+                ideo_w39 = F_IDEO_W39,
+                party_w38 = F_PARTY_FINAL_W38,
+                party_w39 = F_PARTY_FINAL_W39) %>%
+  
+  pivot_longer(names_to = "variable",
+               values_to = "value",
+               cols = c(contains("trump"), 
+                        contains("ideo"), 
+                        contains("par")))
 ```
 
-
-
-
-Transforming the data in this way will result in duplicate rows for each respondent. Whether or not this data format is desirable depends on the intended use for the data. 
+### Introducing `separate()`
+Why did renaming the variables make our life easier? Well, the `separate()` function is awsome for data wrangling tasks, because it allows us to separate the `variable` column into two, that way we have a separate time-related column.
 ```{r}
-library(tidyr)
-table(names(merged_inner))
-merged_long <- merged_inner
+df_long <- as_factor(merged_inner) %>%
+  
+  dplyr::select(QKEY,
+                trump_38 = POL1DT_W38,
+                trump_39 = POL1DT_W39,
+                ideo_38 = F_IDEO_W38,
+                ideo_39 = F_IDEO_W39,
+                party_38 = F_PARTY_FINAL_W38,
+                party_39 = F_PARTY_FINAL_W39) %>%
+  
+  pivot_longer(names_to = "variable",
+               values_to = "value",
+               cols = -QKEY) %>%
+  
+  separate(variable, c("var", "wave"))
 ```
 
 
+It would be interesting to find out to what extent people changed their stated values after the election? Let's drop the people who refused to answer. Also, we need to change the `wave` variable to numeric. We then use the `lag()` function to create a lagged variable from `value`.
+```{r}
+df_change <- df_long %>%
+  mutate(wave = as.numeric(wave)) %>%
+  group_by(QKEY, var) %>%
+  mutate(value_lag = lag(value)) %>%
+  ungroup() %>%
+  mutate(change = ifelse(value != value_lag, 1, 0))
 
-
-```{r, warning = F, message = F}
-library(tidyr)
-merged_long <- merged_inner %>%
-  dplyr::group_by(F_IDEO_W39) %>% 
-  dplyr::summarize(n=n(),
-                   POL1DT_W38=sum(POL1DT_W38),
-                   POL1DT_W39=sum(POL1DT_W39)) %>% 
-  dplyr::mutate(drop = ifelse(F_IDEO_W39==99, 1, 0)) %>% # remove non-responses for political ideology question 
-  dplyr::filter(drop == 0) %>% 
-  tidyr::gather(variable, # name for categorical name indicator
-                key, # values
-                c(3:4), # variables to be reshaped
-                na.rm = T)
-
-merged_long1 <- merged_inner %>% 
-  tidyr::pivot_longer(-F_IDEO_W39, names_to = "variable", values_to = "count")
-merged_long
+# Only 0.06% of answers changed
+sum(df_change$change, na.rm = T)/length(unique(df_change$QKEY))
 ```
 
-We can use this format to compare pre- and post-election attitudes about Donald Trump by political ideology among the panel respondents (Note: without applying survey weights, this is *not* a representative estimate). Here, I use the `ggplot2` package (also from the "tidyverse") to show how to create bar graphs that use the properties of "tidy" data, namely the fact that a specific feature is represented with a single column (here `F_IDEO_W39`), with additional columns specifying supplementary properties of this feature (here `variable`). Note that `F_IDEO_W39`==1 indicates "very conservative", while `F_IDEO_W39`==5 indicates "very liberal".
-
-```{r, fig.width= 5, fig.height=3, warning = F}
-library(ggplot2)
-ggplot(merged_long, 
-       aes(x = F_IDEO_W39, y = key, fill = variable)) +
-  geom_bar(stat = "identity", position = "dodge2")
-```
 
 ## `pivot_wider()`
 Suppose we wanted to revert our operation (or generall shape data from a long to a wide format), we can use `tidyr`'s `pivot_wider()` function. The syntax is similar to `pivot_longer()`.
 
-`new_df <- spread(old_df, key, value)`,
+`new_df <- spread(old_df, names_from = key, values_from = value)`,
 
-where `key` refers to the colum which contains the values that are to be converted to column names and `value` specifies the column that contains the value which is to be stored in the newly created columns.
+where `key` refers to the colum which contains the values that are to be converted to column names and `value` specifies the column that contains the values which is to be stored in the newly created columns.
 
+Below, we semi-revert the creation of a single column containing the variable types and a single column containing our variable values. 
 ```{r}
-head(merged_long, 3)
-merged_wide <- pivot_wider(merged_long, variable, key) 
-merged_wide
+names(df_long)
+df_wide <- df_long %>%
+  pivot_wider(names_from = var,
+              values_from = value) %>%
+  
+  #Cleaning issues w/ levels
+  droplevels() # drops empty factor levels
 ```
+
+
+We can use this format to compute comparisons of Trump approval across waves. Notice the use of `ungroup()` below.
+```{r}
+df_approval1 <- df_wide %>%
+  filter(trump != "Refused") %>%
+  group_by(wave, trump) %>%
+  summarise(count = n()) %>%
+  
+  # Creating percentage
+  ungroup() %>%
+  group_by(wave) %>%
+  mutate(perc = 100/sum(count)*count)
+df_approval1
+```
+
+**Bonus**
+We can also use this format to compare pre- and post-election approval rates about Donald Trump by political ideology among the panel respondents (Note: without applying survey weights, this is *not* a representative estimate).  Approval ratings have gone up across the ideological spectrum.
+```{r}
+df_approval2 <- df_wide %>%
+  filter(trump != "Refused",
+         ideo != "Refused") %>%
+  group_by(wave, trump, ideo) %>%
+  summarise(count = n()) %>%
+  
+  # Creating percentage
+  # Here, the baseline is all people in a certain ideology group per wave
+  ungroup() %>%
+  group_by(wave, ideo) %>%
+  mutate(perc = 100/sum(count)*count) %>%
+  filter(trump == "Approve")
+  
+library(ggplot2)
+ggplot(df_approval2,
+       aes(x = ideo, y = perc, fill = wave)) +
+  geom_bar(stat = "identity", position = position_dodge())
+```
+
+
+We can also fully revert the operation by specifying both the `wave` and the the `value` colum in the `names_from` parameter.
+```{r}
+names(df_long)
+df_wider <- df_long %>%
+  pivot_wider(names_from = c(var, wave),
+              values_from = value)
+```
+
+
 
 # Sources {-}
 Bacoffe, A. and Silver, N., 2019. *The 2020 Endorsement Primary*. FiveThirtyEight. Retrieved January 13, 2020.
 
 Pew Research Center. 2015. Building Pew Research Center's American Trends Panel, Technical Report, Washington D.C. Available at http://pewrsr.ch/1Jo4nKE. 
 
-© 2020 GitHub, Inc.
