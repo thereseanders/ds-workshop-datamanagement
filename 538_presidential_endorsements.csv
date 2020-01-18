@@ -1,1006 +1,1006 @@
-"date","position","state","endorser","endorsee","endorser.party","source","category","points","drop","drop_date"
-"28.07.17","representative","MD","David Trone","John Delaney","D","https://twitter.com/davidjtrone/status/890985957981401088","Representatives",3,0,"NA"
-"02.01.19","governor","NY","Andrew Cuomo","Joe Biden","D","https://www.cnn.com/2019/01/02/politics/cuomo-biden-best-case-2020/index.html","Governors",8,0,"NA"
-"03.01.19","senator","CA","Dianne Feinstein","Joe Biden","D","https://www.politico.com/story/2019/01/03/dianne-feinstein-2020-pick-joe-biden-1079024","Senators",6,0,"NA"
-"08.01.19","senator","DE","Thomas R. Carper","Joe Biden","D","https://fox61.com/2019/01/08/will-he-or-wont-he-joe-biden-looms-over-the-2020-field/","Senators",6,0,"NA"
-"12.01.19","mayor","TX","Ron Nirenberg","Julian Castro",NA,"https://www.sacurrent.com/the-daily/archives/2019/01/12/former-san-antonio-mayor-julian-castro-launches-2020-presidential-bid-at-west-side-rally","Mayors",3,1,"2020-01-02"
-"21.01.19","DNC member","CA","Laphonza Butler","Kamala Harris","D","https://www.politico.com/states/california/story/2019/01/21/kamala-harris-launches-campaign-for-president-804259","DNC members",1,1,"2019-12-03"
-"25.01.19","DNC member","DC","James J. Zogby","Bernie Sanders","D","https://twitter.com/jjz1600/status/1088974458885455872","DNC members",1,0,"NA"
-"27.01.19","state treasurer","CA","Fiona Ma","Kamala Harris","D","https://twitter.com/fionama/status/1089623289872343040","Statewide officeholders",2,1,"2019-12-03"
-"27.01.19","lieutenant governor","CA","Eleni Kounalakis","Kamala Harris","D","https://twitter.com/EleniForCA/status/1089628133228109824","Statewide officeholders",2,1,"2019-12-03"
-"27.01.19","mayor","CA","Libby Schaaf","Kamala Harris","D","https://www.mercurynews.com/2019/01/27/kamala-harris-president-oakland-rally-campaign-kickoff/","Mayors",3,1,"2019-12-03"
-"27.01.19","mayor","CA","London Breed","Kamala Harris","D","https://www.politico.com/newsletters/california-playbook/2019/01/28/kamala-launches-on-her-home-turf-trump-renews-california-lie-newsom-intensifies-housing-battle-shutdown-victory-boosts-pelosi-data-privacy-20-fight-powers-up-382254","Mayors",3,1,"2019-12-03"
-"28.01.19","representative","CA","Ted Lieu","Kamala Harris","D","https://thehill.com/homenews/house/427255-ted-lieu-endorses-kamala-harris-for-president-she-embraces-the-future","Representatives",3,1,"2019-12-03"
-"29.01.19","representative","CA","Nanette Diaz Barragán","Kamala Harris","D","https://twitter.com/Nanette4CA/status/1090386597604978689","Representatives",3,1,"2019-12-03"
-"01.02.19","senator","NJ","Robert Menendez","Cory Booker","D","https://twitter.com/BobMenendezNJ/status/1091391811040567297","Senators",6,0,"2020-01-13"
-"01.02.19","governor","NJ","Phil Murphy","Cory Booker","D","https://newjerseyglobe.com/fr/murphy-endorses-booker-presidential-bid/","Governors",8,0,"2020-01-13"
-"04.02.19","DNC member","SC","Clay N. Middleton","Cory Booker","D","https://www.postandcourier.com/politics/cory-booker-makes-key-campaign-hires-in-south-carolina/article_b4381394-287b-11e9-8c77-8fbeeae31ac7.html","DNC members",1,0,"2020-01-13"
-"06.02.19","past vice president","MN","Walter Mondale","Amy Klobuchar","D","https://wadenapj.com/news/government-and-politics/4567736-mondale-backs-klobuchar-bid-former-vp-likes-senators-chances","Past presidents and vice presidents",10,0,"NA"
-"07.02.19","president pro tem","CA","Toni Atkins","Kamala Harris","D","https://www.politico.com/story/2019/02/07/kamala-harris-2020-california-endorsments-1157651","State legislative leaders",2,1,"2019-12-03"
-"08.02.19","representative","MA","James McGovern","Elizabeth Warren","D","https://twitter.com/heatherscope/status/1093944117380419585?s=21","Representatives",3,0,"NA"
-"09.02.19","president","MA","Karen Spilka","Elizabeth Warren","D","https://www.boston.com/news/politics/2019/02/09/elizabeth-warren-endorsements-2020","State legislative leaders",2,0,"NA"
-"09.02.19","representative","MA","Joseph P. Kennedy III","Elizabeth Warren","D","https://www.bostonherald.com/2019/02/09/warren-confirms-2020-presidential-bid/","Representatives",3,0,"NA"
-"09.02.19","representative","MA","Lori Trahan","Elizabeth Warren","D","https://www.bostonherald.com/2019/02/09/warren-confirms-2020-presidential-bid/","Representatives",3,0,"NA"
-"09.02.19","senator","MA","Edward J. Markey","Elizabeth Warren","D","https://www.bostonherald.com/2019/02/09/warren-confirms-2020-presidential-bid/","Senators",6,0,"NA"
-"10.02.19","state auditor","MN","Julie Blaha","Amy Klobuchar","D","https://twitter.com/julieblaha/status/1094683488203296768","Statewide officeholders",2,0,"NA"
-"10.02.19","lieutenant governor","MN","Peggy Flanagan","Amy Klobuchar","D","https://www.minnpost.com/national/2019/02/klobuchar-launches-2020-presidential-bid/","Statewide officeholders",2,0,"NA"
-"10.02.19","speaker","MN","Melissa Hortman","Amy Klobuchar","D","https://www.facebook.com/MelissaHortman/photos/a.749130508478704/2179548155436925/","State legislative leaders",2,0,"NA"
-"10.02.19","representative","MN","Dean Phillips","Amy Klobuchar","D","https://twitter.com/deanbphillips/status/1094723519366221827","Representatives",3,0,"NA"
-"10.02.19","representative","MN","Angie Craig","Amy Klobuchar","D","https://twitter.com/AngieCraigMN/status/1094711099998507015","Representatives",3,0,"NA"
-"10.02.19","mayor","MN","Jacob Frey","Amy Klobuchar","D","https://www.minnpost.com/national/2019/02/klobuchar-launches-2020-presidential-bid/","Mayors",3,0,"NA"
-"10.02.19","senator","MN","Tina Smith","Amy Klobuchar","D","https://www.youtube.com/watch?v=EYXpQGKiZhM","Senators",6,0,"NA"
-"10.02.19","governor","MN","Tim Walz","Amy Klobuchar","D","https://www.youtube.com/watch?v=EYXpQGKiZhM","Governors",8,0,"NA"
-"14.02.19","representative","CA","Barbara Lee","Kamala Harris","D","https://www.cnn.com/2019/02/14/politics/kamala-harris-barbara-lee-cbc/index.html","Representatives",3,1,"2019-12-03"
-"15.02.19","governor","CA","Gavin Newsom","Kamala Harris","D","https://www.politico.com/story/2019/02/15/gavin-newsom-endorses-kamala-harris-2020-1173317","Governors",8,1,"2019-12-03"
-"19.02.19","lieutenant governor","VT","David Zuckerman","Bernie Sanders","D","https://twitter.com/DaveZuckermanVT/status/1097975870973755392","Statewide officeholders",2,0,"NA"
-"19.02.19","representative","VT","Peter Welch","Bernie Sanders","D","https://ktiv.com/2019/02/19/the-latest-sanders-calls-2020-bid-a-continuation-of-2016/","Representatives",3,0,"NA"
-"19.02.19","senator","VT","Patrick J. Leahy","Bernie Sanders","D","https://www.apnews.com/0eede4a4a5be4e2280eb8904c6fd1a39","Senators",6,0,"NA"
-"20.02.19","DNC member","TX","Emmy Ruiz","Kamala Harris","D","https://www.politico.com/story/2019/02/20/kamala-harris-2020-staff-1176679","DNC members",1,1,"2019-12-03"
-"20.02.19","DNC member","DC","Larry Cohen","Bernie Sanders","D","https://www.independent.co.uk/voices/bernie-sanders-2020-election-campaign-trump-democrat-candidate-race-a8788596.html","DNC members",1,0,"NA"
-"20.02.19","mayor","PR","Carmen Yulín Cruz","Bernie Sanders","D","https://twitter.com/CarmenYulinCruz/status/1098257728902819842","Mayors",3,0,"NA"
-"21.02.19","DNC member","OH","Nina Turner","Bernie Sanders","D","https://www.cleveland.com/politics/2019/02/former-ohio-sen-nina-turner-to-serve-as-co-chair-of-bernie-sanders-campaign.html","DNC members",1,0,"NA"
-"21.02.19","DNC member","NJ","John Currie","Cory Booker","D","https://medium.com/@corybooker/50-nj-democrats-endorse-cory-booker-for-president-9eefb60c72d2","DNC members",1,0,"2020-01-13"
-"21.02.19","lieutenant governor","NJ","Sheila Oliver","Cory Booker","D","https://medium.com/@corybooker/50-nj-democrats-endorse-cory-booker-for-president-9eefb60c72d2","Statewide officeholders",2,0,"2020-01-13"
-"21.02.19","president","NJ","Stephen Sweeney","Cory Booker","D","https://medium.com/@corybooker/50-nj-democrats-endorse-cory-booker-for-president-9eefb60c72d2","State legislative leaders",2,0,"2020-01-13"
-"21.02.19","speaker","NJ","Craig Coughlin","Cory Booker","D","https://medium.com/@corybooker/50-nj-democrats-endorse-cory-booker-for-president-9eefb60c72d2","State legislative leaders",2,0,"2020-01-13"
-"21.02.19","representative","NJ","Bonnie Watson Coleman","Cory Booker","D","https://medium.com/@corybooker/50-nj-democrats-endorse-cory-booker-for-president-9eefb60c72d2","Representatives",3,0,"2020-01-13"
-"21.02.19","representative","NJ","Mikie Sherrill","Cory Booker","D","https://medium.com/@corybooker/50-nj-democrats-endorse-cory-booker-for-president-9eefb60c72d2","Representatives",3,0,"2020-01-13"
-"21.02.19","representative","NJ","Donald Payne Jr.","Cory Booker","D","https://medium.com/@corybooker/50-nj-democrats-endorse-cory-booker-for-president-9eefb60c72d2","Representatives",3,0,"2020-01-13"
-"21.02.19","representative","NJ","Bill Pascrell Jr.","Cory Booker","D","https://medium.com/@corybooker/50-nj-democrats-endorse-cory-booker-for-president-9eefb60c72d2","Representatives",3,0,"2020-01-13"
-"21.02.19","representative","NJ","Albio Sires","Cory Booker","D","https://medium.com/@corybooker/50-nj-democrats-endorse-cory-booker-for-president-9eefb60c72d2","Representatives",3,0,"2020-01-13"
-"21.02.19","representative","NJ","Frank Pallone Jr.","Cory Booker","D","https://medium.com/@corybooker/50-nj-democrats-endorse-cory-booker-for-president-9eefb60c72d2","Representatives",3,0,"2020-01-13"
-"21.02.19","representative","NJ","Josh Gottheimer","Cory Booker","D","https://medium.com/@corybooker/50-nj-democrats-endorse-cory-booker-for-president-9eefb60c72d2","Representatives",3,0,"2020-01-13"
-"21.02.19","representative","NJ","Andy Kim","Cory Booker","D","https://medium.com/@corybooker/50-nj-democrats-endorse-cory-booker-for-president-9eefb60c72d2","Representatives",3,0,"2020-01-13"
-"21.02.19","representative","NJ","Jeff Van Drew","Cory Booker","R","https://medium.com/@corybooker/50-nj-democrats-endorse-cory-booker-for-president-9eefb60c72d2","Representatives",3,0,"2020-01-13"
-"21.02.19","representative","NJ","Donald Norcross","Cory Booker","D","https://medium.com/@corybooker/50-nj-democrats-endorse-cory-booker-for-president-9eefb60c72d2","Representatives",3,0,"2020-01-13"
-"21.02.19","representative","CA","Ro Khanna","Bernie Sanders","D","https://www.sfchronicle.com/politics/article/Bernie-Sanders-enlists-Ro-Khanna-for-presidential-13635537.php","Representatives",3,0,"NA"
-"26.02.19","superintendent of public instruction","CA","Tony Thurmond","Kamala Harris","D","https://www.politico.com/amp/story/2019/02/26/kamala-harris-california-1186389","Statewide officeholders",2,1,"2019-12-03"
-"26.02.19","insurance commissioner","CA","Ricardo Lara","Kamala Harris","D","https://www.politico.com/amp/story/2019/02/26/kamala-harris-california-1186389","Statewide officeholders",2,1,"2019-12-03"
-"26.02.19","secretary of state","CA","Alex Padilla","Kamala Harris","D","https://www.politico.com/amp/story/2019/02/26/kamala-harris-california-1186389","Statewide officeholders",2,1,"2019-12-03"
-"26.02.19","senator","DE","Christopher A. Coons","Joe Biden","D","https://www.breitbart.com/clips/2019/02/26/coons-i-absolutely-will-endorse-biden-if-he-runs/","Senators",6,0,"NA"
-"27.02.19","representative","CA","Juan Vargas","John Delaney","D","https://twitter.com/danielmarans/status/1100868238085406720","Representatives",3,0,"NA"
-"28.02.19","representative","CA","Julia Brownley","Kamala Harris","D","https://www.nbclosangeles.com/news/local/Rep-Julia-Brownley-Endorses-Kamala-Harris-for-President-506459851.html","Representatives",3,1,"2019-12-03"
-"01.03.19","attorney general","WA","Bob Ferguson","Jay Inslee","D","https://www.thestranger.com/slog/2019/03/01/39403537/jay-inslee-announces-his-run-for-president","Statewide officeholders",2,1,"2019-08-21"
-"01.03.19","representative","WA","Rick Larsen","Jay Inslee","D","https://www.seattlepi.com/local/politics/article/Inslee-Running-president-climate-change-campaign-13656077.php","Representatives",3,1,"2019-08-21"
-"07.03.19","attorney general","DC","Karl Racine","Kamala Harris","D","https://www.washingtonpost.com/local/dc-politics/dc-attorney-general-karl-racine-endorses-kamala-harris-for-president/2019/03/07/bd43b860-40e2-11e9-9361-301ffb5bd5e6_story.html?utm_term=.4ebee8be575d","Statewide officeholders",2,1,"2019-12-03"
-"07.03.19","mayor","CA","Darrell Steinberg","Kamala Harris","D","https://www.mercurynews.com/2019/03/07/kamala-harris-california-mayors-liccardo-breed-endorsement/","Mayors",3,1,"2019-12-03"
-"07.03.19","mayor","CO","Michael Hancock","John Hickenlooper","D","https://www.cnn.com/2019/03/07/politics/hickenlooper-2020-launch/index.html","Mayors",3,1,"2019-08-15"
-"14.03.19","representative","TX","Veronica Escobar","Beto O'Rourke","D","https://www.texastribune.org/2019/03/14/beto-orourke-4-members-congress-endorse-within-hours/","Representatives",3,1,"2019-11-01"
-"17.03.19","representative","NY","Carolyn Maloney","Kirsten Gillibrand","D","https://twitter.com/carolynbmaloney/status/1107390398459248640?s=21","Representatives",3,1,"NA"
-"25.03.19","DNC member","CA","Susie A. Shannon","Bernie Sanders","D","https://projects.fivethirtyeight.com/endorsements-2020-data/susie_shannon_endorsement.png","DNC members",1,0,"NA"
-"11.04.19","former DNC chair","MA","Steven Grossman","Pete Buttigieg","D","https://www.bostonglobe.com/metro/2019/04/11/buttigieg-campaign-getting-massachusetts-boost-from-grossman/lIQcax0i192wQlJoTxikqO/story.html","Former party leaders",5,0,"NA"
-"12.04.19","DNC member","NJ","Bernadette P. McPherson","Cory Booker","D","https://newjerseyglobe.com/national/two-dnc-members-endorse-booker/","DNC members",1,0,"2020-01-13"
-"12.04.19","DNC member","NJ","John Graham","Cory Booker","D","https://newjerseyglobe.com/national/two-dnc-members-endorse-booker/","DNC members",1,0,"2020-01-13"
-"14.04.19","DNC member","OH","Nan Whaley","Pete Buttigieg","D","https://www.daytondailynews.com/news/local/dayton-mayor-nan-whaley-endorses-pete-buttigieg-for-president/MmyzVi4dDvKgpvuxJramKP/","DNC members",1,0,"NA"
-"14.04.19","mayor","TX","Steve Adler","Pete Buttigieg","D","https://www.kvue.com/article/news/politics/mayor-adler-endorses-pete-buttigieg-for-2020-democratic-run/269-613c4b0e-20ac-4891-80a6-37c7188e266b","Mayors",3,0,"NA"
-"18.04.19","DNC member","MI","Michelle Deatrick","Bernie Sanders","D","https://www.detroitnews.com/story/news/politics/2019/04/19/early-presidential-fundraising-michigan-donors/3505825002/","DNC members",1,0,"NA"
-"19.04.19","DNC member","MA","Kate Donaghue","Elizabeth Warren","D","https://projects.fivethirtyeight.com/endorsements-2020-data/kate_donaghue_endorsement.png","DNC members",1,0,"NA"
-"22.04.19","representative","MA","Stephen F. Lynch","Joe Biden","D","https://twitter.com/hillarychabot/status/1120345230455255041","Representatives",3,0,"NA"
-"22.04.19","former DNC chair","PA","Ed Rendell","Joe Biden","D","https://www.post-gazette.com/news/politics-local/2019/04/22/Joe-Biden-plans-Pittsburgh-rally-presidential-announcement-candidacy-Democrat/stories/201904220086?utm_medium=social&utm_source=twitter_PittsburghPG","Former party leaders",5,0,"NA"
-"24.04.19","representative","VA","Don Beyer","Pete Buttigieg","D","https://www.washingtonpost.com/local/virginia-politics/buttigieg-gets-first-endorsement-from-member-of-congress-rep-don-beyer-of-va/2019/04/24/8f42be3c-66c3-11e9-8985-4cf30147bdca_story.html?utm_term=.7efcd3bf07bf","Representatives",3,0,"NA"
-"24.04.19","representative","PA","Matt Cartwright","Joe Biden","D","http://www.politicspa.com/boyle-cartwright-and-evans-back-biden/91028/","Representatives",3,0,"NA"
-"25.04.19","DNC member","DC","Symone Sanders","Joe Biden","D","https://apnews.com/2572f844ea074460a2f95243c433f9bc","DNC members",1,0,"NA"
-"25.04.19","DNC member","DC","Cristobal J. Alex","Joe Biden","D","https://twitter.com/cristobaljalex/status/1121364035528687616?s=21","DNC members",1,0,"NA"
-"25.04.19","attorney general","DE","Kathy Jennings","Joe Biden","D","https://www.facebook.com/149727352405928/posts/323362398375755?s=100000461722748&v=i&sfns=mo","Statewide officeholders",2,0,"NA"
-"25.04.19","representative","PA","Dwight Evans","Joe Biden","D","http://www.politicspa.com/boyle-cartwright-and-evans-back-biden/91028/","Representatives",3,0,"NA"
-"25.04.19","representative","PA","Brendan Boyle","Joe Biden","D","https://twitter.com/lauraolson/status/1121449705102348289","Representatives",3,0,"NA"
-"25.04.19","representative","NY","Thomas Suozzi","Joe Biden","D","https://twitter.com/Tom_Suozzi/status/1121379897874767874","Representatives",3,0,"NA"
-"25.04.19","representative","LA","Cedric Richmond","Joe Biden","D","https://www.vox.com/policy-and-politics/2019/4/28/18521515/joe-biden-support-electability-cedric-richmond-james-clyburn-anita-hill","Representatives",3,0,"NA"
-"25.04.19","representative","DE","Lisa Blunt Rochester","Joe Biden","D","https://twitter.com/benyc/status/1121369759550005249?s=19","Representatives",3,0,"NA"
-"25.04.19","senator","PA","Robert P. Casey Jr.","Joe Biden","D","https://twitter.com/JTHVerhovek/status/1121363322526470144","Senators",6,0,"NA"
-"25.04.19","senator","AL","Doug Jones","Joe Biden","D","https://twitter.com/dougjones/status/1121381353117843456","Senators",6,0,"NA"
-"25.04.19","governor","DE","John Carney","Joe Biden","D","https://www.instagram.com/p/Bwri44glSkb/","Governors",8,0,"NA"
-"26.04.19","past presidential nominee","MA","Michael Dukakis","Elizabeth Warren","D","https://www.wbur.org/news/2019/04/26/dukakis-biden-2020-campaign","Past nominees",5,0,"NA"
-"03.05.19","representative","VA","A. Donald McEachin","Joe Biden","D","https://www.usatoday.com/story/news/politics/2019/05/03/2020-candidates-courting-congressional-black-caucus-members/3645701002/","Representatives",3,0,"NA"
-"12.05.19","state controller","NV","Catherine Byrne","Elizabeth Warren","D","https://twitter.com/meganmesserly/status/1127732368779800576","Statewide officeholders",2,0,"NA"
-"14.05.19","representative","TX","Filemon Vela","Joe Biden","D","https://twitter.com/heatherscope/status/1128390149115666433","Representatives",3,0,"NA"
-"20.05.19","former U.S. Senate majority leader","SD","Tom Daschle","Joe Biden","D","https://www.cnbc.com/video/2019/05/20/a-lot-of-promise-in-cannabis-says-former-senate-majority-leader-tom-daschle.html","Former party leaders",5,0,"NA"
-"23.05.19","representative","WA","Kim Schrier","Jay Inslee","D","https://twitter.com/ZachMontellaro/status/1141475723812757504","Representatives",3,1,"2019-08-21"
-"30.05.19","speaker","CA","Anthony Rendon","Kamala Harris","D","https://twitter.com/RendonAnthony/status/1134095064861331457","State legislative leaders",2,1,"2019-12-03"
-"30.05.19","representative","FL","Al Lawson","Joe Biden","D","https://www.politico.com/story/2019/05/30/joe-biden-congressional-endorsements-1347598","Representatives",3,0,"NA"
-"09.06.19","senator","MT","Jon Tester","Steve Bullock","D","https://www.cbsnews.com/news/steve-bullock-endorsed-by-jon-tester-fellow-montana-democrat/","Senators",6,1,"NA"
-"14.06.19","DNC member","NJ","George E. Norcross III","Cory Booker","D","https://newjerseyglobe.com/national/george-norcross-to-host-cory-booker-fundraiser/","DNC members",1,0,"2020-01-13"
-"17.06.19","representative","CA","Jim Costa","Kamala Harris","D","https://www.fresnobee.com/news/local/article231649843.html","Representatives",3,1,"2019-12-03"
-"20.06.19","representative","WA","Derek Kilmer","Jay Inslee","D","https://twitter.com/ZachMontellaro/status/1142098852910178304","Representatives",3,1,"2019-08-21"
-"20.06.19","representative","TX","Al Green","Kamala Harris","D","https://www.politico.com/story/2019/06/20/al-green-endorses-kamala-harris-1372602","Representatives",3,1,"2019-12-03"
-"21.06.19","representative","FL","Alcee L. Hastings","Kamala Harris","D","https://www.cnn.com/2019/06/21/politics/kamala-harris-endorsed-by-alcee-hastings/index.html","Representatives",3,1,"2019-12-03"
-"25.06.19","representative","MO","William Lacy Clay Jr.","Kamala Harris","D","https://www.cnn.com/2019/06/25/politics/kamala-harris-william-lacy-clay-endorse-black-caucus/index.html","Representatives",3,1,"2019-12-03"
-"26.06.19","DNC member","IA","Jan M. Bauer","Steve Bullock","D","https://www.politico.com/story/2019/06/26/steve-bullock-iowa-endorsement-1383638","DNC members",1,1,"NA"
-"28.06.19","DNC member","MI","Barry J. Goodman","Joe Biden","D","https://twitter.com/tmservo433/status/1144609060723077121","DNC members",1,0,"NA"
-"28.06.19","attorney general","MN","Keith Ellison","Bernie Sanders","D","https://twitter.com/keithellison/status/1144580524092067840","Statewide officeholders",2,0,"NA"
-"28.06.19","representative","MN","Collin C. Peterson","Amy Klobuchar","D","http://www.startribune.com/keith-ellison-endorses-bernie-sanders-for-president-again/511959892/?refresh=true","Representatives",3,0,"NA"
-"28.06.19","mayor","GA","Keisha Lance Bottoms","Joe Biden","D","https://abcnews.go.com/Politics/wireStory/biden-nabs-2020-endorsement-atlanta-mayor-bottoms-64012750","Mayors",3,0,"NA"
-"30.06.19","representative","IL","Bobby L. Rush","Kamala Harris","D","https://apnews.com/d5fb5fce21314a87b2e7d771475aed3a","Representatives",3,1,"2019-12-03"
-"30.06.19","representative","FL","Frederica Wilson","Kamala Harris","D","https://apnews.com/d5fb5fce21314a87b2e7d771475aed3a","Representatives",3,1,"2019-12-03"
-"02.07.19","governor","CT","Ned Lamont","Joe Biden","D","https://www.courant.com/politics/hc-pol-lamont-endorses-biden-20190702-mtds3jf2n5ct3ngxoekezamzue-story.html","Governors",8,0,"NA"
-"03.07.19","representative","CT","Jahana Hayes","Kamala Harris","D","https://www.essence.com/op-ed/jahana-hayes-endorses-kamala-harris-president/","Representatives",3,1,"2019-12-03"
-"12.07.19","minority leader","GA","Robert Trammell","Kamala Harris","D","https://www.ajc.com/blog/politics/top-georgia-house-democrat-picks-harris-2020-race/lEXtAE1Gqr7LAn6RlmktqJ/","State legislative leaders",2,1,"2019-12-03"
-"17.07.19","minority leader","TN","Jeff Yarbro","Pete Buttigieg","D","https://www.tennessean.com/story/news/politics/2019/07/17/mayor-pete-buttigieg-nashville-democrat-jeff-yarbro-announces-endorsement/1749874001/","State legislative leaders",2,0,"NA"
-"21.07.19","former U.S. House Democratic whip","MI","David Bonior","Elizabeth Warren","D","https://twitter.com/nsroka/status/1153095256214253573","Former party leaders",5,0,"NA"
-"22.07.19","DNC member","VA","Leopoldo J. Martinez","Joe Biden","D","https://www.cnn.com/videos/spanish/2019/07/22/joe-biden-candidato-elecciones-eeuu-que-propone-economa-leopoldo-martinez-entrevista-rodriguez-dinero.cnn","DNC members",1,0,"NA"
-"22.07.19","representative","TX","Eddie Bernice Johnson","Joe Biden","D","https://www.politico.com/story/2019/07/22/biden-congressional-black-caucus-endorsement-1425686","Representatives",3,0,"NA"
-"22.07.19","mayor","MI","Mike Duggan","Joe Biden","D","https://apnews.com/5ecbbd420f8541a3a93a733817fa7ed8","Mayors",3,0,"NA"
-"23.07.19","DNC member","VT","Mary M. Sullivan","Bernie Sanders","D","https://twitter.com/JTHVerhovek/status/1153757689673060357","DNC members",1,0,"NA"
-"23.07.19","state auditor","VT","Doug Hoffer","Bernie Sanders","D","https://twitter.com/JTHVerhovek/status/1153757689673060357","Statewide officeholders",2,0,"NA"
-"23.07.19","state treasurer","VT","Beth Pearce","Bernie Sanders","D","https://twitter.com/JTHVerhovek/status/1153757689673060357","Statewide officeholders",2,0,"NA"
-"23.07.19","attorney general","VT","T.J. Donovan","Bernie Sanders","D","https://twitter.com/JTHVerhovek/status/1153757689673060357","Statewide officeholders",2,0,"NA"
-"23.07.19","president pro tem","VT","Tim Ashe","Bernie Sanders","D","https://twitter.com/JTHVerhovek/status/1153757689673060357","State legislative leaders",2,0,"NA"
-"28.07.19","representative","IL","Danny K. Davis","Kamala Harris","D","https://www.politico.com/newsletters/illinois-playbook/2019/07/29/lightfoots-dinner-with-kamala-alaina-hampton-speaks-out-weekend-wedding-with-pix-462365","Representatives",3,1,"2019-12-03"
-"29.07.19","DNC member","TN","William Owen","Joe Biden","D","https://www.tennessean.com/story/news/politics/2019/07/29/joe-biden-2020-former-vp-releases-tennessee-endorsement-list/1854813001/","DNC members",1,0,"NA"
-"30.07.19","representative","NM","Debra A. Haaland","Elizabeth Warren","D","https://twitter.com/AlxThomp/status/1156198339047809024","Representatives",3,0,"NA"
-"30.07.19","representative","MI","Andy Levin","Elizabeth Warren","D","https://twitter.com/AlxThomp/status/1156198339047809024","Representatives",3,0,"NA"
-"30.07.19","representative","MA","Katherine Clark","Elizabeth Warren","D","https://twitter.com/AlxThomp/status/1156198339047809024","Representatives",3,0,"NA"
-"30.07.19","representative","AZ","Raul Grijalva","Elizabeth Warren","D","https://twitter.com/AlxThomp/status/1156198339047809024","Representatives",3,0,"NA"
-"01.08.19","DNC member","WI","Khary Penebaker","Cory Booker","D","https://www.jsonline.com/story/news/politics/elections/2019/08/01/cory-booker-coming-milwaukees-sherman-park-aug-11/1882614001/","DNC members",1,0,"2020-01-13"
-"01.08.19","representative","MI","Brenda Lawrence","Kamala Harris","D","https://www.detroitnews.com/story/news/politics/2019/08/01/rep-lawrence-endorses-kamala-harris-president/1886973001/","Representatives",3,1,"2019-12-03"
-"10.08.19","minority leader","ND","Josh Boschee","Pete Buttigieg","D","https://www.grandforksherald.com/news/government-and-politics/4324749-Some-N.D.-Democrats-eye-favored-candidates-in-crowded-presidential-field","State legislative leaders",2,0,"NA"
-"13.08.19","state treasurer","IL","Mike Frerichs","Elizabeth Warren","D","https://frerichsforillinois.com/illinois-state-treasurer-michael-frerichs-endorses-elizabeth-warren/","Statewide officeholders",2,0,"NA"
-"15.08.19","representative","OH","Marcia L. Fudge","Kamala Harris","D","https://www.cleveland.com/open/2019/08/rep-marcia-fudge-endorses-sen-kamala-harris-for-president.html","Representatives",3,1,"2019-12-03"
-"22.08.19","representative","CA","J. Luis Correa","Joe Biden","D","https://www.ocregister.com/2019/08/22/rep-lou-correa-endorses-joe-biden-for-president/","Representatives",3,0,"NA"
-"31.08.19","DNC member","MO","Curtis Wylde","Bernie Sanders","D","https://twitter.com/curtiswylde/status/1167939815490211840","DNC members",1,0,"NA"
-"01.09.19","president","ME","Troy Jackson","Bernie Sanders","D","https://www.youtube.com/watch?v=AfBmT0msJ6g&feature=youtu.be&t=575","State legislative leaders",2,0,"NA"
-"06.09.19","representative","MD","Jamie Raskin","Elizabeth Warren","D","https://thekojonnamdishow.org/shows/2019-09-06/the-politics-hour-september-6-2019","Representatives",3,0,"NA"
-"12.09.19","DNC member","FL","Nikki Ford Barnes","Cory Booker","D","https://twitter.com/DemNikkiBarnes/status/1172343471853772802","DNC members",1,0,"2020-01-13"
-"12.09.19","attorney general","MA","Maura Healey","Elizabeth Warren","D","https://twitter.com/maura_healey/status/1172210264151773185","Statewide officeholders",2,0,"NA"
-"12.09.19","Democratic caucus chairman","MS","Derrick T. Simmons","Joe Biden","D","https://mississippitoday.org/2019/09/12/joe-biden-receives-2020-endorsement-from-eight-african-american-mississippi-lawmakers/","State legislative leaders",2,0,"NA"
-"12.09.19","representative","AZ","Ruben Gallego","Kamala Harris","D","https://www.azcentral.com/story/news/politics/arizona/2019/09/12/rep-ruben-gallego-backs-sen-kamala-harris-bid-president/2296242001/","Representatives",3,1,"2019-12-03"
-"15.09.19","representative","TX","Vicente Gonzalez","Joe Biden","D","https://www.politico.com/story/2019/09/15/texas-congressman-castro-biden-endorsement-1496180","Representatives",3,0,"NA"
-"18.09.19","state treasurer","IA","Michael Fitzgerald","Elizabeth Warren","D","https://www.apnews.com/c3c2baefc7e247e8ac58fc1959945a74","Statewide officeholders",2,0,"NA"
-"18.09.19","mayor","OH","John Cranley","Pete Buttigieg","D","https://www.usatoday.com/story/opinion/voices/2019/09/18/mayor-pete-buttigieg-south-bend-indiana-mayors-endorse-column/2350438001/","Mayors",3,0,"NA"
-"19.09.19","representative","NC","G.K. Butterfield","Joe Biden","D","https://twitter.com/scottwongDC/status/1174748571456983043?s=19","Representatives",3,0,"NA"
-"19.09.19","representative","MO","Emanuel Cleaver","Joe Biden","D","https://twitter.com/scottwongDC/status/1174748571456983043?s=19","Representatives",3,0,"NA"
-"19.09.19","representative","FL","Charlie Crist","Joe Biden","D","https://twitter.com/scottwongDC/status/1174748571456983043?s=19","Representatives",3,0,"NA"
-"10.10.19","DNC member","NV","Alex Goff","Elizabeth Warren","D","https://twitter.com/meganmesserly/status/1182348991763116032","DNC members",1,0,"NA"
-"10.10.19","minority leader","MN","Tom Bakk","Amy Klobuchar","D","https://blog.4president.org/2020/2019/10/more-than-70-federal-state-and-local-elected-officials-from-minnesota-endorse-us-senator-amy-klobuch.html","State legislative leaders",2,0,"NA"
-"10.10.19","representative","MN","Betty McCollum","Amy Klobuchar","D","https://blog.4president.org/2020/2019/10/more-than-70-federal-state-and-local-elected-officials-from-minnesota-endorse-us-senator-amy-klobuch.html","Representatives",3,0,"NA"
-"15.10.19","representative","MN","Ilhan Omar","Bernie Sanders","D","https://twitter.com/NYTnickc/status/1184310148191473666","Representatives",3,0,"NA"
-"18.10.19","former DNC chair","CT","Chris Dodd","Joe Biden","D","https://www.courant.com/politics/hc-pol-dodd-endorses-biden-20191018-4kxzivowffhhbo4vhlwzmr6i2y-story.html","Former party leaders",5,0,"NA"
-"19.10.19","representative","NY","Alexandria Ocasio-Cortez","Bernie Sanders","D","https://www.cbsnews.com/news/alexandria-ocasio-cortez-to-endorse-bernie-sanders-queens-rally-democratic-primary-2019-10-19/","Representatives",3,0,"NA"
-"22.10.19","DNC member","CO","Terry L. Tucker","Bernie Sanders","D","https://www.coloradopolitics.com/quick-hits/bernie-sanders-wins-endorsements-from-colorado-progressives/article_cba31ef4-f4e8-11e9-8a4a-b3464e40294f.html","DNC members",1,0,"NA"
-"22.10.19","DNC member","CO","Jeri D. Shepherd","Bernie Sanders","D","https://www.coloradopolitics.com/quick-hits/bernie-sanders-wins-endorsements-from-colorado-progressives/article_cba31ef4-f4e8-11e9-8a4a-b3464e40294f.html","DNC members",1,0,"NA"
-"23.10.19","mayor","PA","James F. Kenney","Elizabeth Warren","D","https://twitter.com/JimFKenney/status/1186945479919177728","Mayors",3,0,"NA"
-"26.10.19","representative","CA","Katie Porter","Elizabeth Warren","D","https://twitter.com/katieporteroc/status/1188193604226797568","Representatives",3,0,"NA"
-"27.10.19","representative","MI","Rashida Tlaib","Bernie Sanders","D","https://twitter.com/BernieSanders/status/1188575246737121280","Representatives",3,0,"NA"
-"05.11.19","DNC member","TX","Jose R. Rodriguez","Julian Castro","D","https://www.texastribune.org/2019/11/05/julian-castro-gets-support-texas-lawmakers-who-backed-beto-orourke/","DNC members",1,1,"2020-01-02"
-"05.11.19","speaker pro tem","TX","Joe Moody","Julian Castro","D","https://www.texastribune.org/2019/11/05/julian-castro-gets-support-texas-lawmakers-who-backed-beto-orourke/","State legislative leaders",2,1,"2020-01-02"
-"05.11.19","former DNC chair","CO","Roy Romer","Michael Bennet","D","https://michaelbennet.com/wp-content/uploads/2019/11/Educators_for_Bennet_11_05_19.pdf","Former party leaders",5,0,"NA"
-"06.11.19","representative","MA","Ayanna Pressley","Elizabeth Warren","D","https://www.nytimes.com/2019/11/06/us/politics/ayanna-pressley-endorses-elizabeth-warren.html","Representatives",3,0,"NA"
-"07.11.19","representative","TX","Marc Veasey","Joe Biden","D","https://www.politico.com/news/2019/11/07/joe-biden-marc-veasey-endorsement-067079","Representatives",3,0,"NA"
-"13.11.19","Former 2020 candidate","OH","Tim Ryan","Joe Biden","D","https://www.cleveland.com/open/2019/11/rep-tim-ryan-endorses-joe-bidens-presidential-run.html","Candidates who have dropped out",5,0,"NA"
-"16.11.19","representative","OR","Kurt Schrader","Joe Biden","D","https://www.kgw.com/article/news/politics/joe-biden-arrives-portland-private-fundraiser-president/283-f2243140-2c51-4c49-a053-b8f9374f6e48","Representatives",3,0,"NA"
-"18.11.19","DNC member","TX","Celina Vasquez","Julian Castro","D","https://blog.4president.org/2020/2019/11/third-dnc-member-six-state-lawmakers-among-14-leaders-endorsing-juli%C3%A1n-castro.html","DNC members",1,1,"2020-01-02"
-"21.11.19","DNC member","GA","Ted Terry","Bernie Sanders","D","https://twitter.com/tedterry1/status/1197562865831546880","DNC members",1,0,"NA"
-"21.11.19","delegate","VI","Stacey E. Plaskett","Kamala Harris","D","https://blog.4president.org/2020/2019/11/congresswoman-stacey-plaskett-becomes-eleventh-cbc-member-to-endorse-kamala-harris.html","Representatives",3,1,"2019-12-03"
-"22.11.19","representative","CA","Salud Carbajal","Kamala Harris","D","https://www.politico.com/news/2019/11/22/harris-lands-4th-hispanic-caucus-endorsement-072897","Representatives",3,1,"2019-12-03"
-"24.11.19","mayor","KY","Greg Fischer","Michael Bloomberg","D","https://www.courier-journal.com/story/news/politics/metro-government/2019/11/24/louisville-mayor-greg-fischer-backs-michael-bloomberg-running-president/4290449002/","Mayors",3,0,"NA"
-"25.11.19","representative","NV","Dina Titus","Joe Biden","D","https://twitter.com/dinatitus/status/1198960490266808326","Representatives",3,0,"NA"
-"25.11.19","representative","IN","Peter Visclosky","Pete Buttigieg","D","https://www.indystar.com/story/news/politics/elections/2019/11/25/u-s-rep-pete-visclosky-endorses-pete-buttigieg-president-democratic-primary/4296783002/","Representatives",3,0,"NA"
-"26.11.19","DNC member","CA","Kerman Maddox","Joe Biden","D","https://blog.4president.org/2020/2019/11/21-california-state-legislators-and-community-leaders-endorse-joe-biden-for-president.html","DNC members",1,0,"NA"
-"26.11.19","minority leader","FL","Audrey Gibson","Joe Biden","D","https://www.politico.com/states/florida/story/2019/11/26/biden-wins-endorsement-of-top-florida-democrat-1229814","State legislative leaders",2,0,"NA"
-"26.11.19","representative","NY","Kathleen Rice","Pete Buttigieg","D","https://www.cnn.com/2019/11/26/politics/pete-buttigieg-kathleen-rice-endorsement/index.html","Representatives",3,0,"NA"
-"30.11.19","representative","IL","Jan Schakowsky","Elizabeth Warren","D","https://www.chicagotribune.com/politics/ct-elizabeth-warren-chicago-rally-20191130-iany6w3rvrflvmnf3ralusmvde-story.html","Representatives",3,0,"NA"
-"30.11.19","representative","CA","John Garamendi","Joe Biden","D","https://blog.4president.org/2020/2019/11/california-congressman-john-garamendi-endorses-joe-biden-for-president.html","Representatives",3,0,"NA"
-"03.12.19","representative","CA","Ami Bera","Joe Biden","D","https://www.sacbee.com/news/politics-government/capitol-alert/article237962089.html","Representatives",3,0,"NA"
-"05.12.19","DNC member","PR","Maria E. Melendez Altieri","Joe Biden","D","https://blog.4president.org/2020/2019/12/joe-biden-picks-up-puerto-rican-endorsements.html","DNC members",1,0,"NA"
-"05.12.19","past presidential nominee","MA","John Kerry","Joe Biden","D","https://www.desmoinesregister.com/story/news/elections/presidential/caucus/2019/12/05/john-kerry-campaign-iowa-joe-biden-after-making-endorsement-2020-iowa-caucuses/2617918001/","Past nominees",5,0,"NA"
-"06.12.19","Former 2020 candidate","CO","John Hickenlooper","Michael Bennet","D","https://apnews.com/2cb807d5971c91534cf488d38571b462","Candidates who have dropped out",5,0,"NA"
-"08.12.19","attorney general","CO","Phil Weiser","Michael Bennet","D","https://michaelbennet.com/resources/","Statewide officeholders",2,0,"NA"
-"09.12.19","secretary of state","CT","Denise Merrill","Elizabeth Warren","D","https://www.middletownpress.com/middletown/article/Denise-Merrill-endorses-Warren-citing-election-14891796.php","Statewide officeholders",2,0,"NA"
-"09.12.19","mayor","CA","Sam Liccardo","Michael Bloomberg","D","https://www.mikebloomberg.com/news/san-jose-mayor-sam-liccardo-endorses-mike-bloomberg-is-named-california-co-chair-of-2020-campaign-2","Mayors",3,0,"NA"
-"10.12.19","mayor","CA","Michael D. Tubbs","Michael Bloomberg","D","https://www.sfchronicle.com/politics/article/Mike-Bloomberg-wins-key-backing-in-California-and-14897154.php","Mayors",3,0,"NA"
-"11.12.19","DNC member","CA","Bob Mulholland","Joe Biden","D","https://twitter.com/ccadelago/status/1204770998844829696","DNC members",1,0,"NA"
-"11.12.19","lieutenant governor","RI","Dan McKee","Joe Biden","D","https://blog.4president.org/2020/2019/12/rhode-island-leaders-endorse-joe-biden-for-president.html","Statewide officeholders",2,0,"NA"
-"13.12.19","representative","CA","Lucille Roybal-Allard","Joe Biden","D","https://twitter.com/JTHVerhovek/status/1205565744953643009","Representatives",3,0,"NA"
-"17.12.19","mayor","MN","Melvin Carter","Amy Klobuchar","D","https://twitter.com/amandawgolden/status/1206916251685142529","Mayors",3,0,"NA"
-"18.12.19","speaker","NH","Steve Shurtleff","Joe Biden","D","https://twitter.com/chrisdonato04/status/1207373446545588224","State legislative leaders",2,0,"NA"
-"20.12.19","DNC member","TX","Carla Brailey","Michael Bloomberg","D","https://www.mcclatchydc.com/news/politics-government/election/article238540528.html","DNC members",1,0,"NA"
-"20.12.19","DNC member","PA","Michael A. Nutter","Michael Bloomberg","D","https://www.inquirer.com/news/mayor-michael-nutter-endorses-michael-bloomberg-campaign-chair-2020-democrats-20191220.html","DNC members",1,0,"NA"
-"23.12.19","DNC member","DC","Keith Michael Harper","Pete Buttigieg","D","https://www.usatoday.com/story/news/politics/elections/2019/12/23/election-2020-pete-buttigieg-gets-218-foreign-policy-endorsements/2712988001/","DNC members",1,0,"NA"
-"23.12.19","representative","CA","Tony Cárdenas","Joe Biden","D","https://apnews.com/9844e81c03dbf3623b1944e7adc9de1c","Representatives",3,0,"NA"
-"01.01.20","DNC member","MI","Mark LaChey","Pete Buttigieg","D","https://twitter.com/GeorgeHornedo/status/1212457740469198849","DNC members",1,0,"NA"
-"02.01.20","representative","IA","Abby Finkenauer","Joe Biden","D","https://twitter.com/IAStartingLine/status/1212716275794878465","Representatives",3,0,"NA"
-"03.01.20","DNC member","DC","Jeff Berman","Tom Steyer","D","https://blog.4president.org/2020/2020/01/tom-steyer-campaign-hires-jeff-berman-as-senior-adviser.html","DNC members",1,0,"NA"
-"05.01.20","representative","VA","Elaine Luria","Joe Biden","D","https://www.inquirer.com/news/joe-biden-endorsement-chrissy-houlahan-conor-lamb-pennsylvania-swing-districts-democrats-primary-2020-20200106.html","Representatives",3,0,"NA"
-"05.01.20","representative","PA","Conor Lamb","Joe Biden","D","https://www.inquirer.com/news/joe-biden-endorsement-chrissy-houlahan-conor-lamb-pennsylvania-swing-districts-democrats-primary-2020-20200106.html","Representatives",3,0,"NA"
-"05.01.20","representative","PA","Chrissy Houlahan","Joe Biden","D","https://www.inquirer.com/news/joe-biden-endorsement-chrissy-houlahan-conor-lamb-pennsylvania-swing-districts-democrats-primary-2020-20200106.html","Representatives",3,0,"NA"
-"06.01.20","Former 2020 candidate","TX","Julian Castro","Elizabeth Warren","D","https://twitter.com/JulianCastro/status/1214188178686525440","Candidates who have dropped out",5,0,"NA"
-"08.01.20","DNC member","MO","Megan E. Green","Bernie Sanders","D","https://twitter.com/MeganEllyia/status/1215008411861037056?s=20","DNC members",1,0,"NA"
-"09.01.20","DNC member","NH","Martha Fuller Clark","Joe Biden","D","https://twitter.com/AdamSextonWMUR/status/1215305477992730624","DNC members",1,0,"NA"
-"09.01.20","DNC member","NV","Allison A. Stephens","Elizabeth Warren","D","https://twitter.com/meganmesserly/status/1215318274952454144","DNC members",1,0,"NA"
-"09.01.20","representative","MD","Anthony Brown","Pete Buttigieg","D","https://www.washingtonpost.com/politics/pete-buttigieg-wins-first-endorsement-from-a-black-member-of-congress/2020/01/08/dc4de64e-3179-11ea-a053-dc6d944ba776_story.html","Representatives",3,0,"NA"
-"09.01.20","mayor","CA","Robert Garcia","Joe Biden","D","https://www.presstelegram.com/2020/01/09/mayor-robert-garcia-endorses-joe-biden-ahead-of-planned-visit-to-long-beach/","Mayors",3,0,"NA"
-"09.01.20","mayor","CA","Eric Garcetti","Joe Biden","D","https://www.latimes.com/politics/story/2020-01-09/eric-garcetti-endorses-joe-biden-for-president","Mayors",3,0,"NA"
-"10.01.20","DNC member","CA","Alexandra Gallardo Rooker","Michael Bloomberg","D","https://apnews.com/f29d38b451889b7df31eadebf1eca6fa","DNC members",1,0,"NA"
-"10.01.20","mayor","TN","Jim Strickland","Michael Bloomberg","D","https://www.commercialappeal.com/story/news/2020/01/10/memphis-mayor-jim-strickland-endorses-mike-bloomberg-president/4434861002/","Mayors",3,0,"NA"
-"12.01.20","representative","IA","David Loebsack","Pete Buttigieg","D","https://www.desmoinesregister.com/story/news/elections/presidential/caucus/2020/01/12/congressman-dave-loebsack-endorses-democrat-pete-buttigieg-president-iowa-caucuses-second-district/4444427002/","Representatives",3,0,"NA"
-"13.01.20","attorney general","IA","Tom Miller","Joe Biden","D","https://www.desmoinesregister.com/story/news/elections/presidential/caucus/2020/01/13/iowa-attorney-general-tom-miller-endorses-joe-biden-president-2020-iowa-caucuses/4449485002/","Statewide officeholders",2,0,"NA"
-"13.01.20","representative","TX","Colin Allred","Joe Biden","D","https://www.dallasnews.com/news/politics/2020/01/13/congressman-colin-allred-backs-joe-biden-for-president-in-front-of-dallas-visit/","Representatives",3,0,"NA"
-"13.01.20","representative","NY","Sean Patrick Maloney","Joe Biden","D","https://www.recordonline.com/news/20200113/maloney-endorses-biden-for-president","Representatives",3,0,"NA"
-"13.01.20","representative","NY","Max N. Rose","Michael Bloomberg","D","https://www.wsj.com/articles/michael-bloomberg-gets-first-endorsement-from-member-of-congress-11578936854","Representatives",3,0,"NA"
-"14.01.20","representative","TX","Joaquin Castro","Elizabeth Warren","D","https://twitter.com/BenjaminEW/status/1217114150087860229","Representatives",3,0,"NA"
-"14.01.20","representative","NJ","Tom Malinowski","Joe Biden","D","https://www.insidernj.com/malinowski-endorses-joe-biden/","Representatives",3,0,"NA"
-"15.01.20","representative","NH","Ann Kuster","Pete Buttigieg","D","https://twitter.com/JamesPindell/status/1217582892236312580","Representatives",3,0,"NA"
-"16.01.20","representative","WI","Mark Pocan","Bernie Sanders","D","https://apnews.com/7c6799ee5425569a3765f9f75f9b0577","Representatives",3,0,"NA"
-"16.01.20","representative","FL","Stephanie Murphy","Michael Bloomberg","D","https://www.politico.com/news/2020/01/16/florida-murphy-stephanie-bloomberg-100210","Representatives",3,0,"NA"
-NA,"DNC member","NY","Michael Reich",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","IN","Cordelia M. Lewis-Burks",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","IN","Cindy S. Henry",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","IN","David a Frye",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","IL","Karen A. Yarbrough",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","IL","Becky Strezchowski",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","IL","Carol Ronen",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","IL","Jayne Mazzotti",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","IL","Iris Y. Martinez",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","IL","Daniel W. Hynes",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","IL","John J. Cullerton",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","IL","Jerry F. Costello",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","IL","Carrie Austin",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","ID","Jerry C. Shriner",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","ID","Jesse Maldonado",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","ID","Paulette Jordan",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","ID","Susan S. Eastlake",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","ID","Evangeline M. Beechler",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","HI","Kathleen G. Stanley",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","HI","Gary Hooser",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","HI","Bart E. Dame",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","GU","Taling Taitano",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","GU","Rory Respicio",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","GU","Regine Biscoe Lee",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","GU","Jon Junior Calvo",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","GA","Nikema Williams",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","GA","Pamela Stephenson",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","GA","Sally S. Rosser",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","GA","Richard A. Ray",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","GA","Sheikh M. Rahman",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","GA","Daniel J. Halpern",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","GA","Louis Elrod",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","GA","Wendy Davis",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","FL","Craig Smith",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","FL","Casmore Shaw",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","FL","Terrie Lorraine Rizzo",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","FL","John A. Ramos",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","FL","Judy C. Mount",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","FL","Maureen A. McKenna",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","FL","Shawn W. Kinsey",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","FL","Mikaela Guido",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","FL","Alma R. Gonzalez",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","FL","Ken N. Evans",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","FL","Alan R. Clendenin",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","FL","Briana L. Cartwright",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","FL","Grace Carrington",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","FL","Cynthia M. Busch",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","FL","Dwight Bullard",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","DC","Charles E. Wilson",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","DC","Rick C. Wade",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","DC","Lee A. Saunders",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","DC","Steve Regenstreif",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","DC","Carrie Pugh",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","DC","Carol J. Pensky",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","DC","Minyon Moore",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","DC","Silvia J. Martinez",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","DC","Claire Lucas",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","DC","Harold Ickes",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","DC","Linda L. Gray",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","DC","Lily L. Eskelsen Garcia",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","DC","Earl D. Fowlkes Jr.",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","DC","Jack Evans",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","DC","Joanne Dowdell",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","DC","Leah Daughtry",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","DC","J. David Cox",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","DC","Alexandra Chalupa",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","DC","Maria Cardona",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","DC","Calla R. Brown",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","DC","Roxanne D. Brown",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","DC","James Joseph Boland",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","DA","Orlando E. Vidal",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","DA","Kenneth E. Sherman",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","DA","Alex Montgomery",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","DA","Martha McDevitt-Pugh",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","DA","Adrianne R. George",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","DA","John A. Eastwood",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","DA","Julia Bryan",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","DA","Connie Borde",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","DE","Erik Raser-Schramm",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","DE","Elizabeth D. Maron",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","DE","Valerie Longhurst",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","DE","Kerri Evelyn Harris",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","DE","Sean Finnigan",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","CT","Nancy Wyman",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","CT","Erick Russell",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","CT","John W. Olsen",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","CT","Nancy DiNardo",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","CO","Michael F. Hamrick",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","CO","Howard Chou",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","CO","Morgan Carroll",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","CA","Laurence S. Zakson",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","CA","Rosalind Wyman",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","CA","Amy Elaine Wakeland",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","CA","Keith Umemoto",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","CA","Garry S. Shay",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","CA","Rion J. Ramirez",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","CA","Melahat Rafiei",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","CA","John A. Perez",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","CA","Christine Pelosi",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","CA","Sandra M. Lowe",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","CA","Otto O. Lee",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","CA","Andrew Lachman",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","CA","Michael Kapp",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","CA","Lorna M. Johnson",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","CA","Aleita J. Huguenin",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","CA","Alice A. Huffman",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","CA","Rusty Hicks",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","CA","Ron Galperin",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","CA","Maria Echaveste",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","CA","Mary Ellen Early",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","CA","Jesse L. Durfee",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","CA","Becca Doten",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","CA","Steven K. Alari",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","AR","Kasey Summerville",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","AR","Lottie Shackelford",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","AR","Dustin McDaniel",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","AR","Nicole Hart",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","AR","Michael John Gray",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","AZ","Sierra Yamanaka",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","AZ","Felecia Rotellini",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","AZ","Ellie Perez",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","AZ","Luis Alberto Heredia",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","AZ","Adrian Fontes",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","AZ","William Patrick Burns",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","AZ","Douglas Ballard",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","AS","Minnie Tuia",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","AS","Aliitama Soto'a",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","AS","Petti Matila",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","AS","Fagafaga D. Langkilde",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","AK","Edward Wesley",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","AK","Casey Steinau",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","AK","Sheila A. Selkregg",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","AK","Chuck Degnan",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","AL","Nancy L. Worley",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","AL","Charlie Lethate Staten",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","AL","Janet May",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","AL","Randy B. Kelley",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","AL","Unzell Kelley",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","AL","Clinton M. Daughtrey",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"public auditor","GU","Benjamin Cruz",NA,"D",NA,"Statewide officeholders",2,0,"NA"
-NA,"lieutenant governor","VI","Tregenza Roach",NA,"D",NA,"Statewide officeholders",2,0,"NA"
-NA,"lieutenant governor","AS","Lemanu Palepoi S. Mauga",NA,"D",NA,"Statewide officeholders",2,0,"NA"
-NA,"attorney general","MP","Edward Manibusan",NA,NA,NA,"Statewide officeholders",2,0,"NA"
-NA,"lieutenant governor","GU","Joshua Tenorio",NA,"D",NA,"Statewide officeholders",2,0,"NA"
-NA,"attorney general","GU","Leevin T. Camacho",NA,NA,NA,"Statewide officeholders",2,0,"NA"
-NA,"superintendent of public instruction","WI","Carolyn Stanford Taylor",NA,"D",NA,"Statewide officeholders",2,0,"NA"
-NA,"attorney general","WI","Josh Kaul",NA,"D",NA,"Statewide officeholders",2,0,"NA"
-NA,"state treasurer","WI","Sarah Godlewski",NA,"D",NA,"Statewide officeholders",2,0,"NA"
-NA,"secretary of state","WI","Doug La Follette",NA,"D",NA,"Statewide officeholders",2,0,"NA"
-NA,"lieutenant governor","WI","Mandela Barnes",NA,"D",NA,"Statewide officeholders",2,0,"NA"
-NA,"state treasurer","WV","John Perdue",NA,"D",NA,"Statewide officeholders",2,0,"NA"
-NA,"superintendent of public instruction","WA","Chris Reykdal",NA,"D",NA,"Statewide officeholders",2,0,"NA"
-NA,"commissioner of public lands","WA","Hilary Franz",NA,"D",NA,"Statewide officeholders",2,0,"NA"
-NA,"insurance commissioner","WA","Mike Kreidler",NA,"D",NA,"Statewide officeholders",2,0,"NA"
-NA,"state auditor","WA","Pat McCarthy",NA,"D",NA,"Statewide officeholders",2,0,"NA"
-NA,"lieutenant governor","WA","Cyrus Habib",NA,"D",NA,"Statewide officeholders",2,0,"NA"
-NA,"attorney general","VA","Mark Herring",NA,"D",NA,"Statewide officeholders",2,0,"NA"
-NA,"lieutenant governor","VA","Justin Fairfax",NA,"D",NA,"Statewide officeholders",2,0,"NA"
-NA,"secretary of state","VT","Jim Condos",NA,"D",NA,"Statewide officeholders",2,0,"NA"
-NA,"general treasurer","RI","Seth Magaziner",NA,"D",NA,"Statewide officeholders",2,0,"NA"
-NA,"attorney general","RI","Peter Neronha",NA,"D",NA,"Statewide officeholders",2,0,"NA"
-NA,"secretary of state","RI","Nellie Gorbea",NA,"D",NA,"Statewide officeholders",2,0,"NA"
-NA,"auditor general","PA","Eugene DePasquale",NA,"D",NA,"Statewide officeholders",2,0,"NA"
-NA,"state treasurer","PA","Joe Torsella",NA,"D",NA,"Statewide officeholders",2,0,"NA"
-NA,"attorney general","PA","Josh Shapiro",NA,"D",NA,"Statewide officeholders",2,0,"NA"
-NA,"lieutenant governor","PA","John Fetterman",NA,"D",NA,"Statewide officeholders",2,0,"NA"
-NA,"commissioner of labor and industries","OR","Val Hoyle",NA,"D",NA,"Statewide officeholders",2,0,"NA"
-NA,"state treasurer","OR","Tobias Read",NA,"D",NA,"Statewide officeholders",2,0,"NA"
-NA,"attorney general","OR","Ellen Rosenblum",NA,"D",NA,"Statewide officeholders",2,0,"NA"
-NA,"state auditor","NC","Beth Wood",NA,"D",NA,"Statewide officeholders",2,0,"NA"
-NA,"attorney general","NC","Josh Stein",NA,"D",NA,"Statewide officeholders",2,0,"NA"
-NA,"secretary of state","NC","Elaine Marshall",NA,"D",NA,"Statewide officeholders",2,0,"NA"
-NA,"state comptroller","NY","Thomas DiNapoli",NA,"D",NA,"Statewide officeholders",2,0,"NA"
-NA,"attorney general","NY","Letitia James",NA,"D",NA,"Statewide officeholders",2,0,"NA"
-NA,"lieutenant governor","NY","Kathy Hochul",NA,"D",NA,"Statewide officeholders",2,0,"NA"
-NA,"commissioner of public lands","NM","Stephanie Garcia Richard",NA,"D",NA,"Statewide officeholders",2,0,"NA"
-NA,"state auditor","NM","Brian Colón",NA,"D",NA,"Statewide officeholders",2,0,"NA"
-NA,"state treasurer","NM","Tim Eichenberg",NA,"D",NA,"Statewide officeholders",2,0,"NA"
-NA,"attorney general","NM","Hector Balderas",NA,"D",NA,"Statewide officeholders",2,0,"NA"
-NA,"secretary of state","NM","Maggie Toulouse Oliver",NA,"D",NA,"Statewide officeholders",2,0,"NA"
-NA,"lieutenant governor","NM","Howie Morales",NA,"D",NA,"Statewide officeholders",2,0,"NA"
-NA,"state treasurer","NV","Zach Conine",NA,"D",NA,"Statewide officeholders",2,0,"NA"
-NA,"attorney general","NV","Aaron Ford",NA,"D",NA,"Statewide officeholders",2,0,"NA"
-NA,"lieutenant governor","NV","Kate Marshall",NA,"D",NA,"Statewide officeholders",2,0,"NA"
-NA,"lieutenant governor","MT","Mike Cooney",NA,"D",NA,"Statewide officeholders",2,0,"NA"
-NA,"state auditor","MO","Nicole Galloway",NA,"D",NA,"Statewide officeholders",2,0,"NA"
-NA,"secretary of state","MN","Steve Simon",NA,"D",NA,"Statewide officeholders",2,0,"NA"
-NA,"attorney general","MI","Dana Nessel",NA,"D",NA,"Statewide officeholders",2,0,"NA"
-NA,"secretary of state","MI","Jocelyn Benson",NA,"D",NA,"Statewide officeholders",2,0,"NA"
-NA,"lieutenant governor","MI","Garlin Gilchrist",NA,"D",NA,"Statewide officeholders",2,0,"NA"
-NA,"state auditor","MA","Suzanne Bump",NA,"D",NA,"Statewide officeholders",2,0,"NA"
-NA,"state treasurer and receiver-general","MA","Deborah Goldberg",NA,"D",NA,"Statewide officeholders",2,0,"NA"
-NA,"secretary of the commonwealth","MA","Bill Galvin",NA,"D",NA,"Statewide officeholders",2,0,"NA"
-NA,"state comptroller","MD","Peter Franchot",NA,"D",NA,"Statewide officeholders",2,0,"NA"
-NA,"attorney general","MD","Brian Frosh",NA,"D",NA,"Statewide officeholders",2,0,"NA"
-NA,"lieutenant governor","KY","Jacqueline Coleman",NA,"D",NA,"Statewide officeholders",2,0,"NA"
-NA,"lieutenant governor","KS","Lynn Rogers",NA,"D",NA,"Statewide officeholders",2,0,"NA"
-NA,"state auditor","IA","Rob Sand",NA,"D",NA,"Statewide officeholders",2,0,"NA"
-NA,"state comptroller","IL","Susana Mendoza",NA,"D",NA,"Statewide officeholders",2,0,"NA"
-NA,"attorney general","IL","Kwame Raoul",NA,"D",NA,"Statewide officeholders",2,0,"NA"
-NA,"secretary of state","IL","Jesse White",NA,"D",NA,"Statewide officeholders",2,0,"NA"
-NA,"lieutenant governor","IL","Juliana Stratton",NA,"D",NA,"Statewide officeholders",2,0,"NA"
-NA,"lieutenant governor","HI","Josh Green",NA,"D",NA,"Statewide officeholders",2,0,"NA"
-NA,"commissioner of agriculture and consumer services","FL","Nikki Fried",NA,"D",NA,"Statewide officeholders",2,0,"NA"
-NA,"commissioner of insurance","DE","Trinidad Navarro",NA,"D",NA,"Statewide officeholders",2,0,"NA"
-NA,"auditor of accounts","DE","Kathleen McGuiness",NA,"D",NA,"Statewide officeholders",2,0,"NA"
-NA,"state treasurer","DE","Colleen Davis",NA,"D",NA,"Statewide officeholders",2,0,"NA"
-NA,"lieutenant governor","DE","Bethany Hall-Long",NA,"D",NA,"Statewide officeholders",2,0,"NA"
-NA,"state comptroller","CT","Kevin Lembo",NA,"D",NA,"Statewide officeholders",2,0,"NA"
-NA,"attorney general","CT","William Tong",NA,"D",NA,"Statewide officeholders",2,0,"NA"
-NA,"state treasurer","CT","Shawn Wooden",NA,"D",NA,"Statewide officeholders",2,0,"NA"
-NA,"lieutenant governor","CT","Susan Bysiewicz",NA,"D",NA,"Statewide officeholders",2,0,"NA"
-NA,"state treasurer","CO","Dave Young",NA,"D",NA,"Statewide officeholders",2,0,"NA"
-NA,"secretary of state","CO","Jena Griswold",NA,"D",NA,"Statewide officeholders",2,0,"NA"
-NA,"lieutenant governor","CO","Dianne Primavera",NA,"D",NA,"Statewide officeholders",2,0,"NA"
-NA,"state controller","CA","Betty Yee",NA,"D",NA,"Statewide officeholders",2,0,"NA"
-NA,"attorney general","CA","Xavier Becerra",NA,"D",NA,"Statewide officeholders",2,0,"NA"
-NA,"superintendent of public instruction","AZ","Kathy Hoffman",NA,"D",NA,"Statewide officeholders",2,0,"NA"
-NA,"secretary of state","AZ","Katie Hobbs",NA,"D",NA,"Statewide officeholders",2,0,"NA"
-NA,"minority leader","WY","Chris Rothfuss",NA,"D",NA,"State legislative leaders",2,0,"NA"
-NA,"minority leader","WY","Cathy Connolly",NA,"D",NA,"State legislative leaders",2,0,"NA"
-NA,"minority leader","WI","Jennifer Shilling",NA,"D",NA,"State legislative leaders",2,0,"NA"
-NA,"minority leader","WI","Gordon Hintz",NA,"D",NA,"State legislative leaders",2,0,"NA"
-NA,"minority leader","WV","Roman Prezioso",NA,"D",NA,"State legislative leaders",2,0,"NA"
-NA,"minority leader","WV","Tim Miley",NA,"D",NA,"State legislative leaders",2,0,"NA"
-NA,"president pro tem","WA","Karen Keiser",NA,"D",NA,"State legislative leaders",2,0,"NA"
-NA,"speaker","WA","Laurie Jinkins",NA,"D",NA,"State legislative leaders",2,0,"NA"
-NA,"majority leader","VA","Richard Saslaw",NA,"D",NA,"State legislative leaders",2,0,"NA"
-NA,"speaker","VA","Eileen Filler-Corn",NA,"D",NA,"State legislative leaders",2,0,"NA"
-NA,"president","VI","Novelle E. Francis",NA,"D",NA,"State legislative leaders",2,0,"NA"
-NA,"speaker","VT","Mitzi Johnson",NA,"D",NA,"State legislative leaders",2,0,"NA"
-NA,"minority leader","UT","Karen Mayne",NA,"D",NA,"State legislative leaders",2,0,"NA"
-NA,"minority leader","UT","Brian King",NA,"D",NA,"State legislative leaders",2,0,"NA"
-NA,"minority leader","TN","Karen Camper",NA,"D",NA,"State legislative leaders",2,0,"NA"
-NA,"minority leader","SD","Jamie Smith",NA,"D",NA,"State legislative leaders",2,0,"NA"
-NA,"minority leader","SD","Troy Heinert",NA,"D",NA,"State legislative leaders",2,0,"NA"
-NA,"minority leader","SC","Nikki Setzler",NA,"D",NA,"State legislative leaders",2,0,"NA"
-NA,"minority leader","SC","J. Todd Rutherford",NA,"D",NA,"State legislative leaders",2,0,"NA"
-NA,"president","RI","Dominick Ruggerio",NA,"D",NA,"State legislative leaders",2,0,"NA"
-NA,"speaker","RI","Nicholas Mattiello",NA,"D",NA,"State legislative leaders",2,0,"NA"
-NA,"president","PR","Thomas Rivera Schatz",NA,"NPP",NA,"State legislative leaders",2,0,"NA"
-NA,"speaker","PR","Carlos Johnny Méndez",NA,"NPP",NA,"State legislative leaders",2,0,"NA"
-NA,"minority leader","PA","Frank Dermody",NA,"D",NA,"State legislative leaders",2,0,"NA"
-NA,"minority leader","PA","Jay Costa",NA,"D",NA,"State legislative leaders",2,0,"NA"
-NA,"speaker","OR","Tina Kotek",NA,"D",NA,"State legislative leaders",2,0,"NA"
-NA,"president","OR","Peter Courtney",NA,"D",NA,"State legislative leaders",2,0,"NA"
-NA,"minority leader","OK","Emily Virgin",NA,"D",NA,"State legislative leaders",2,0,"NA"
-NA,"minority leader","OK","Kay Floyd",NA,"D",NA,"State legislative leaders",2,0,"NA"
-NA,"minority leader","OH","Kenny Yuko",NA,"D",NA,"State legislative leaders",2,0,"NA"
-NA,"minority leader","OH","Emilia Sykes",NA,"D",NA,"State legislative leaders",2,0,"NA"
-NA,"minority leader","ND","Joan Heckaman",NA,"D",NA,"State legislative leaders",2,0,"NA"
-NA,"minority leader","NC","Darren Jackson",NA,"D",NA,"State legislative leaders",2,0,"NA"
-NA,"minority leader","NC","Dan Blue",NA,"D",NA,"State legislative leaders",2,0,"NA"
-NA,"president","NY","Andrea Stewart-Cousins",NA,"D",NA,"State legislative leaders",2,0,"NA"
-NA,"speaker","NY","Carl Heastie",NA,"D",NA,"State legislative leaders",2,0,"NA"
-NA,"president pro tem","NM","Mary Kay Papen",NA,"D",NA,"State legislative leaders",2,0,"NA"
-NA,"speaker","NM","Brian Egolf",NA,"D",NA,"State legislative leaders",2,0,"NA"
-NA,"president","NH","Donna Soucy",NA,"D",NA,"State legislative leaders",2,0,"NA"
-NA,"speaker","NV","Jason Frierson",NA,"D",NA,"State legislative leaders",2,0,"NA"
-NA,"president pro tem","NV","Mo Denis",NA,"D",NA,"State legislative leaders",2,0,"NA"
-NA,"Executive Board chairman","NE","Tony Vargas",NA,"D",NA,"State legislative leaders",2,0,"NA"
-NA,"Executive Board member","NE","Kate Bolz",NA,"D",NA,"State legislative leaders",2,0,"NA"
-NA,"minority leader","MT","Jon Sesso",NA,"D",NA,"State legislative leaders",2,0,"NA"
-NA,"minority leader","MT","Casey Schreiner",NA,"D",NA,"State legislative leaders",2,0,"NA"
-NA,"minority leader","MO","Gina Walsh",NA,"D",NA,"State legislative leaders",2,0,"NA"
-NA,"minority leader","MO","Crystal Quade",NA,"D",NA,"State legislative leaders",2,0,"NA"
-NA,"minority leader","MS","David Baria",NA,"D",NA,"State legislative leaders",2,0,"NA"
-NA,"minority leader","MI","Christine Greig",NA,"D",NA,"State legislative leaders",2,0,"NA"
-NA,"minority leader","MI","Jim Ananich",NA,"D",NA,"State legislative leaders",2,0,"NA"
-NA,"speaker","MA","Robert DeLeo",NA,"D",NA,"State legislative leaders",2,0,"NA"
-NA,"speaker","MD","Adrienne Jones",NA,"D",NA,"State legislative leaders",2,0,"NA"
-NA,"president","MD","Bill Ferguson",NA,"D",NA,"State legislative leaders",2,0,"NA"
-NA,"speaker","ME","Sara Gideon",NA,"D",NA,"State legislative leaders",2,0,"NA"
-NA,"speaker pro tem","LA","Walt Leger III",NA,"D",NA,"State legislative leaders",2,0,"NA"
-NA,"Democratic caucus chairman","LA","Troy Carter Sr.",NA,"D",NA,"State legislative leaders",2,0,"NA"
-NA,"minority floor leader","KY","Morgan McGarvey",NA,"D",NA,"State legislative leaders",2,0,"NA"
-NA,"minority floor leader","KY","Joni Jenkins",NA,"D",NA,"State legislative leaders",2,0,"NA"
-NA,"minority leader","KS","Tom Sawyer",NA,"D",NA,"State legislative leaders",2,0,"NA"
-NA,"minority leader","KS","Anthony Hensley",NA,"D",NA,"State legislative leaders",2,0,"NA"
-NA,"minority leader","IA","Todd Prichard",NA,"D",NA,"State legislative leaders",2,0,"NA"
-NA,"minority leader","IA","Janet Petersen",NA,"D",NA,"State legislative leaders",2,0,"NA"
-NA,"minority leader","IN","Tim Lanane",NA,"D",NA,"State legislative leaders",2,0,"NA"
-NA,"minority leader","IN","Phil Giaquinta",NA,"D",NA,"State legislative leaders",2,0,"NA"
-NA,"speaker","IL","Michael Madigan",NA,"D",NA,"State legislative leaders",2,0,"NA"
-NA,"president","IL","John Cullerton",NA,"D",NA,"State legislative leaders",2,0,"NA"
-NA,"minority leader","ID","Michelle Stennett",NA,"D",NA,"State legislative leaders",2,0,"NA"
-NA,"minority leader","ID","Ilana Rubel",NA,"D",NA,"State legislative leaders",2,0,"NA"
-NA,"speaker","HI","Scott Saiki",NA,"D",NA,"State legislative leaders",2,0,"NA"
-NA,"president","HI","Ron Kouchi",NA,"D",NA,"State legislative leaders",2,0,"NA"
-NA,"speaker","GU","Tina Muña Barnes",NA,"D",NA,"State legislative leaders",2,0,"NA"
-NA,"minority leader","GA","Steve Henson",NA,"D",NA,"State legislative leaders",2,0,"NA"
-NA,"minority leader","FL","Kionne McGhee",NA,"D",NA,"State legislative leaders",2,0,"NA"
-NA,"chairman","DC","Phil Mendelson",NA,"D",NA,"State legislative leaders",2,0,"NA"
-NA,"speaker","DE","Peter Schwartzkopf",NA,"D",NA,"State legislative leaders",2,0,"NA"
-NA,"president pro tem","DE","David McBride",NA,"D",NA,"State legislative leaders",2,0,"NA"
-NA,"president pro tem","CT","Martin Looney",NA,"D",NA,"State legislative leaders",2,0,"NA"
-NA,"speaker","CT","Joe Aresimowicz",NA,"D",NA,"State legislative leaders",2,0,"NA"
-NA,"president","CO","Leroy Garcia",NA,"D",NA,"State legislative leaders",2,0,"NA"
-NA,"speaker","CO","KC Becker",NA,"D",NA,"State legislative leaders",2,0,"NA"
-NA,"minority leader","AR","Fredrick Love",NA,"D",NA,"State legislative leaders",2,0,"NA"
-NA,"minority leader","AR","Keith Ingram",NA,"D",NA,"State legislative leaders",2,0,"NA"
-NA,"minority leader","AZ","Charlene Fernandez",NA,"D",NA,"State legislative leaders",2,0,"NA"
-NA,"minority leader","AZ","David Bradley",NA,"D",NA,"State legislative leaders",2,0,"NA"
-NA,"president","AS","Gaoteote P. Tofau",NA,NA,NA,"State legislative leaders",2,0,"NA"
-NA,"speaker","AK","Bryce Edgmon",NA,"I",NA,"State legislative leaders",2,0,"NA"
-NA,"minority leader","AK","Tom Begich",NA,"D",NA,"State legislative leaders",2,0,"NA"
-NA,"minority leader","AL","Bobby Singleton",NA,"D",NA,"State legislative leaders",2,0,"NA"
-NA,"minority leader","AL","Anthony Daniels",NA,"D",NA,"State legislative leaders",2,0,"NA"
-NA,"representative","WI","Gwen Moore",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","WI","Ron Kind",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","WA","Denny Heck",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","WA","Adam Smith",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","WA","Pramila Jayapal",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","WA","Suzan DelBene",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","VA","Gerald E. Connolly",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","VA","Jennifer Wexton",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","VA","Abigail Spanberger",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","VA","Robert C. Scott",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","UT","Ben McAdams",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","TX","Lloyd Doggett",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","TX","Sylvia R. Garcia",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","TX","Henry Cuellar",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","TX","Sheila Jackson Lee",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","TX","Lizzie Pannill Fletcher",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","TN","Steve Cohen",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","TN","Jim Cooper",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","SC","Joe Cunningham",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","RI","Jim Langevin",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","RI","David Cicilline",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","PA","Mike Doyle",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","PA","Susan Wild",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","PA","Mary Gay Scanlon",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","PA","Madeleine Dean",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","OR","Peter DeFazio",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","OR","Earl Blumenauer",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","OR","Suzanne Bonamici",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","OK","Kendra Horn",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","OH","Marcy Kaptur",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","OH","Joyce Beatty",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"delegate","MP","Gregorio Kilili Camacho Sablan",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","NC","Alma Adams",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","NC","David Price",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","NY","Brian Higgins",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","NY","Joseph D. Morelle",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","NY","Anthony Brindisi",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","NY","Paul D. Tonko",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","NY","Antonio Delgado",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","NY","Nita Lowey",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","NY","Eliot Engel",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","NY","José E. Serrano",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","NY","Adriano Espaillat",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","NY","Jerrold Nadler",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","NY","Yvette D. Clarke",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","NY","Hakeem Jeffries",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","NY","Nydia M. Velázquez",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","NY","Grace Meng",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","NY","Gregory W. Meeks",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","NM","Ben R. Lujan",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","NM","Xochitl Torres Small",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","NH","Chris Pappas",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","NV","Steven A. Horsford",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","NV","Susie Lee",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","MS","Bennie G. Thompson",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","MI","Debbie Dingell",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","MI","Haley Stevens",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","MI","Elissa Slotkin",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","MI","Daniel Kildee",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","MI","Justin Amash",NA,"I",NA,"Representatives",3,0,"NA"
-NA,"representative","MA","William Keating",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","MA","Seth Moulton",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","MA","Richard E. Neal",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","MD","John P. Sarbanes",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","MD","C. A. Dutch Ruppersberger",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","ME","Jared Golden",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","ME","Chellie Pingree",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","KY","John A. Yarmuth",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","KS","Sharice Davids",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","IA","Cindy Axne",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","IN","André Carson",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","IL","Cheri Bustos",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","IL","Lauren Underwood",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","IL","Bill Foster",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","IL","Bradley Schneider",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","IL","Raja Krishnamoorthi",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","IL","Sean Casten",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","IL","Mike Quigley",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","IL","Jesus ""Chuy"" Garcia",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","IL","Daniel Lipinski",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","IL","Robin Kelly",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","HI","Ed Case",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"delegate","GU","Michael San Nicolas",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","GA","David Scott",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","GA","Lucy McBath",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","GA","John Lewis",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","GA","Hank Johnson",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","GA","Sanford D. Bishop Jr.",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","FL","Donna Shalala",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","FL","Debbie Mucarsel-Powell",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","FL","Ted Deutch",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","FL","Lois Frankel",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","FL","Kathy Castor",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","FL","Val Demings",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","FL","Darren Soto",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"delegate","DC","Eleanor Holmes Norton",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","CT","Jim Himes",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","CT","Rosa L. DeLauro",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","CT","Joe Courtney",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","CT","John B. Larson",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","CO","Ed Perlmutter",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","CO","Jason Crow",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","CO","Joe Neguse",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","CO","Diana DeGette",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","CA","Susan Davis",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","CA","Scott Peters",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","CA","Mike Levin",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","CA","Harley Rouda",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","CA","Alan Lowenthal",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","CA","Maxine Waters",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","CA","Mark Takano",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","CA","Gil Cisneros",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","CA","Linda Sánchez",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","CA","Karen Bass",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","CA","Raul Ruiz",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","CA","Norma Torres",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","CA","Jimmy Gomez",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","CA","Grace Napolitano",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","CA","Pete Aguilar",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","CA","Brad Sherman",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","CA","Adam Schiff",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","CA","Judy Chu",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","CA","TJ Cox",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","CA","Jimmy Panetta",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","CA","Zoe Lofgren",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","CA","Anna G. Eshoo",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","CA","Jackie Speier",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","CA","Mark DeSaulnier",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","CA","Josh Harder",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","CA","Jerry McNerney",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","CA","Doris O. Matsui",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","CA","Mike Thompson",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","CA","Jared Huffman",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","AZ","Greg Stanton",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","AZ","Ann Kirkpatrick",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","AZ","Tom O'Halleran",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"representative","AL","Terri A. Sewell",NA,"D",NA,"Representatives",3,0,"NA"
-NA,"mayor","CA","Rusty Bailey",NA,NA,NA,"Mayors",3,0,"NA"
-NA,"mayor","PA","Bill Peduto",NA,"D",NA,"Mayors",3,0,"NA"
-NA,"mayor","NV","Debra March",NA,"D",NA,"Mayors",3,0,"NA"
-NA,"mayor","MO","Lyda Krewson",NA,"D",NA,"Mayors",3,0,"NA"
-NA,"mayor","CA","Miguel A. Pulido",NA,"D",NA,"Mayors",3,0,"NA"
-NA,"mayor","HI","Kirk Caldwell",NA,"D",NA,"Mayors",3,0,"NA"
-NA,"mayor","FL","Jane Castor",NA,"D",NA,"Mayors",3,0,"NA"
-NA,"mayor","OH","Frank G. Jackson",NA,"D",NA,"Mayors",3,0,"NA"
-NA,"mayor","KS","Brandon Whipple",NA,"D",NA,"Mayors",3,0,"NA"
-NA,"mayor","LA","LaToya Cantrell",NA,"D",NA,"Mayors",3,0,"NA"
-NA,"mayor","NC","Mary-Ann Baldwin",NA,"D",NA,"Mayors",3,0,"NA"
-NA,"mayor","MO","Quinton Lucas",NA,"D",NA,"Mayors",3,0,"NA"
-NA,"mayor","AZ","Jonathan Rothschild",NA,"D",NA,"Mayors",3,0,"NA"
-NA,"mayor","NM","Tim Keller",NA,"D",NA,"Mayors",3,0,"NA"
-NA,"mayor","WI","Tom Barrett",NA,"D",NA,"Mayors",3,0,"NA"
-NA,"mayor","MD","Bernard C. ""Jack"" Young",NA,"D",NA,"Mayors",3,0,"NA"
-NA,"mayor","NV","Carolyn Goodman",NA,NA,NA,"Mayors",3,0,"NA"
-NA,"mayor","OR","Ted Wheeler",NA,"D",NA,"Mayors",3,0,"NA"
-NA,"mayor","TN","John Cooper",NA,"D",NA,"Mayors",3,0,"NA"
-NA,"mayor","MA","Marty Walsh",NA,"D",NA,"Mayors",3,0,"NA"
-NA,"mayor","WA","Jenny Durkan",NA,"D",NA,"Mayors",3,0,"NA"
-NA,"mayor","NC","Vi Lyles",NA,"D",NA,"Mayors",3,0,"NA"
-NA,"mayor","IN","Joe Hogsett",NA,"D",NA,"Mayors",3,0,"NA"
-NA,"mayor","OH","Andrew Ginther",NA,"D",NA,"Mayors",3,0,"NA"
-NA,"mayor","TX","Eric Johnson",NA,"D",NA,"Mayors",3,0,"NA"
-NA,"mayor","AZ","Kate Gallego",NA,"D",NA,"Mayors",3,0,"NA"
-NA,"mayor","TX","Sylvester Turner",NA,"D",NA,"Mayors",3,0,"NA"
-NA,"mayor","IL","Lori Lightfoot",NA,"D",NA,"Mayors",3,0,"NA"
-NA,"past vice-presidential nominee","CT","Joe Lieberman",NA,"D",NA,"Past nominees",5,0,"NA"
-NA,"past vice-presidential nominee","NC","John Edwards",NA,"D",NA,"Past nominees",5,0,"NA"
-NA,"past presidential nominee","NY","Hillary Clinton",NA,"D",NA,"Past nominees",5,0,"NA"
-NA,"former DNC chair","VA","Terry McAuliffe",NA,"D",NA,"Former party leaders",5,0,"NA"
-NA,"former DNC chair","VT","Howard Dean",NA,"D",NA,"Former party leaders",5,0,"NA"
-NA,"former DNC chair","SC","Donald Fowler",NA,"D",NA,"Former party leaders",5,0,"NA"
-NA,"former DNC chair","OH","David Wilhelm",NA,"D",NA,"Former party leaders",5,0,"NA"
-NA,"former U.S. Senate majority leader","NY","George Mitchell",NA,"D",NA,"Former party leaders",5,0,"NA"
-NA,"former DNC chair","NM","Fred Harris",NA,"D",NA,"Former party leaders",5,0,"NA"
-NA,"former U.S. Senate majority leader","NV","Harry Reid",NA,"D",NA,"Former party leaders",5,0,"NA"
-NA,"former U.S. House majority leader","MO","Richard Gephardt",NA,"D",NA,"Former party leaders",5,0,"NA"
-NA,"former DNC chair","MA","Paul Kirk",NA,"D",NA,"Former party leaders",5,0,"NA"
-NA,"former DNC chair","MA","Debra DeLee",NA,"D",NA,"Former party leaders",5,0,"NA"
-NA,"former DNC chair","MD","Joe Andrew",NA,"D",NA,"Former party leaders",5,0,"NA"
-NA,"former DNC chair","FL","Debbie Wasserman Schultz",NA,"D",NA,"Former party leaders",5,0,"NA"
-NA,"former DNC chair","FL","Kenneth Curtis",NA,"D",NA,"Former party leaders",5,0,"NA"
-NA,"former DNC chair","DC","Donna Brazile",NA,"D",NA,"Former party leaders",5,0,"NA"
-NA,"former U.S. House Democratic whip","DE","Tony Coelho",NA,"D",NA,"Former party leaders",5,0,"NA"
-NA,"Former 2020 candidate","TX","Beto O'Rourke",NA,"D",NA,"Candidates who have dropped out",5,0,"NA"
-NA,"Former 2020 candidate","NY","Bill de Blasio",NA,"D",NA,"Candidates who have dropped out",5,0,"NA"
-NA,"Former 2020 candidate","CA","Marianne Williamson",NA,"D",NA,"Candidates who have dropped out",5,0,"NA"
-NA,"Former 2020 candidate","CA","Eric Swalwell",NA,"D",NA,"Candidates who have dropped out",5,0,"NA"
-NA,"senator","WI","Tammy Baldwin",NA,"D",NA,"Senators",6,0,"NA"
-NA,"senator","WV","Joe Manchin III",NA,"D",NA,"Senators",6,0,"NA"
-NA,"senator","WA","Patty Murray",NA,"D",NA,"Senators",6,0,"NA"
-NA,"senator","WA","Maria Cantwell",NA,"D",NA,"Senators",6,0,"NA"
-NA,"senator","VA","Mark R. Warner",NA,"D",NA,"Senators",6,0,"NA"
-NA,"senator","VA","Tim Kaine",NA,"D",NA,"Senators",6,0,"NA"
-NA,"senator","RI","Sheldon Whitehouse",NA,"D",NA,"Senators",6,0,"NA"
-NA,"senator","RI","Jack Reed",NA,"D",NA,"Senators",6,0,"NA"
-NA,"senator","OR","Ron Wyden",NA,"D",NA,"Senators",6,0,"NA"
-NA,"senator","OR","Jeff Merkley",NA,"D",NA,"Senators",6,0,"NA"
-NA,"senator","OH","Sherrod Brown",NA,"D",NA,"Senators",6,0,"NA"
-NA,"senator","NY","Kirsten Gillibrand",NA,"D",NA,"Senators",6,0,"NA"
-NA,"senator","NM","Tom Udall",NA,"D",NA,"Senators",6,0,"NA"
-NA,"senator","NM","Martin Heinrich",NA,"D",NA,"Senators",6,0,"NA"
-NA,"senator","NJ","Cory Booker",NA,"D",NA,"Senators",6,0,"NA"
-NA,"senator","NH","Jeanne Shaheen",NA,"D",NA,"Senators",6,0,"NA"
-NA,"senator","NH","Margaret Wood Hassan",NA,"D",NA,"Senators",6,0,"NA"
-NA,"senator","NV","Jacky Rosen",NA,"D",NA,"Senators",6,0,"NA"
-NA,"senator","NV","Catherine Cortez Masto",NA,"D",NA,"Senators",6,0,"NA"
-NA,"senator","MI","Debbie Stabenow",NA,"D",NA,"Senators",6,0,"NA"
-NA,"senator","MI","Gary C. Peters",NA,"D",NA,"Senators",6,0,"NA"
-NA,"senator","MD","Chris Van Hollen",NA,"D",NA,"Senators",6,0,"NA"
-NA,"senator","MD","Benjamin L. Cardin",NA,"D",NA,"Senators",6,0,"NA"
-NA,"senator","ME","Angus S. King Jr.",NA,"I",NA,"Senators",6,0,"NA"
-NA,"senator","IL","Tammy Duckworth",NA,"D",NA,"Senators",6,0,"NA"
-NA,"senator","HI","Brian Schatz",NA,"D",NA,"Senators",6,0,"NA"
-NA,"senator","HI","Mazie K. Hirono",NA,"D",NA,"Senators",6,0,"NA"
-NA,"senator","CT","Christopher Murphy",NA,"D",NA,"Senators",6,0,"NA"
-NA,"senator","CT","Richard Blumenthal",NA,"D",NA,"Senators",6,0,"NA"
-NA,"senator","CA","Kamala Harris",NA,"D",NA,"Senators",6,0,"NA"
-NA,"senator","AZ","Kyrsten Sinema",NA,"D",NA,"Senators",6,0,"NA"
-NA,"governor","WI","Tony Evers",NA,"D",NA,"Governors",8,0,"NA"
-NA,"governor","WA","Jay Inslee",NA,"D",NA,"Governors",8,0,"NA"
-NA,"governor","VA","Ralph Northam",NA,"D",NA,"Governors",8,0,"NA"
-NA,"governor","VI","Albert Bryan Jr",NA,"D",NA,"Governors",8,0,"NA"
-NA,"governor","RI","Gina Raimondo",NA,"D",NA,"Governors",8,0,"NA"
-NA,"governor","PR","Wanda Vázquez Garced",NA,NA,NA,"Governors",8,0,"NA"
-NA,"governor","PA","Tom Wolf",NA,"D",NA,"Governors",8,0,"NA"
-NA,"governor","OR","Kate Brown",NA,"D",NA,"Governors",8,0,"NA"
-NA,"governor","NC","Roy Cooper",NA,"D",NA,"Governors",8,0,"NA"
-NA,"governor","NM","Michelle Lujan Grisham",NA,"D",NA,"Governors",8,0,"NA"
-NA,"governor","NV","Steve Sisolak",NA,"D",NA,"Governors",8,0,"NA"
-NA,"governor","MT","Steve Bullock",NA,"D",NA,"Governors",8,0,"NA"
-NA,"governor","MI","Gretchen Whitmer",NA,"D",NA,"Governors",8,0,"NA"
-NA,"governor","ME","Janet Mills",NA,"D",NA,"Governors",8,0,"NA"
-NA,"governor","LA","John Bel Edwards",NA,"D",NA,"Governors",8,0,"NA"
-NA,"governor","KY","Andy Beshear",NA,"D",NA,"Governors",8,0,"NA"
-NA,"governor","KS","Laura Kelly",NA,"D",NA,"Governors",8,0,"NA"
-NA,"governor","IL","JB Pritzker",NA,"D",NA,"Governors",8,0,"NA"
-NA,"governor","HI","David Ige",NA,"D",NA,"Governors",8,0,"NA"
-NA,"governor","GU","Lou Leon Guerrero",NA,"D",NA,"Governors",8,0,"NA"
-NA,"mayor","DC","Muriel Bowser",NA,"D",NA,"Governors",8,0,"NA"
-NA,"governor","CO","Jared Polis",NA,"D",NA,"Governors",8,0,"NA"
-NA,"governor","AS","Lolo Matalasi Moliga",NA,"D",NA,"Governors",8,0,"NA"
-NA,"past vice president","TN","Al Gore",NA,"D",NA,"Past presidents and vice presidents",10,0,"NA"
-NA,"past president","NY","Bill Clinton",NA,"D",NA,"Past presidents and vice presidents",10,0,"NA"
-NA,"past president","IL","Barack Obama",NA,"D",NA,"Past presidents and vice presidents",10,0,"NA"
-NA,"past president","GA","Jimmy Carter",NA,"D",NA,"Past presidents and vice presidents",10,0,"NA"
-NA,"U.S. House Democratic whip","SC","James E. Clyburn",NA,"D",NA,"Current party leaders",10,0,"NA"
-NA,"U.S. Senate minority leader","NY","Charles E. Schumer",NA,"D",NA,"Current party leaders",10,0,"NA"
-NA,"DNC chair","MD","Tom Perez",NA,"D",NA,"Current party leaders",10,0,"NA"
-NA,"U.S. House majority leader","MD","Steny Hoyer",NA,"D",NA,"Current party leaders",10,0,"NA"
-NA,"U.S. Senate Democratic whip","IL","Richard J. Durbin",NA,"D",NA,"Current party leaders",10,0,"NA"
-NA,"U.S. House speaker","CA","Nancy Pelosi",NA,"D",NA,"Current party leaders",10,0,"NA"
-NA,"DNC member","IN","John C. Zody",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","IA","Scott M. Brennan",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","IA","Sandy Opstvedt",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","IA","Andrea Phillips",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","IA","Troy M. Price",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","KS","Vicki Hiatt",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","KS","Brandon Johnson",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","KS","Teresa Garcia Krusor",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","KS","Christopher T. Reeves",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","KY","Cassie Chambers Armstrong",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","KY","Susanna French",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","KY","Charlotte Lundergan",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","KY","Ben Self",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","KY","Nathan Gene Smith",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","LA","Deborah J. Langhoff",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","LA","Michael McHale",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","LA","Arthur Morrell",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","LA","Karen Carter Peterson",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","ME","Diane M. Denk",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","ME","Erik Gundersen",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","ME","Kathleen Marra",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","MD","Maria C. Cordone",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","MD","Tefere Gebre",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","MD","Bel W. Leong-Hong",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","MD","Yvette W. Lewis",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","MD","Robert Martinez Jr.",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","MD","Cory V. McCray",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","MD","Glenard S. Middleton",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","MD","Gregory Pecoraro",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","MD","Marc Perrone",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","MD","Kenneth Rigmaiden",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","MA","Gus Bickford",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","MA","Elaine C. Kamarck",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","MA","Debra Kozikowski",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","MA","David M. O'Brien",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","MA","Melvin Poindexter",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","MA","James Roosevelt Jr.",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","MA","Susan Thomson",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","MI","Lavora R. Barnes",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","MI","Scott Benson",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","MI","Shauna Ryder Diggs",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","MI","Cindy Estrada",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","MI","Paula Herbart",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","MI","Daryl Newman",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","MI","Virgie M. Rollins",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","MI","Alexis Wiley",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","MN","J.P. Barone",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","MN","Debbie Goettel",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","MN","Ron Harris",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","MN","Marge Hoffa",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","MN","Ken Martin",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","MN","Lori A. Sellner",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","MN","Elly Zaragoza",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","MS","Will Colom",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","MS","Rae Shawn Davis",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","MS","Bobby Moak",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","MS","Vicki R. Slater",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","MO","Winston Apple",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","MO","Jean Peters Baker",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","MO","Persephone Dakopolos",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","MO","Clem Smith",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","MO","Ethan Smith",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","MO","Brian Wahby",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","MT","Bryce Bennett",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","MT","Jean Lemire Dahlman",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","MT","Jorge Quintana",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","MT","Mary Sexton",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","NE","Ron Kaminski",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","NE","Jane Erin Fleming Kleeb",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","NE","Frank D. LaMere",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","NE","Patricia A. Zieg",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","NV","Artie Blanco",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","NV","William McCurdy II",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","NV","Marty McGarry",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","NH","Raymond C. Buckley II",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","NH","William H. Shaheen",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","NH","Kathleen Sullivan",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","NJ","Tonio Burgos",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","NJ","Marcia Marley",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","NJ","Marguerite M. Schaffer",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","NM","Marg Elliston",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","NM","Joni Marie Gutierrez",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","NM","Marcus Porter",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","NM","Raymond Sanchez",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","NY","Stuart H. Appelbaum",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","NY","Maria Cuomo Cole",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","NY","Vivian Cook",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","NY","Jennifer Cunningham",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","NY","Hazel Duke",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","NY","Emily Giske",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","NY","Jay S. Jacobs",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","NY","Charlie King",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","NY","Christopher Lowe",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","NY","Ai-Jen Poo",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","NY","Christine Quinn",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","IN","S. Anthony Long",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","NY","Gerard J. Sweeney",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","NY","Randi Weingarten",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","NY","Robert Zimmerman",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","NC","Denise D. Adams",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","NC","Wayne Goodwin",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","NC","Shelia A. Huggins",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","NC","Ray McKinnon",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","NC","Cliff Moone",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","NC","Bobbie Richardson",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","NC","John R. Verdejo",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","ND","Ondine E. Baird",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","ND","Patrick M. Hart",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","ND","Kylie Oversen",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","MP","Nola K. Hix",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","MP","Daniel O. Quitugua",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","MP","Michael A. White",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","OH","Tim Burga",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","OH","Isabel Framer",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","OH","Rebecca L. Higgins",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","OH","Mark Mallory",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","OH","Ronald L. Malone",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","OH","Valarie J. McCall",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","OH","Rhine McLin",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","OH","David A. Pepper",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","OH","Joe Rugola",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","OK","Brian Jones",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","OK","Anna Langthorn",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","OK","Betty McElderry",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","OK","David L. Walters",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","OR","Carla ""KC"" Hanson",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","OR","Matt K. Keating",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","OR","Peter B. Lee",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","OR","Travis Nelson",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","OR","Tanya Shively",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","PA","Rick Bloomingdale",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","PA","Ronald Donatucci",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","PA","Peggy Grove",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","PA","Murat Guzel",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","PA","Gerald Lawrence",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","PA","Nancy Patton Mills",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","PA","Ian Murray",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","PA","Evie Rafalko-McNulty",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","PA","Sharif T. Street",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","PA","Marian B. Tasco",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","PA","Sylvia C. Wilson",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","PR","Luis D. Davila",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","PR","Andres Lopez",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","PR","Margarita Nolasco",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","PR","Manuel Ortiz",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","PR","Charles A. Rodriguez",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","PR","Johanne M. Velez",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","RI","Grace Diaz",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","RI","Edna O'Neill Mattson",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","RI","Joseph M. McNamara",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","RI","Joseph R. Paolino Jr.",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","SC","Gilda Cobb-Hunter",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","SC","Carol K. Fowler",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","SC","Jaime R. Harrison",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","SC","Lessie Price",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","SC","Travis Robertson Jr.",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","SD","Paula A. Hawks",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","SD","Deb J. Knecht",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","SD","Randy Seiler",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","SD","Bill E. Walsh",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","TN","Gale Jones Carson",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","TN","Will T. Cheek",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","TN","Robert H. Cowan",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","TN","Mary Mancini",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","TN","Marisa Richmond",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","TX","Yvonne Davis",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","TX","AJ Durrani",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","TX","Gilberto Hinojosa",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","TX","Kat Hoang",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","TX","Glen Maxey",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","TX","Lorraine C. Miller",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","TX","John B. Patrick",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","TX","Hasmit R. Popat",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","TX","Betty Z. Richie",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","TX","Dennis D. Speight",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","TX","Jere Talley",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","TX","Senfronia Thompson",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","TX","Royce B. West",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","UT","Marcus Stevenson",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","UT","Charles A. Stormont",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","UT","Daisy Thomas",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","UT","Jenny Wilson",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","VT","Terje Anderson",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","VT","Tim Jerman",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","VT","Tess Taylor",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","VI","Cecil R. Benjamin",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","VI","Carol M. Burke",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","VI","Carla Joseph",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","VI","Ernest Morris",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","VA","Yohannes Abraham",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","VA","Marc Broklawski",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","VA","Steven C. Cochran",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","VA","Doris Crouse-Mays",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","VA","Morgan W. Jameson",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","VA","Frank Leone",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","VA","Christopher P. Lu",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","VA","Jennifer L. McClellan",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","VA","Atima Omara",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","VA","Susan R. Swecker",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","VA","Yasmine P. Taeb",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","VA","Jeion A. Ward",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","WA","Ed S. Cote",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","WA","David Green",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","WA","Juanita G. Luiz",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","WA","Sharon Mast",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","WA","David T. McDonald",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","WA","Nancy E. Monacelli",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","WA","Candace Mumm",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","WA","Tina Podlodowski",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","WV","Belinda J. Biafore",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","WV","Elaine A. Harris",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","WV","William Laird",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","WV","Pat Maroney",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","WI","Janet T. Bewley",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","WI","Martha Marie Love",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","WI","Felesia Martin",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","WI","Mahlon Mitchell",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","WI","Andrew Werthmann",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","WI","Ben Wikler",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","WY","Joseph M. Barbuto",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","WY","Jessica S. Chambers",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","WY","Lucas Fralick",NA,"D",NA,"DNC members",1,0,"NA"
-NA,"DNC member","WY","Erin O'Doherty",NA,"D",NA,"DNC members",1,0,"NA"
+date,position,state,endorser,endorsee,endorser.party,source,category,points,drop,drop_date
+28.07.17,representative,MD,David Trone,John Delaney,D,https://twitter.com/davidjtrone/status/890985957981401088,Representatives,3,0,NA
+02.01.19,governor,NY,Andrew Cuomo,Joe Biden,D,https://www.cnn.com/2019/01/02/politics/cuomo-biden-best-case-2020/index.html,Governors,8,0,NA
+03.01.19,senator,CA,Dianne Feinstein,Joe Biden,D,https://www.politico.com/story/2019/01/03/dianne-feinstein-2020-pick-joe-biden-1079024,Senators,6,0,NA
+08.01.19,senator,DE,Thomas R. Carper,Joe Biden,D,https://fox61.com/2019/01/08/will-he-or-wont-he-joe-biden-looms-over-the-2020-field/,Senators,6,0,NA
+12.01.19,mayor,TX,Ron Nirenberg,Julian Castro,NA,https://www.sacurrent.com/the-daily/archives/2019/01/12/former-san-antonio-mayor-julian-castro-launches-2020-presidential-bid-at-west-side-rally,Mayors,3,1,2020-01-02
+21.01.19,DNC member,CA,Laphonza Butler,Kamala Harris,D,https://www.politico.com/states/california/story/2019/01/21/kamala-harris-launches-campaign-for-president-804259,DNC members,1,1,2020-12-03
+25.01.19,DNC member,DC,James J. Zogby,Bernie Sanders,D,https://twitter.com/jjz1600/status/1088974458885455872,DNC members,1,0,NA
+27.01.19,state treasurer,CA,Fiona Ma,Kamala Harris,D,https://twitter.com/fionama/status/1089623289872343040,Statewide officeholders,2,1,2020-12-03
+27.01.19,lieutenant governor,CA,Eleni Kounalakis,Kamala Harris,D,https://twitter.com/EleniForCA/status/1089628133228109824,Statewide officeholders,2,1,2020-12-03
+27.01.19,mayor,CA,Libby Schaaf,Kamala Harris,D,https://www.mercurynews.com/2019/01/27/kamala-harris-president-oakland-rally-campaign-kickoff/,Mayors,3,1,2020-12-03
+27.01.19,mayor,CA,London Breed,Kamala Harris,D,https://www.politico.com/newsletters/california-playbook/2019/01/28/kamala-launches-on-her-home-turf-trump-renews-california-lie-newsom-intensifies-housing-battle-shutdown-victory-boosts-pelosi-data-privacy-20-fight-powers-up-382254,Mayors,3,1,2020-12-03
+28.01.19,representative,CA,Ted Lieu,Kamala Harris,D,https://thehill.com/homenews/house/427255-ted-lieu-endorses-kamala-harris-for-president-she-embraces-the-future,Representatives,3,1,2020-12-03
+29.01.19,representative,CA,Nanette Diaz Barragán,Kamala Harris,D,https://twitter.com/Nanette4CA/status/1090386597604978689,Representatives,3,1,2020-12-03
+01.02.19,senator,NJ,Robert Menendez,Cory Booker,D,https://twitter.com/BobMenendezNJ/status/1091391811040567297,Senators,6,0,2020-01-13
+01.02.19,governor,NJ,Phil Murphy,Cory Booker,D,https://newjerseyglobe.com/fr/murphy-endorses-booker-presidential-bid/,Governors,8,0,2020-01-13
+04.02.19,DNC member,SC,Clay N. Middleton,Cory Booker,D,https://www.postandcourier.com/politics/cory-booker-makes-key-campaign-hires-in-south-carolina/article_b4381394-287b-11e9-8c77-8fbeeae31ac7.html,DNC members,1,0,2020-01-13
+06.02.19,past vice president,MN,Walter Mondale,Amy Klobuchar,D,https://wadenapj.com/news/government-and-politics/4567736-mondale-backs-klobuchar-bid-former-vp-likes-senators-chances,Past presidents and vice presidents,10,0,NA
+07.02.19,president pro tem,CA,Toni Atkins,Kamala Harris,D,https://www.politico.com/story/2019/02/07/kamala-harris-2020-california-endorsments-1157651,State legislative leaders,2,1,2020-12-03
+08.02.19,representative,MA,James McGovern,Elizabeth Warren,D,https://twitter.com/heatherscope/status/1093944117380419585?s=21,Representatives,3,0,NA
+09.02.19,president,MA,Karen Spilka,Elizabeth Warren,D,https://www.boston.com/news/politics/2019/02/09/elizabeth-warren-endorsements-2020,State legislative leaders,2,0,NA
+09.02.19,representative,MA,Joseph P. Kennedy III,Elizabeth Warren,D,https://www.bostonherald.com/2019/02/09/warren-confirms-2020-presidential-bid/,Representatives,3,0,NA
+09.02.19,representative,MA,Lori Trahan,Elizabeth Warren,D,https://www.bostonherald.com/2019/02/09/warren-confirms-2020-presidential-bid/,Representatives,3,0,NA
+09.02.19,senator,MA,Edward J. Markey,Elizabeth Warren,D,https://www.bostonherald.com/2019/02/09/warren-confirms-2020-presidential-bid/,Senators,6,0,NA
+10.02.19,state auditor,MN,Julie Blaha,Amy Klobuchar,D,https://twitter.com/julieblaha/status/1094683488203296768,Statewide officeholders,2,0,NA
+10.02.19,lieutenant governor,MN,Peggy Flanagan,Amy Klobuchar,D,https://www.minnpost.com/national/2019/02/klobuchar-launches-2020-presidential-bid/,Statewide officeholders,2,0,NA
+10.02.19,speaker,MN,Melissa Hortman,Amy Klobuchar,D,https://www.facebook.com/MelissaHortman/photos/a.749130508478704/2179548155436925/,State legislative leaders,2,0,NA
+10.02.19,representative,MN,Dean Phillips,Amy Klobuchar,D,https://twitter.com/deanbphillips/status/1094723519366221827,Representatives,3,0,NA
+10.02.19,representative,MN,Angie Craig,Amy Klobuchar,D,https://twitter.com/AngieCraigMN/status/1094711099998507015,Representatives,3,0,NA
+10.02.19,mayor,MN,Jacob Frey,Amy Klobuchar,D,https://www.minnpost.com/national/2019/02/klobuchar-launches-2020-presidential-bid/,Mayors,3,0,NA
+10.02.19,senator,MN,Tina Smith,Amy Klobuchar,D,https://www.youtube.com/watch?v=EYXpQGKiZhM,Senators,6,0,NA
+10.02.19,governor,MN,Tim Walz,Amy Klobuchar,D,https://www.youtube.com/watch?v=EYXpQGKiZhM,Governors,8,0,NA
+14.02.19,representative,CA,Barbara Lee,Kamala Harris,D,https://www.cnn.com/2019/02/14/politics/kamala-harris-barbara-lee-cbc/index.html,Representatives,3,1,2020-12-03
+15.02.19,governor,CA,Gavin Newsom,Kamala Harris,D,https://www.politico.com/story/2019/02/15/gavin-newsom-endorses-kamala-harris-2020-1173317,Governors,8,1,2020-12-03
+19.02.19,lieutenant governor,VT,David Zuckerman,Bernie Sanders,D,https://twitter.com/DaveZuckermanVT/status/1097975870973755392,Statewide officeholders,2,0,NA
+19.02.19,representative,VT,Peter Welch,Bernie Sanders,D,https://ktiv.com/2019/02/19/the-latest-sanders-calls-2020-bid-a-continuation-of-2016/,Representatives,3,0,NA
+19.02.19,senator,VT,Patrick J. Leahy,Bernie Sanders,D,https://www.apnews.com/0eede4a4a5be4e2280eb8904c6fd1a39,Senators,6,0,NA
+20.02.19,DNC member,TX,Emmy Ruiz,Kamala Harris,D,https://www.politico.com/story/2019/02/20/kamala-harris-2020-staff-1176679,DNC members,1,1,2020-12-03
+20.02.19,DNC member,DC,Larry Cohen,Bernie Sanders,D,https://www.independent.co.uk/voices/bernie-sanders-2020-election-campaign-trump-democrat-candidate-race-a8788596.html,DNC members,1,0,NA
+20.02.19,mayor,PR,Carmen Yulín Cruz,Bernie Sanders,D,https://twitter.com/CarmenYulinCruz/status/1098257728902819842,Mayors,3,0,NA
+21.02.19,DNC member,OH,Nina Turner,Bernie Sanders,D,https://www.cleveland.com/politics/2019/02/former-ohio-sen-nina-turner-to-serve-as-co-chair-of-bernie-sanders-campaign.html,DNC members,1,0,NA
+21.02.19,DNC member,NJ,John Currie,Cory Booker,D,https://medium.com/@corybooker/50-nj-democrats-endorse-cory-booker-for-president-9eefb60c72d2,DNC members,1,0,2020-01-13
+21.02.19,lieutenant governor,NJ,Sheila Oliver,Cory Booker,D,https://medium.com/@corybooker/50-nj-democrats-endorse-cory-booker-for-president-9eefb60c72d2,Statewide officeholders,2,0,2020-01-13
+21.02.19,president,NJ,Stephen Sweeney,Cory Booker,D,https://medium.com/@corybooker/50-nj-democrats-endorse-cory-booker-for-president-9eefb60c72d2,State legislative leaders,2,0,2020-01-13
+21.02.19,speaker,NJ,Craig Coughlin,Cory Booker,D,https://medium.com/@corybooker/50-nj-democrats-endorse-cory-booker-for-president-9eefb60c72d2,State legislative leaders,2,0,2020-01-13
+21.02.19,representative,NJ,Bonnie Watson Coleman,Cory Booker,D,https://medium.com/@corybooker/50-nj-democrats-endorse-cory-booker-for-president-9eefb60c72d2,Representatives,3,0,2020-01-13
+21.02.19,representative,NJ,Mikie Sherrill,Cory Booker,D,https://medium.com/@corybooker/50-nj-democrats-endorse-cory-booker-for-president-9eefb60c72d2,Representatives,3,0,2020-01-13
+21.02.19,representative,NJ,Donald Payne Jr.,Cory Booker,D,https://medium.com/@corybooker/50-nj-democrats-endorse-cory-booker-for-president-9eefb60c72d2,Representatives,3,0,2020-01-13
+21.02.19,representative,NJ,Bill Pascrell Jr.,Cory Booker,D,https://medium.com/@corybooker/50-nj-democrats-endorse-cory-booker-for-president-9eefb60c72d2,Representatives,3,0,2020-01-13
+21.02.19,representative,NJ,Albio Sires,Cory Booker,D,https://medium.com/@corybooker/50-nj-democrats-endorse-cory-booker-for-president-9eefb60c72d2,Representatives,3,0,2020-01-13
+21.02.19,representative,NJ,Frank Pallone Jr.,Cory Booker,D,https://medium.com/@corybooker/50-nj-democrats-endorse-cory-booker-for-president-9eefb60c72d2,Representatives,3,0,2020-01-13
+21.02.19,representative,NJ,Josh Gottheimer,Cory Booker,D,https://medium.com/@corybooker/50-nj-democrats-endorse-cory-booker-for-president-9eefb60c72d2,Representatives,3,0,2020-01-13
+21.02.19,representative,NJ,Andy Kim,Cory Booker,D,https://medium.com/@corybooker/50-nj-democrats-endorse-cory-booker-for-president-9eefb60c72d2,Representatives,3,0,2020-01-13
+21.02.19,representative,NJ,Jeff Van Drew,Cory Booker,R,https://medium.com/@corybooker/50-nj-democrats-endorse-cory-booker-for-president-9eefb60c72d2,Representatives,3,0,2020-01-13
+21.02.19,representative,NJ,Donald Norcross,Cory Booker,D,https://medium.com/@corybooker/50-nj-democrats-endorse-cory-booker-for-president-9eefb60c72d2,Representatives,3,0,2020-01-13
+21.02.19,representative,CA,Ro Khanna,Bernie Sanders,D,https://www.sfchronicle.com/politics/article/Bernie-Sanders-enlists-Ro-Khanna-for-presidential-13635537.php,Representatives,3,0,NA
+26.02.19,superintendent of public instruction,CA,Tony Thurmond,Kamala Harris,D,https://www.politico.com/amp/story/2019/02/26/kamala-harris-california-1186389,Statewide officeholders,2,1,2020-12-03
+26.02.19,insurance commissioner,CA,Ricardo Lara,Kamala Harris,D,https://www.politico.com/amp/story/2019/02/26/kamala-harris-california-1186389,Statewide officeholders,2,1,2020-12-03
+26.02.19,secretary of state,CA,Alex Padilla,Kamala Harris,D,https://www.politico.com/amp/story/2019/02/26/kamala-harris-california-1186389,Statewide officeholders,2,1,2020-12-03
+26.02.19,senator,DE,Christopher A. Coons,Joe Biden,D,https://www.breitbart.com/clips/2019/02/26/coons-i-absolutely-will-endorse-biden-if-he-runs/,Senators,6,0,NA
+27.02.19,representative,CA,Juan Vargas,John Delaney,D,https://twitter.com/danielmarans/status/1100868238085406720,Representatives,3,0,NA
+28.02.19,representative,CA,Julia Brownley,Kamala Harris,D,https://www.nbclosangeles.com/news/local/Rep-Julia-Brownley-Endorses-Kamala-Harris-for-President-506459851.html,Representatives,3,1,2020-12-03
+01.03.19,attorney general,WA,Bob Ferguson,Jay Inslee,D,https://www.thestranger.com/slog/2019/03/01/39403537/jay-inslee-announces-his-run-for-president,Statewide officeholders,2,1,2019-08-21
+01.03.19,representative,WA,Rick Larsen,Jay Inslee,D,https://www.seattlepi.com/local/politics/article/Inslee-Running-president-climate-change-campaign-13656077.php,Representatives,3,1,2019-08-21
+07.03.19,attorney general,DC,Karl Racine,Kamala Harris,D,https://www.washingtonpost.com/local/dc-politics/dc-attorney-general-karl-racine-endorses-kamala-harris-for-president/2019/03/07/bd43b860-40e2-11e9-9361-301ffb5bd5e6_story.html?utm_term=.4ebee8be575d,Statewide officeholders,2,1,2020-12-03
+07.03.19,mayor,CA,Darrell Steinberg,Kamala Harris,D,https://www.mercurynews.com/2019/03/07/kamala-harris-california-mayors-liccardo-breed-endorsement/,Mayors,3,1,2020-12-03
+07.03.19,mayor,CO,Michael Hancock,John Hickenlooper,D,https://www.cnn.com/2019/03/07/politics/hickenlooper-2020-launch/index.html,Mayors,3,1,2019-08-15
+14.03.19,representative,TX,Veronica Escobar,Beto O'Rourke,D,https://www.texastribune.org/2019/03/14/beto-orourke-4-members-congress-endorse-within-hours/,Representatives,3,1,2019-11-01
+17.03.19,representative,NY,Carolyn Maloney,Kirsten Gillibrand,D,https://twitter.com/carolynbmaloney/status/1107390398459248640?s=21,Representatives,3,1,2019-09-12
+25.03.19,DNC member,CA,Susie A. Shannon,Bernie Sanders,D,https://projects.fivethirtyeight.com/endorsements-2020-data/susie_shannon_endorsement.png,DNC members,1,0,NA
+11.04.19,former DNC chair,MA,Steven Grossman,Pete Buttigieg,D,https://www.bostonglobe.com/metro/2019/04/11/buttigieg-campaign-getting-massachusetts-boost-from-grossman/lIQcax0i192wQlJoTxikqO/story.html,Former party leaders,5,0,NA
+12.04.19,DNC member,NJ,Bernadette P. McPherson,Cory Booker,D,https://newjerseyglobe.com/national/two-dnc-members-endorse-booker/,DNC members,1,0,2020-01-13
+12.04.19,DNC member,NJ,John Graham,Cory Booker,D,https://newjerseyglobe.com/national/two-dnc-members-endorse-booker/,DNC members,1,0,2020-01-13
+14.04.19,DNC member,OH,Nan Whaley,Pete Buttigieg,D,https://www.daytondailynews.com/news/local/dayton-mayor-nan-whaley-endorses-pete-buttigieg-for-president/MmyzVi4dDvKgpvuxJramKP/,DNC members,1,0,NA
+14.04.19,mayor,TX,Steve Adler,Pete Buttigieg,D,https://www.kvue.com/article/news/politics/mayor-adler-endorses-pete-buttigieg-for-2020-democratic-run/269-613c4b0e-20ac-4891-80a6-37c7188e266b,Mayors,3,0,NA
+18.04.19,DNC member,MI,Michelle Deatrick,Bernie Sanders,D,https://www.detroitnews.com/story/news/politics/2019/04/19/early-presidential-fundraising-michigan-donors/3505825002/,DNC members,1,0,NA
+19.04.19,DNC member,MA,Kate Donaghue,Elizabeth Warren,D,https://projects.fivethirtyeight.com/endorsements-2020-data/kate_donaghue_endorsement.png,DNC members,1,0,NA
+22.04.19,representative,MA,Stephen F. Lynch,Joe Biden,D,https://twitter.com/hillarychabot/status/1120345230455255041,Representatives,3,0,NA
+22.04.19,former DNC chair,PA,Ed Rendell,Joe Biden,D,https://www.post-gazette.com/news/politics-local/2019/04/22/Joe-Biden-plans-Pittsburgh-rally-presidential-announcement-candidacy-Democrat/stories/201904220086?utm_medium=social&utm_source=twitter_PittsburghPG,Former party leaders,5,0,NA
+24.04.19,representative,VA,Don Beyer,Pete Buttigieg,D,https://www.washingtonpost.com/local/virginia-politics/buttigieg-gets-first-endorsement-from-member-of-congress-rep-don-beyer-of-va/2019/04/24/8f42be3c-66c3-11e9-8985-4cf30147bdca_story.html?utm_term=.7efcd3bf07bf,Representatives,3,0,NA
+24.04.19,representative,PA,Matt Cartwright,Joe Biden,D,http://www.politicspa.com/boyle-cartwright-and-evans-back-biden/91028/,Representatives,3,0,NA
+25.04.19,DNC member,DC,Symone Sanders,Joe Biden,D,https://apnews.com/2572f844ea074460a2f95243c433f9bc,DNC members,1,0,NA
+25.04.19,DNC member,DC,Cristobal J. Alex,Joe Biden,D,https://twitter.com/cristobaljalex/status/1121364035528687616?s=21,DNC members,1,0,NA
+25.04.19,attorney general,DE,Kathy Jennings,Joe Biden,D,https://www.facebook.com/149727352405928/posts/323362398375755?s=100000461722748&v=i&sfns=mo,Statewide officeholders,2,0,NA
+25.04.19,representative,PA,Dwight Evans,Joe Biden,D,http://www.politicspa.com/boyle-cartwright-and-evans-back-biden/91028/,Representatives,3,0,NA
+25.04.19,representative,PA,Brendan Boyle,Joe Biden,D,https://twitter.com/lauraolson/status/1121449705102348289,Representatives,3,0,NA
+25.04.19,representative,NY,Thomas Suozzi,Joe Biden,D,https://twitter.com/Tom_Suozzi/status/1121379897874767874,Representatives,3,0,NA
+25.04.19,representative,LA,Cedric Richmond,Joe Biden,D,https://www.vox.com/policy-and-politics/2019/4/28/18521515/joe-biden-support-electability-cedric-richmond-james-clyburn-anita-hill,Representatives,3,0,NA
+25.04.19,representative,DE,Lisa Blunt Rochester,Joe Biden,D,https://twitter.com/benyc/status/1121369759550005249?s=19,Representatives,3,0,NA
+25.04.19,senator,PA,Robert P. Casey Jr.,Joe Biden,D,https://twitter.com/JTHVerhovek/status/1121363322526470144,Senators,6,0,NA
+25.04.19,senator,AL,Doug Jones,Joe Biden,D,https://twitter.com/dougjones/status/1121381353117843456,Senators,6,0,NA
+25.04.19,governor,DE,John Carney,Joe Biden,D,https://www.instagram.com/p/Bwri44glSkb/,Governors,8,0,NA
+26.04.19,past presidential nominee,MA,Michael Dukakis,Elizabeth Warren,D,https://www.wbur.org/news/2019/04/26/dukakis-biden-2020-campaign,Past nominees,5,0,NA
+03.05.19,representative,VA,A. Donald McEachin,Joe Biden,D,https://www.usatoday.com/story/news/politics/2019/05/03/2020-candidates-courting-congressional-black-caucus-members/3645701002/,Representatives,3,0,NA
+12.05.19,state controller,NV,Catherine Byrne,Elizabeth Warren,D,https://twitter.com/meganmesserly/status/1127732368779800576,Statewide officeholders,2,0,NA
+14.05.19,representative,TX,Filemon Vela,Joe Biden,D,https://twitter.com/heatherscope/status/1128390149115666433,Representatives,3,0,NA
+20.05.19,former U.S. Senate majority leader,SD,Tom Daschle,Joe Biden,D,https://www.cnbc.com/video/2019/05/20/a-lot-of-promise-in-cannabis-says-former-senate-majority-leader-tom-daschle.html,Former party leaders,5,0,NA
+23.05.19,representative,WA,Kim Schrier,Jay Inslee,D,https://twitter.com/ZachMontellaro/status/1141475723812757504,Representatives,3,1,2019-08-21
+30.05.19,speaker,CA,Anthony Rendon,Kamala Harris,D,https://twitter.com/RendonAnthony/status/1134095064861331457,State legislative leaders,2,1,2020-12-03
+30.05.19,representative,FL,Al Lawson,Joe Biden,D,https://www.politico.com/story/2019/05/30/joe-biden-congressional-endorsements-1347598,Representatives,3,0,NA
+09.06.19,senator,MT,Jon Tester,Steve Bullock,D,https://www.cbsnews.com/news/steve-bullock-endorsed-by-jon-tester-fellow-montana-democrat/,Senators,6,1,2019-12-02
+14.06.19,DNC member,NJ,George E. Norcross III,Cory Booker,D,https://newjerseyglobe.com/national/george-norcross-to-host-cory-booker-fundraiser/,DNC members,1,0,2020-01-13
+17.06.19,representative,CA,Jim Costa,Kamala Harris,D,https://www.fresnobee.com/news/local/article231649843.html,Representatives,3,1,2020-12-03
+20.06.19,representative,WA,Derek Kilmer,Jay Inslee,D,https://twitter.com/ZachMontellaro/status/1142098852910178304,Representatives,3,1,2019-08-21
+20.06.19,representative,TX,Al Green,Kamala Harris,D,https://www.politico.com/story/2019/06/20/al-green-endorses-kamala-harris-1372602,Representatives,3,1,2020-12-03
+21.06.19,representative,FL,Alcee L. Hastings,Kamala Harris,D,https://www.cnn.com/2019/06/21/politics/kamala-harris-endorsed-by-alcee-hastings/index.html,Representatives,3,1,2020-12-03
+25.06.19,representative,MO,William Lacy Clay Jr.,Kamala Harris,D,https://www.cnn.com/2019/06/25/politics/kamala-harris-william-lacy-clay-endorse-black-caucus/index.html,Representatives,3,1,2020-12-03
+26.06.19,DNC member,IA,Jan M. Bauer,Steve Bullock,D,https://www.politico.com/story/2019/06/26/steve-bullock-iowa-endorsement-1383638,DNC members,1,1,2019-12-02
+28.06.19,DNC member,MI,Barry J. Goodman,Joe Biden,D,https://twitter.com/tmservo433/status/1144609060723077121,DNC members,1,0,NA
+28.06.19,attorney general,MN,Keith Ellison,Bernie Sanders,D,https://twitter.com/keithellison/status/1144580524092067840,Statewide officeholders,2,0,NA
+28.06.19,representative,MN,Collin C. Peterson,Amy Klobuchar,D,http://www.startribune.com/keith-ellison-endorses-bernie-sanders-for-president-again/511959892/?refresh=true,Representatives,3,0,NA
+28.06.19,mayor,GA,Keisha Lance Bottoms,Joe Biden,D,https://abcnews.go.com/Politics/wireStory/biden-nabs-2020-endorsement-atlanta-mayor-bottoms-64012750,Mayors,3,0,NA
+30.06.19,representative,IL,Bobby L. Rush,Kamala Harris,D,https://apnews.com/d5fb5fce21314a87b2e7d771475aed3a,Representatives,3,1,2020-12-03
+30.06.19,representative,FL,Frederica Wilson,Kamala Harris,D,https://apnews.com/d5fb5fce21314a87b2e7d771475aed3a,Representatives,3,1,2020-12-03
+02.07.19,governor,CT,Ned Lamont,Joe Biden,D,https://www.courant.com/politics/hc-pol-lamont-endorses-biden-20190702-mtds3jf2n5ct3ngxoekezamzue-story.html,Governors,8,0,NA
+03.07.19,representative,CT,Jahana Hayes,Kamala Harris,D,https://www.essence.com/op-ed/jahana-hayes-endorses-kamala-harris-president/,Representatives,3,1,2020-12-03
+12.07.19,minority leader,GA,Robert Trammell,Kamala Harris,D,https://www.ajc.com/blog/politics/top-georgia-house-democrat-picks-harris-2020-race/lEXtAE1Gqr7LAn6RlmktqJ/,State legislative leaders,2,1,2020-12-03
+17.07.19,minority leader,TN,Jeff Yarbro,Pete Buttigieg,D,https://www.tennessean.com/story/news/politics/2019/07/17/mayor-pete-buttigieg-nashville-democrat-jeff-yarbro-announces-endorsement/1749874001/,State legislative leaders,2,0,NA
+21.07.19,former U.S. House Democratic whip,MI,David Bonior,Elizabeth Warren,D,https://twitter.com/nsroka/status/1153095256214253573,Former party leaders,5,0,NA
+22.07.19,DNC member,VA,Leopoldo J. Martinez,Joe Biden,D,https://www.cnn.com/videos/spanish/2019/07/22/joe-biden-candidato-elecciones-eeuu-que-propone-economa-leopoldo-martinez-entrevista-rodriguez-dinero.cnn,DNC members,1,0,NA
+22.07.19,representative,TX,Eddie Bernice Johnson,Joe Biden,D,https://www.politico.com/story/2019/07/22/biden-congressional-black-caucus-endorsement-1425686,Representatives,3,0,NA
+22.07.19,mayor,MI,Mike Duggan,Joe Biden,D,https://apnews.com/5ecbbd420f8541a3a93a733817fa7ed8,Mayors,3,0,NA
+23.07.19,DNC member,VT,Mary M. Sullivan,Bernie Sanders,D,https://twitter.com/JTHVerhovek/status/1153757689673060357,DNC members,1,0,NA
+23.07.19,state auditor,VT,Doug Hoffer,Bernie Sanders,D,https://twitter.com/JTHVerhovek/status/1153757689673060357,Statewide officeholders,2,0,NA
+23.07.19,state treasurer,VT,Beth Pearce,Bernie Sanders,D,https://twitter.com/JTHVerhovek/status/1153757689673060357,Statewide officeholders,2,0,NA
+23.07.19,attorney general,VT,T.J. Donovan,Bernie Sanders,D,https://twitter.com/JTHVerhovek/status/1153757689673060357,Statewide officeholders,2,0,NA
+23.07.19,president pro tem,VT,Tim Ashe,Bernie Sanders,D,https://twitter.com/JTHVerhovek/status/1153757689673060357,State legislative leaders,2,0,NA
+28.07.19,representative,IL,Danny K. Davis,Kamala Harris,D,https://www.politico.com/newsletters/illinois-playbook/2019/07/29/lightfoots-dinner-with-kamala-alaina-hampton-speaks-out-weekend-wedding-with-pix-462365,Representatives,3,1,2020-12-03
+29.07.19,DNC member,TN,William Owen,Joe Biden,D,https://www.tennessean.com/story/news/politics/2019/07/29/joe-biden-2020-former-vp-releases-tennessee-endorsement-list/1854813001/,DNC members,1,0,NA
+30.07.19,representative,NM,Debra A. Haaland,Elizabeth Warren,D,https://twitter.com/AlxThomp/status/1156198339047809024,Representatives,3,0,NA
+30.07.19,representative,MI,Andy Levin,Elizabeth Warren,D,https://twitter.com/AlxThomp/status/1156198339047809024,Representatives,3,0,NA
+30.07.19,representative,MA,Katherine Clark,Elizabeth Warren,D,https://twitter.com/AlxThomp/status/1156198339047809024,Representatives,3,0,NA
+30.07.19,representative,AZ,Raul Grijalva,Elizabeth Warren,D,https://twitter.com/AlxThomp/status/1156198339047809024,Representatives,3,0,NA
+01.08.19,DNC member,WI,Khary Penebaker,Cory Booker,D,https://www.jsonline.com/story/news/politics/elections/2019/08/01/cory-booker-coming-milwaukees-sherman-park-aug-11/1882614001/,DNC members,1,0,2020-01-13
+01.08.19,representative,MI,Brenda Lawrence,Kamala Harris,D,https://www.detroitnews.com/story/news/politics/2019/08/01/rep-lawrence-endorses-kamala-harris-president/1886973001/,Representatives,3,1,2020-12-03
+10.08.19,minority leader,ND,Josh Boschee,Pete Buttigieg,D,https://www.grandforksherald.com/news/government-and-politics/4324749-Some-N.D.-Democrats-eye-favored-candidates-in-crowded-presidential-field,State legislative leaders,2,0,NA
+13.08.19,state treasurer,IL,Mike Frerichs,Elizabeth Warren,D,https://frerichsforillinois.com/illinois-state-treasurer-michael-frerichs-endorses-elizabeth-warren/,Statewide officeholders,2,0,NA
+15.08.19,representative,OH,Marcia L. Fudge,Kamala Harris,D,https://www.cleveland.com/open/2019/08/rep-marcia-fudge-endorses-sen-kamala-harris-for-president.html,Representatives,3,1,2020-12-03
+22.08.19,representative,CA,J. Luis Correa,Joe Biden,D,https://www.ocregister.com/2019/08/22/rep-lou-correa-endorses-joe-biden-for-president/,Representatives,3,0,NA
+31.08.19,DNC member,MO,Curtis Wylde,Bernie Sanders,D,https://twitter.com/curtiswylde/status/1167939815490211840,DNC members,1,0,NA
+01.09.19,president,ME,Troy Jackson,Bernie Sanders,D,https://www.youtube.com/watch?v=AfBmT0msJ6g&feature=youtu.be&t=575,State legislative leaders,2,0,NA
+06.09.19,representative,MD,Jamie Raskin,Elizabeth Warren,D,https://thekojonnamdishow.org/shows/2019-09-06/the-politics-hour-september-6-2019,Representatives,3,0,NA
+12.09.19,DNC member,FL,Nikki Ford Barnes,Cory Booker,D,https://twitter.com/DemNikkiBarnes/status/1172343471853772802,DNC members,1,0,2020-01-13
+12.09.19,attorney general,MA,Maura Healey,Elizabeth Warren,D,https://twitter.com/maura_healey/status/1172210264151773185,Statewide officeholders,2,0,NA
+12.09.19,Democratic caucus chairman,MS,Derrick T. Simmons,Joe Biden,D,https://mississippitoday.org/2019/09/12/joe-biden-receives-2020-endorsement-from-eight-african-american-mississippi-lawmakers/,State legislative leaders,2,0,NA
+12.09.19,representative,AZ,Ruben Gallego,Kamala Harris,D,https://www.azcentral.com/story/news/politics/arizona/2019/09/12/rep-ruben-gallego-backs-sen-kamala-harris-bid-president/2296242001/,Representatives,3,1,2020-12-03
+15.09.19,representative,TX,Vicente Gonzalez,Joe Biden,D,https://www.politico.com/story/2019/09/15/texas-congressman-castro-biden-endorsement-1496180,Representatives,3,0,NA
+18.09.19,state treasurer,IA,Michael Fitzgerald,Elizabeth Warren,D,https://www.apnews.com/c3c2baefc7e247e8ac58fc1959945a74,Statewide officeholders,2,0,NA
+18.09.19,mayor,OH,John Cranley,Pete Buttigieg,D,https://www.usatoday.com/story/opinion/voices/2019/09/18/mayor-pete-buttigieg-south-bend-indiana-mayors-endorse-column/2350438001/,Mayors,3,0,NA
+19.09.19,representative,NC,G.K. Butterfield,Joe Biden,D,https://twitter.com/scottwongDC/status/1174748571456983043?s=19,Representatives,3,0,NA
+19.09.19,representative,MO,Emanuel Cleaver,Joe Biden,D,https://twitter.com/scottwongDC/status/1174748571456983043?s=19,Representatives,3,0,NA
+19.09.19,representative,FL,Charlie Crist,Joe Biden,D,https://twitter.com/scottwongDC/status/1174748571456983043?s=19,Representatives,3,0,NA
+10.10.19,DNC member,NV,Alex Goff,Elizabeth Warren,D,https://twitter.com/meganmesserly/status/1182348991763116032,DNC members,1,0,NA
+10.10.19,minority leader,MN,Tom Bakk,Amy Klobuchar,D,https://blog.4president.org/2020/2019/10/more-than-70-federal-state-and-local-elected-officials-from-minnesota-endorse-us-senator-amy-klobuch.html,State legislative leaders,2,0,NA
+10.10.19,representative,MN,Betty McCollum,Amy Klobuchar,D,https://blog.4president.org/2020/2019/10/more-than-70-federal-state-and-local-elected-officials-from-minnesota-endorse-us-senator-amy-klobuch.html,Representatives,3,0,NA
+15.10.19,representative,MN,Ilhan Omar,Bernie Sanders,D,https://twitter.com/NYTnickc/status/1184310148191473666,Representatives,3,0,NA
+18.10.19,former DNC chair,CT,Chris Dodd,Joe Biden,D,https://www.courant.com/politics/hc-pol-dodd-endorses-biden-20191018-4kxzivowffhhbo4vhlwzmr6i2y-story.html,Former party leaders,5,0,NA
+19.10.19,representative,NY,Alexandria Ocasio-Cortez,Bernie Sanders,D,https://www.cbsnews.com/news/alexandria-ocasio-cortez-to-endorse-bernie-sanders-queens-rally-democratic-primary-2019-10-19/,Representatives,3,0,NA
+22.10.19,DNC member,CO,Terry L. Tucker,Bernie Sanders,D,https://www.coloradopolitics.com/quick-hits/bernie-sanders-wins-endorsements-from-colorado-progressives/article_cba31ef4-f4e8-11e9-8a4a-b3464e40294f.html,DNC members,1,0,NA
+22.10.19,DNC member,CO,Jeri D. Shepherd,Bernie Sanders,D,https://www.coloradopolitics.com/quick-hits/bernie-sanders-wins-endorsements-from-colorado-progressives/article_cba31ef4-f4e8-11e9-8a4a-b3464e40294f.html,DNC members,1,0,NA
+23.10.19,mayor,PA,James F. Kenney,Elizabeth Warren,D,https://twitter.com/JimFKenney/status/1186945479919177728,Mayors,3,0,NA
+26.10.19,representative,CA,Katie Porter,Elizabeth Warren,D,https://twitter.com/katieporteroc/status/1188193604226797568,Representatives,3,0,NA
+27.10.19,representative,MI,Rashida Tlaib,Bernie Sanders,D,https://twitter.com/BernieSanders/status/1188575246737121280,Representatives,3,0,NA
+05.11.19,DNC member,TX,Jose R. Rodriguez,Julian Castro,D,https://www.texastribune.org/2019/11/05/julian-castro-gets-support-texas-lawmakers-who-backed-beto-orourke/,DNC members,1,1,2020-01-02
+05.11.19,speaker pro tem,TX,Joe Moody,Julian Castro,D,https://www.texastribune.org/2019/11/05/julian-castro-gets-support-texas-lawmakers-who-backed-beto-orourke/,State legislative leaders,2,1,2020-01-02
+05.11.19,former DNC chair,CO,Roy Romer,Michael Bennet,D,https://michaelbennet.com/wp-content/uploads/2019/11/Educators_for_Bennet_11_05_19.pdf,Former party leaders,5,0,NA
+06.11.19,representative,MA,Ayanna Pressley,Elizabeth Warren,D,https://www.nytimes.com/2019/11/06/us/politics/ayanna-pressley-endorses-elizabeth-warren.html,Representatives,3,0,NA
+07.11.19,representative,TX,Marc Veasey,Joe Biden,D,https://www.politico.com/news/2019/11/07/joe-biden-marc-veasey-endorsement-067079,Representatives,3,0,NA
+13.11.19,Former 2020 candidate,OH,Tim Ryan,Joe Biden,D,https://www.cleveland.com/open/2019/11/rep-tim-ryan-endorses-joe-bidens-presidential-run.html,Candidates who have dropped out,5,0,NA
+16.11.19,representative,OR,Kurt Schrader,Joe Biden,D,https://www.kgw.com/article/news/politics/joe-biden-arrives-portland-private-fundraiser-president/283-f2243140-2c51-4c49-a053-b8f9374f6e48,Representatives,3,0,NA
+18.11.19,DNC member,TX,Celina Vasquez,Julian Castro,D,https://blog.4president.org/2020/2019/11/third-dnc-member-six-state-lawmakers-among-14-leaders-endorsing-juli%C3%A1n-castro.html,DNC members,1,1,2020-01-02
+21.11.19,DNC member,GA,Ted Terry,Bernie Sanders,D,https://twitter.com/tedterry1/status/1197562865831546880,DNC members,1,0,NA
+21.11.19,delegate,VI,Stacey E. Plaskett,Kamala Harris,D,https://blog.4president.org/2020/2019/11/congresswoman-stacey-plaskett-becomes-eleventh-cbc-member-to-endorse-kamala-harris.html,Representatives,3,1,2020-12-03
+22.11.19,representative,CA,Salud Carbajal,Kamala Harris,D,https://www.politico.com/news/2019/11/22/harris-lands-4th-hispanic-caucus-endorsement-072897,Representatives,3,1,2020-12-03
+24.11.19,mayor,KY,Greg Fischer,Michael Bloomberg,D,https://www.courier-journal.com/story/news/politics/metro-government/2019/11/24/louisville-mayor-greg-fischer-backs-michael-bloomberg-running-president/4290449002/,Mayors,3,0,NA
+25.11.19,representative,NV,Dina Titus,Joe Biden,D,https://twitter.com/dinatitus/status/1198960490266808326,Representatives,3,0,NA
+25.11.19,representative,IN,Peter Visclosky,Pete Buttigieg,D,https://www.indystar.com/story/news/politics/elections/2019/11/25/u-s-rep-pete-visclosky-endorses-pete-buttigieg-president-democratic-primary/4296783002/,Representatives,3,0,NA
+26.11.19,DNC member,CA,Kerman Maddox,Joe Biden,D,https://blog.4president.org/2020/2019/11/21-california-state-legislators-and-community-leaders-endorse-joe-biden-for-president.html,DNC members,1,0,NA
+26.11.19,minority leader,FL,Audrey Gibson,Joe Biden,D,https://www.politico.com/states/florida/story/2019/11/26/biden-wins-endorsement-of-top-florida-democrat-1229814,State legislative leaders,2,0,NA
+26.11.19,representative,NY,Kathleen Rice,Pete Buttigieg,D,https://www.cnn.com/2019/11/26/politics/pete-buttigieg-kathleen-rice-endorsement/index.html,Representatives,3,0,NA
+30.11.19,representative,IL,Jan Schakowsky,Elizabeth Warren,D,https://www.chicagotribune.com/politics/ct-elizabeth-warren-chicago-rally-20191130-iany6w3rvrflvmnf3ralusmvde-story.html,Representatives,3,0,NA
+30.11.19,representative,CA,John Garamendi,Joe Biden,D,https://blog.4president.org/2020/2019/11/california-congressman-john-garamendi-endorses-joe-biden-for-president.html,Representatives,3,0,NA
+03.12.19,representative,CA,Ami Bera,Joe Biden,D,https://www.sacbee.com/news/politics-government/capitol-alert/article237962089.html,Representatives,3,0,NA
+05.12.19,DNC member,PR,Maria E. Melendez Altieri,Joe Biden,D,https://blog.4president.org/2020/2019/12/joe-biden-picks-up-puerto-rican-endorsements.html,DNC members,1,0,NA
+05.12.19,past presidential nominee,MA,John Kerry,Joe Biden,D,https://www.desmoinesregister.com/story/news/elections/presidential/caucus/2019/12/05/john-kerry-campaign-iowa-joe-biden-after-making-endorsement-2020-iowa-caucuses/2617918001/,Past nominees,5,0,NA
+06.12.19,Former 2020 candidate,CO,John Hickenlooper,Michael Bennet,D,https://apnews.com/2cb807d5971c91534cf488d38571b462,Candidates who have dropped out,5,0,NA
+08.12.19,attorney general,CO,Phil Weiser,Michael Bennet,D,https://michaelbennet.com/resources/,Statewide officeholders,2,0,NA
+09.12.19,secretary of state,CT,Denise Merrill,Elizabeth Warren,D,https://www.middletownpress.com/middletown/article/Denise-Merrill-endorses-Warren-citing-election-14891796.php,Statewide officeholders,2,0,NA
+09.12.19,mayor,CA,Sam Liccardo,Michael Bloomberg,D,https://www.mikebloomberg.com/news/san-jose-mayor-sam-liccardo-endorses-mike-bloomberg-is-named-california-co-chair-of-2020-campaign-2,Mayors,3,0,NA
+10.12.19,mayor,CA,Michael D. Tubbs,Michael Bloomberg,D,https://www.sfchronicle.com/politics/article/Mike-Bloomberg-wins-key-backing-in-California-and-14897154.php,Mayors,3,0,NA
+11.12.19,DNC member,CA,Bob Mulholland,Joe Biden,D,https://twitter.com/ccadelago/status/1204770998844829696,DNC members,1,0,NA
+11.12.19,lieutenant governor,RI,Dan McKee,Joe Biden,D,https://blog.4president.org/2020/2019/12/rhode-island-leaders-endorse-joe-biden-for-president.html,Statewide officeholders,2,0,NA
+13.12.19,representative,CA,Lucille Roybal-Allard,Joe Biden,D,https://twitter.com/JTHVerhovek/status/1205565744953643009,Representatives,3,0,NA
+17.12.19,mayor,MN,Melvin Carter,Amy Klobuchar,D,https://twitter.com/amandawgolden/status/1206916251685142529,Mayors,3,0,NA
+18.12.19,speaker,NH,Steve Shurtleff,Joe Biden,D,https://twitter.com/chrisdonato04/status/1207373446545588224,State legislative leaders,2,0,NA
+20.12.19,DNC member,TX,Carla Brailey,Michael Bloomberg,D,https://www.mcclatchydc.com/news/politics-government/election/article238540528.html,DNC members,1,0,NA
+20.12.19,DNC member,PA,Michael A. Nutter,Michael Bloomberg,D,https://www.inquirer.com/news/mayor-michael-nutter-endorses-michael-bloomberg-campaign-chair-2020-democrats-20191220.html,DNC members,1,0,NA
+23.12.19,DNC member,DC,Keith Michael Harper,Pete Buttigieg,D,https://www.usatoday.com/story/news/politics/elections/2019/12/23/election-2020-pete-buttigieg-gets-218-foreign-policy-endorsements/2712988001/,DNC members,1,0,NA
+23.12.19,representative,CA,Tony Cárdenas,Joe Biden,D,https://apnews.com/9844e81c03dbf3623b1944e7adc9de1c,Representatives,3,0,NA
+01.01.20,DNC member,MI,Mark LaChey,Pete Buttigieg,D,https://twitter.com/GeorgeHornedo/status/1212457740469198849,DNC members,1,0,NA
+02.01.20,representative,IA,Abby Finkenauer,Joe Biden,D,https://twitter.com/IAStartingLine/status/1212716275794878465,Representatives,3,0,NA
+03.01.20,DNC member,DC,Jeff Berman,Tom Steyer,D,https://blog.4president.org/2020/2020/01/tom-steyer-campaign-hires-jeff-berman-as-senior-adviser.html,DNC members,1,0,NA
+05.01.20,representative,VA,Elaine Luria,Joe Biden,D,https://www.inquirer.com/news/joe-biden-endorsement-chrissy-houlahan-conor-lamb-pennsylvania-swing-districts-democrats-primary-2020-20200106.html,Representatives,3,0,NA
+05.01.20,representative,PA,Conor Lamb,Joe Biden,D,https://www.inquirer.com/news/joe-biden-endorsement-chrissy-houlahan-conor-lamb-pennsylvania-swing-districts-democrats-primary-2020-20200106.html,Representatives,3,0,NA
+05.01.20,representative,PA,Chrissy Houlahan,Joe Biden,D,https://www.inquirer.com/news/joe-biden-endorsement-chrissy-houlahan-conor-lamb-pennsylvania-swing-districts-democrats-primary-2020-20200106.html,Representatives,3,0,NA
+06.01.20,Former 2020 candidate,TX,Julian Castro,Elizabeth Warren,D,https://twitter.com/JulianCastro/status/1214188178686525440,Candidates who have dropped out,5,0,NA
+08.01.20,DNC member,MO,Megan E. Green,Bernie Sanders,D,https://twitter.com/MeganEllyia/status/1215008411861037056?s=20,DNC members,1,0,NA
+09.01.20,DNC member,NH,Martha Fuller Clark,Joe Biden,D,https://twitter.com/AdamSextonWMUR/status/1215305477992730624,DNC members,1,0,NA
+09.01.20,DNC member,NV,Allison A. Stephens,Elizabeth Warren,D,https://twitter.com/meganmesserly/status/1215318274952454144,DNC members,1,0,NA
+09.01.20,representative,MD,Anthony Brown,Pete Buttigieg,D,https://www.washingtonpost.com/politics/pete-buttigieg-wins-first-endorsement-from-a-black-member-of-congress/2020/01/08/dc4de64e-3179-11ea-a053-dc6d944ba776_story.html,Representatives,3,0,NA
+09.01.20,mayor,CA,Robert Garcia,Joe Biden,D,https://www.presstelegram.com/2020/01/09/mayor-robert-garcia-endorses-joe-biden-ahead-of-planned-visit-to-long-beach/,Mayors,3,0,NA
+09.01.20,mayor,CA,Eric Garcetti,Joe Biden,D,https://www.latimes.com/politics/story/2020-01-09/eric-garcetti-endorses-joe-biden-for-president,Mayors,3,0,NA
+10.01.20,DNC member,CA,Alexandra Gallardo Rooker,Michael Bloomberg,D,https://apnews.com/f29d38b451889b7df31eadebf1eca6fa,DNC members,1,0,NA
+10.01.20,mayor,TN,Jim Strickland,Michael Bloomberg,D,https://www.commercialappeal.com/story/news/2020/01/10/memphis-mayor-jim-strickland-endorses-mike-bloomberg-president/4434861002/,Mayors,3,0,NA
+12.01.20,representative,IA,David Loebsack,Pete Buttigieg,D,https://www.desmoinesregister.com/story/news/elections/presidential/caucus/2020/01/12/congressman-dave-loebsack-endorses-democrat-pete-buttigieg-president-iowa-caucuses-second-district/4444427002/,Representatives,3,0,NA
+13.01.20,attorney general,IA,Tom Miller,Joe Biden,D,https://www.desmoinesregister.com/story/news/elections/presidential/caucus/2020/01/13/iowa-attorney-general-tom-miller-endorses-joe-biden-president-2020-iowa-caucuses/4449485002/,Statewide officeholders,2,0,NA
+13.01.20,representative,TX,Colin Allred,Joe Biden,D,https://www.dallasnews.com/news/politics/2020/01/13/congressman-colin-allred-backs-joe-biden-for-president-in-front-of-dallas-visit/,Representatives,3,0,NA
+13.01.20,representative,NY,Sean Patrick Maloney,Joe Biden,D,https://www.recordonline.com/news/20200113/maloney-endorses-biden-for-president,Representatives,3,0,NA
+13.01.20,representative,NY,Max N. Rose,Michael Bloomberg,D,https://www.wsj.com/articles/michael-bloomberg-gets-first-endorsement-from-member-of-congress-11578936854,Representatives,3,0,NA
+14.01.20,representative,TX,Joaquin Castro,Elizabeth Warren,D,https://twitter.com/BenjaminEW/status/1217114150087860229,Representatives,3,0,NA
+14.01.20,representative,NJ,Tom Malinowski,Joe Biden,D,https://www.insidernj.com/malinowski-endorses-joe-biden/,Representatives,3,0,NA
+15.01.20,representative,NH,Ann Kuster,Pete Buttigieg,D,https://twitter.com/JamesPindell/status/1217582892236312580,Representatives,3,0,NA
+16.01.20,representative,WI,Mark Pocan,Bernie Sanders,D,https://apnews.com/7c6799ee5425569a3765f9f75f9b0577,Representatives,3,0,NA
+16.01.20,representative,FL,Stephanie Murphy,Michael Bloomberg,D,https://www.politico.com/news/2020/01/16/florida-murphy-stephanie-bloomberg-100210,Representatives,3,0,NA
+NA,DNC member,NY,Michael Reich,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,IN,Cordelia M. Lewis-Burks,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,IN,Cindy S. Henry,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,IN,David a Frye,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,IL,Karen A. Yarbrough,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,IL,Becky Strezchowski,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,IL,Carol Ronen,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,IL,Jayne Mazzotti,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,IL,Iris Y. Martinez,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,IL,Daniel W. Hynes,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,IL,John J. Cullerton,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,IL,Jerry F. Costello,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,IL,Carrie Austin,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,ID,Jerry C. Shriner,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,ID,Jesse Maldonado,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,ID,Paulette Jordan,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,ID,Susan S. Eastlake,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,ID,Evangeline M. Beechler,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,HI,Kathleen G. Stanley,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,HI,Gary Hooser,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,HI,Bart E. Dame,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,GU,Taling Taitano,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,GU,Rory Respicio,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,GU,Regine Biscoe Lee,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,GU,Jon Junior Calvo,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,GA,Nikema Williams,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,GA,Pamela Stephenson,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,GA,Sally S. Rosser,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,GA,Richard A. Ray,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,GA,Sheikh M. Rahman,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,GA,Daniel J. Halpern,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,GA,Louis Elrod,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,GA,Wendy Davis,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,FL,Craig Smith,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,FL,Casmore Shaw,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,FL,Terrie Lorraine Rizzo,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,FL,John A. Ramos,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,FL,Judy C. Mount,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,FL,Maureen A. McKenna,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,FL,Shawn W. Kinsey,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,FL,Mikaela Guido,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,FL,Alma R. Gonzalez,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,FL,Ken N. Evans,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,FL,Alan R. Clendenin,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,FL,Briana L. Cartwright,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,FL,Grace Carrington,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,FL,Cynthia M. Busch,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,FL,Dwight Bullard,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,DC,Charles E. Wilson,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,DC,Rick C. Wade,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,DC,Lee A. Saunders,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,DC,Steve Regenstreif,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,DC,Carrie Pugh,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,DC,Carol J. Pensky,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,DC,Minyon Moore,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,DC,Silvia J. Martinez,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,DC,Claire Lucas,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,DC,Harold Ickes,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,DC,Linda L. Gray,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,DC,Lily L. Eskelsen Garcia,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,DC,Earl D. Fowlkes Jr.,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,DC,Jack Evans,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,DC,Joanne Dowdell,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,DC,Leah Daughtry,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,DC,J. David Cox,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,DC,Alexandra Chalupa,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,DC,Maria Cardona,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,DC,Calla R. Brown,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,DC,Roxanne D. Brown,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,DC,James Joseph Boland,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,DA,Orlando E. Vidal,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,DA,Kenneth E. Sherman,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,DA,Alex Montgomery,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,DA,Martha McDevitt-Pugh,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,DA,Adrianne R. George,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,DA,John A. Eastwood,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,DA,Julia Bryan,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,DA,Connie Borde,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,DE,Erik Raser-Schramm,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,DE,Elizabeth D. Maron,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,DE,Valerie Longhurst,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,DE,Kerri Evelyn Harris,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,DE,Sean Finnigan,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,CT,Nancy Wyman,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,CT,Erick Russell,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,CT,John W. Olsen,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,CT,Nancy DiNardo,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,CO,Michael F. Hamrick,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,CO,Howard Chou,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,CO,Morgan Carroll,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,CA,Laurence S. Zakson,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,CA,Rosalind Wyman,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,CA,Amy Elaine Wakeland,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,CA,Keith Umemoto,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,CA,Garry S. Shay,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,CA,Rion J. Ramirez,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,CA,Melahat Rafiei,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,CA,John A. Perez,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,CA,Christine Pelosi,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,CA,Sandra M. Lowe,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,CA,Otto O. Lee,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,CA,Andrew Lachman,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,CA,Michael Kapp,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,CA,Lorna M. Johnson,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,CA,Aleita J. Huguenin,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,CA,Alice A. Huffman,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,CA,Rusty Hicks,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,CA,Ron Galperin,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,CA,Maria Echaveste,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,CA,Mary Ellen Early,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,CA,Jesse L. Durfee,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,CA,Becca Doten,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,CA,Steven K. Alari,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,AR,Kasey Summerville,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,AR,Lottie Shackelford,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,AR,Dustin McDaniel,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,AR,Nicole Hart,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,AR,Michael John Gray,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,AZ,Sierra Yamanaka,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,AZ,Felecia Rotellini,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,AZ,Ellie Perez,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,AZ,Luis Alberto Heredia,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,AZ,Adrian Fontes,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,AZ,William Patrick Burns,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,AZ,Douglas Ballard,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,AS,Minnie Tuia,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,AS,Aliitama Soto'a,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,AS,Petti Matila,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,AS,Fagafaga D. Langkilde,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,AK,Edward Wesley,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,AK,Casey Steinau,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,AK,Sheila A. Selkregg,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,AK,Chuck Degnan,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,AL,Nancy L. Worley,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,AL,Charlie Lethate Staten,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,AL,Janet May,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,AL,Randy B. Kelley,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,AL,Unzell Kelley,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,AL,Clinton M. Daughtrey,NA,D,NA,DNC members,1,0,NA
+NA,public auditor,GU,Benjamin Cruz,NA,D,NA,Statewide officeholders,2,0,NA
+NA,lieutenant governor,VI,Tregenza Roach,NA,D,NA,Statewide officeholders,2,0,NA
+NA,lieutenant governor,AS,Lemanu Palepoi S. Mauga,NA,D,NA,Statewide officeholders,2,0,NA
+NA,attorney general,MP,Edward Manibusan,NA,NA,NA,Statewide officeholders,2,0,NA
+NA,lieutenant governor,GU,Joshua Tenorio,NA,D,NA,Statewide officeholders,2,0,NA
+NA,attorney general,GU,Leevin T. Camacho,NA,NA,NA,Statewide officeholders,2,0,NA
+NA,superintendent of public instruction,WI,Carolyn Stanford Taylor,NA,D,NA,Statewide officeholders,2,0,NA
+NA,attorney general,WI,Josh Kaul,NA,D,NA,Statewide officeholders,2,0,NA
+NA,state treasurer,WI,Sarah Godlewski,NA,D,NA,Statewide officeholders,2,0,NA
+NA,secretary of state,WI,Doug La Follette,NA,D,NA,Statewide officeholders,2,0,NA
+NA,lieutenant governor,WI,Mandela Barnes,NA,D,NA,Statewide officeholders,2,0,NA
+NA,state treasurer,WV,John Perdue,NA,D,NA,Statewide officeholders,2,0,NA
+NA,superintendent of public instruction,WA,Chris Reykdal,NA,D,NA,Statewide officeholders,2,0,NA
+NA,commissioner of public lands,WA,Hilary Franz,NA,D,NA,Statewide officeholders,2,0,NA
+NA,insurance commissioner,WA,Mike Kreidler,NA,D,NA,Statewide officeholders,2,0,NA
+NA,state auditor,WA,Pat McCarthy,NA,D,NA,Statewide officeholders,2,0,NA
+NA,lieutenant governor,WA,Cyrus Habib,NA,D,NA,Statewide officeholders,2,0,NA
+NA,attorney general,VA,Mark Herring,NA,D,NA,Statewide officeholders,2,0,NA
+NA,lieutenant governor,VA,Justin Fairfax,NA,D,NA,Statewide officeholders,2,0,NA
+NA,secretary of state,VT,Jim Condos,NA,D,NA,Statewide officeholders,2,0,NA
+NA,general treasurer,RI,Seth Magaziner,NA,D,NA,Statewide officeholders,2,0,NA
+NA,attorney general,RI,Peter Neronha,NA,D,NA,Statewide officeholders,2,0,NA
+NA,secretary of state,RI,Nellie Gorbea,NA,D,NA,Statewide officeholders,2,0,NA
+NA,auditor general,PA,Eugene DePasquale,NA,D,NA,Statewide officeholders,2,0,NA
+NA,state treasurer,PA,Joe Torsella,NA,D,NA,Statewide officeholders,2,0,NA
+NA,attorney general,PA,Josh Shapiro,NA,D,NA,Statewide officeholders,2,0,NA
+NA,lieutenant governor,PA,John Fetterman,NA,D,NA,Statewide officeholders,2,0,NA
+NA,commissioner of labor and industries,OR,Val Hoyle,NA,D,NA,Statewide officeholders,2,0,NA
+NA,state treasurer,OR,Tobias Read,NA,D,NA,Statewide officeholders,2,0,NA
+NA,attorney general,OR,Ellen Rosenblum,NA,D,NA,Statewide officeholders,2,0,NA
+NA,state auditor,NC,Beth Wood,NA,D,NA,Statewide officeholders,2,0,NA
+NA,attorney general,NC,Josh Stein,NA,D,NA,Statewide officeholders,2,0,NA
+NA,secretary of state,NC,Elaine Marshall,NA,D,NA,Statewide officeholders,2,0,NA
+NA,state comptroller,NY,Thomas DiNapoli,NA,D,NA,Statewide officeholders,2,0,NA
+NA,attorney general,NY,Letitia James,NA,D,NA,Statewide officeholders,2,0,NA
+NA,lieutenant governor,NY,Kathy Hochul,NA,D,NA,Statewide officeholders,2,0,NA
+NA,commissioner of public lands,NM,Stephanie Garcia Richard,NA,D,NA,Statewide officeholders,2,0,NA
+NA,state auditor,NM,Brian Colón,NA,D,NA,Statewide officeholders,2,0,NA
+NA,state treasurer,NM,Tim Eichenberg,NA,D,NA,Statewide officeholders,2,0,NA
+NA,attorney general,NM,Hector Balderas,NA,D,NA,Statewide officeholders,2,0,NA
+NA,secretary of state,NM,Maggie Toulouse Oliver,NA,D,NA,Statewide officeholders,2,0,NA
+NA,lieutenant governor,NM,Howie Morales,NA,D,NA,Statewide officeholders,2,0,NA
+NA,state treasurer,NV,Zach Conine,NA,D,NA,Statewide officeholders,2,0,NA
+NA,attorney general,NV,Aaron Ford,NA,D,NA,Statewide officeholders,2,0,NA
+NA,lieutenant governor,NV,Kate Marshall,NA,D,NA,Statewide officeholders,2,0,NA
+NA,lieutenant governor,MT,Mike Cooney,NA,D,NA,Statewide officeholders,2,0,NA
+NA,state auditor,MO,Nicole Galloway,NA,D,NA,Statewide officeholders,2,0,NA
+NA,secretary of state,MN,Steve Simon,NA,D,NA,Statewide officeholders,2,0,NA
+NA,attorney general,MI,Dana Nessel,NA,D,NA,Statewide officeholders,2,0,NA
+NA,secretary of state,MI,Jocelyn Benson,NA,D,NA,Statewide officeholders,2,0,NA
+NA,lieutenant governor,MI,Garlin Gilchrist,NA,D,NA,Statewide officeholders,2,0,NA
+NA,state auditor,MA,Suzanne Bump,NA,D,NA,Statewide officeholders,2,0,NA
+NA,state treasurer and receiver-general,MA,Deborah Goldberg,NA,D,NA,Statewide officeholders,2,0,NA
+NA,secretary of the commonwealth,MA,Bill Galvin,NA,D,NA,Statewide officeholders,2,0,NA
+NA,state comptroller,MD,Peter Franchot,NA,D,NA,Statewide officeholders,2,0,NA
+NA,attorney general,MD,Brian Frosh,NA,D,NA,Statewide officeholders,2,0,NA
+NA,lieutenant governor,KY,Jacqueline Coleman,NA,D,NA,Statewide officeholders,2,0,NA
+NA,lieutenant governor,KS,Lynn Rogers,NA,D,NA,Statewide officeholders,2,0,NA
+NA,state auditor,IA,Rob Sand,NA,D,NA,Statewide officeholders,2,0,NA
+NA,state comptroller,IL,Susana Mendoza,NA,D,NA,Statewide officeholders,2,0,NA
+NA,attorney general,IL,Kwame Raoul,NA,D,NA,Statewide officeholders,2,0,NA
+NA,secretary of state,IL,Jesse White,NA,D,NA,Statewide officeholders,2,0,NA
+NA,lieutenant governor,IL,Juliana Stratton,NA,D,NA,Statewide officeholders,2,0,NA
+NA,lieutenant governor,HI,Josh Green,NA,D,NA,Statewide officeholders,2,0,NA
+NA,commissioner of agriculture and consumer services,FL,Nikki Fried,NA,D,NA,Statewide officeholders,2,0,NA
+NA,commissioner of insurance,DE,Trinidad Navarro,NA,D,NA,Statewide officeholders,2,0,NA
+NA,auditor of accounts,DE,Kathleen McGuiness,NA,D,NA,Statewide officeholders,2,0,NA
+NA,state treasurer,DE,Colleen Davis,NA,D,NA,Statewide officeholders,2,0,NA
+NA,lieutenant governor,DE,Bethany Hall-Long,NA,D,NA,Statewide officeholders,2,0,NA
+NA,state comptroller,CT,Kevin Lembo,NA,D,NA,Statewide officeholders,2,0,NA
+NA,attorney general,CT,William Tong,NA,D,NA,Statewide officeholders,2,0,NA
+NA,state treasurer,CT,Shawn Wooden,NA,D,NA,Statewide officeholders,2,0,NA
+NA,lieutenant governor,CT,Susan Bysiewicz,NA,D,NA,Statewide officeholders,2,0,NA
+NA,state treasurer,CO,Dave Young,NA,D,NA,Statewide officeholders,2,0,NA
+NA,secretary of state,CO,Jena Griswold,NA,D,NA,Statewide officeholders,2,0,NA
+NA,lieutenant governor,CO,Dianne Primavera,NA,D,NA,Statewide officeholders,2,0,NA
+NA,state controller,CA,Betty Yee,NA,D,NA,Statewide officeholders,2,0,NA
+NA,attorney general,CA,Xavier Becerra,NA,D,NA,Statewide officeholders,2,0,NA
+NA,superintendent of public instruction,AZ,Kathy Hoffman,NA,D,NA,Statewide officeholders,2,0,NA
+NA,secretary of state,AZ,Katie Hobbs,NA,D,NA,Statewide officeholders,2,0,NA
+NA,minority leader,WY,Chris Rothfuss,NA,D,NA,State legislative leaders,2,0,NA
+NA,minority leader,WY,Cathy Connolly,NA,D,NA,State legislative leaders,2,0,NA
+NA,minority leader,WI,Jennifer Shilling,NA,D,NA,State legislative leaders,2,0,NA
+NA,minority leader,WI,Gordon Hintz,NA,D,NA,State legislative leaders,2,0,NA
+NA,minority leader,WV,Roman Prezioso,NA,D,NA,State legislative leaders,2,0,NA
+NA,minority leader,WV,Tim Miley,NA,D,NA,State legislative leaders,2,0,NA
+NA,president pro tem,WA,Karen Keiser,NA,D,NA,State legislative leaders,2,0,NA
+NA,speaker,WA,Laurie Jinkins,NA,D,NA,State legislative leaders,2,0,NA
+NA,majority leader,VA,Richard Saslaw,NA,D,NA,State legislative leaders,2,0,NA
+NA,speaker,VA,Eileen Filler-Corn,NA,D,NA,State legislative leaders,2,0,NA
+NA,president,VI,Novelle E. Francis,NA,D,NA,State legislative leaders,2,0,NA
+NA,speaker,VT,Mitzi Johnson,NA,D,NA,State legislative leaders,2,0,NA
+NA,minority leader,UT,Karen Mayne,NA,D,NA,State legislative leaders,2,0,NA
+NA,minority leader,UT,Brian King,NA,D,NA,State legislative leaders,2,0,NA
+NA,minority leader,TN,Karen Camper,NA,D,NA,State legislative leaders,2,0,NA
+NA,minority leader,SD,Jamie Smith,NA,D,NA,State legislative leaders,2,0,NA
+NA,minority leader,SD,Troy Heinert,NA,D,NA,State legislative leaders,2,0,NA
+NA,minority leader,SC,Nikki Setzler,NA,D,NA,State legislative leaders,2,0,NA
+NA,minority leader,SC,J. Todd Rutherford,NA,D,NA,State legislative leaders,2,0,NA
+NA,president,RI,Dominick Ruggerio,NA,D,NA,State legislative leaders,2,0,NA
+NA,speaker,RI,Nicholas Mattiello,NA,D,NA,State legislative leaders,2,0,NA
+NA,president,PR,Thomas Rivera Schatz,NA,NPP,NA,State legislative leaders,2,0,NA
+NA,speaker,PR,Carlos Johnny Méndez,NA,NPP,NA,State legislative leaders,2,0,NA
+NA,minority leader,PA,Frank Dermody,NA,D,NA,State legislative leaders,2,0,NA
+NA,minority leader,PA,Jay Costa,NA,D,NA,State legislative leaders,2,0,NA
+NA,speaker,OR,Tina Kotek,NA,D,NA,State legislative leaders,2,0,NA
+NA,president,OR,Peter Courtney,NA,D,NA,State legislative leaders,2,0,NA
+NA,minority leader,OK,Emily Virgin,NA,D,NA,State legislative leaders,2,0,NA
+NA,minority leader,OK,Kay Floyd,NA,D,NA,State legislative leaders,2,0,NA
+NA,minority leader,OH,Kenny Yuko,NA,D,NA,State legislative leaders,2,0,NA
+NA,minority leader,OH,Emilia Sykes,NA,D,NA,State legislative leaders,2,0,NA
+NA,minority leader,ND,Joan Heckaman,NA,D,NA,State legislative leaders,2,0,NA
+NA,minority leader,NC,Darren Jackson,NA,D,NA,State legislative leaders,2,0,NA
+NA,minority leader,NC,Dan Blue,NA,D,NA,State legislative leaders,2,0,NA
+NA,president,NY,Andrea Stewart-Cousins,NA,D,NA,State legislative leaders,2,0,NA
+NA,speaker,NY,Carl Heastie,NA,D,NA,State legislative leaders,2,0,NA
+NA,president pro tem,NM,Mary Kay Papen,NA,D,NA,State legislative leaders,2,0,NA
+NA,speaker,NM,Brian Egolf,NA,D,NA,State legislative leaders,2,0,NA
+NA,president,NH,Donna Soucy,NA,D,NA,State legislative leaders,2,0,NA
+NA,speaker,NV,Jason Frierson,NA,D,NA,State legislative leaders,2,0,NA
+NA,president pro tem,NV,Mo Denis,NA,D,NA,State legislative leaders,2,0,NA
+NA,Executive Board chairman,NE,Tony Vargas,NA,D,NA,State legislative leaders,2,0,NA
+NA,Executive Board member,NE,Kate Bolz,NA,D,NA,State legislative leaders,2,0,NA
+NA,minority leader,MT,Jon Sesso,NA,D,NA,State legislative leaders,2,0,NA
+NA,minority leader,MT,Casey Schreiner,NA,D,NA,State legislative leaders,2,0,NA
+NA,minority leader,MO,Gina Walsh,NA,D,NA,State legislative leaders,2,0,NA
+NA,minority leader,MO,Crystal Quade,NA,D,NA,State legislative leaders,2,0,NA
+NA,minority leader,MS,David Baria,NA,D,NA,State legislative leaders,2,0,NA
+NA,minority leader,MI,Christine Greig,NA,D,NA,State legislative leaders,2,0,NA
+NA,minority leader,MI,Jim Ananich,NA,D,NA,State legislative leaders,2,0,NA
+NA,speaker,MA,Robert DeLeo,NA,D,NA,State legislative leaders,2,0,NA
+NA,speaker,MD,Adrienne Jones,NA,D,NA,State legislative leaders,2,0,NA
+NA,president,MD,Bill Ferguson,NA,D,NA,State legislative leaders,2,0,NA
+NA,speaker,ME,Sara Gideon,NA,D,NA,State legislative leaders,2,0,NA
+NA,speaker pro tem,LA,Walt Leger III,NA,D,NA,State legislative leaders,2,0,NA
+NA,Democratic caucus chairman,LA,Troy Carter Sr.,NA,D,NA,State legislative leaders,2,0,NA
+NA,minority floor leader,KY,Morgan McGarvey,NA,D,NA,State legislative leaders,2,0,NA
+NA,minority floor leader,KY,Joni Jenkins,NA,D,NA,State legislative leaders,2,0,NA
+NA,minority leader,KS,Tom Sawyer,NA,D,NA,State legislative leaders,2,0,NA
+NA,minority leader,KS,Anthony Hensley,NA,D,NA,State legislative leaders,2,0,NA
+NA,minority leader,IA,Todd Prichard,NA,D,NA,State legislative leaders,2,0,NA
+NA,minority leader,IA,Janet Petersen,NA,D,NA,State legislative leaders,2,0,NA
+NA,minority leader,IN,Tim Lanane,NA,D,NA,State legislative leaders,2,0,NA
+NA,minority leader,IN,Phil Giaquinta,NA,D,NA,State legislative leaders,2,0,NA
+NA,speaker,IL,Michael Madigan,NA,D,NA,State legislative leaders,2,0,NA
+NA,president,IL,John Cullerton,NA,D,NA,State legislative leaders,2,0,NA
+NA,minority leader,ID,Michelle Stennett,NA,D,NA,State legislative leaders,2,0,NA
+NA,minority leader,ID,Ilana Rubel,NA,D,NA,State legislative leaders,2,0,NA
+NA,speaker,HI,Scott Saiki,NA,D,NA,State legislative leaders,2,0,NA
+NA,president,HI,Ron Kouchi,NA,D,NA,State legislative leaders,2,0,NA
+NA,speaker,GU,Tina Muña Barnes,NA,D,NA,State legislative leaders,2,0,NA
+NA,minority leader,GA,Steve Henson,NA,D,NA,State legislative leaders,2,0,NA
+NA,minority leader,FL,Kionne McGhee,NA,D,NA,State legislative leaders,2,0,NA
+NA,chairman,DC,Phil Mendelson,NA,D,NA,State legislative leaders,2,0,NA
+NA,speaker,DE,Peter Schwartzkopf,NA,D,NA,State legislative leaders,2,0,NA
+NA,president pro tem,DE,David McBride,NA,D,NA,State legislative leaders,2,0,NA
+NA,president pro tem,CT,Martin Looney,NA,D,NA,State legislative leaders,2,0,NA
+NA,speaker,CT,Joe Aresimowicz,NA,D,NA,State legislative leaders,2,0,NA
+NA,president,CO,Leroy Garcia,NA,D,NA,State legislative leaders,2,0,NA
+NA,speaker,CO,KC Becker,NA,D,NA,State legislative leaders,2,0,NA
+NA,minority leader,AR,Fredrick Love,NA,D,NA,State legislative leaders,2,0,NA
+NA,minority leader,AR,Keith Ingram,NA,D,NA,State legislative leaders,2,0,NA
+NA,minority leader,AZ,Charlene Fernandez,NA,D,NA,State legislative leaders,2,0,NA
+NA,minority leader,AZ,David Bradley,NA,D,NA,State legislative leaders,2,0,NA
+NA,president,AS,Gaoteote P. Tofau,NA,NA,NA,State legislative leaders,2,0,NA
+NA,speaker,AK,Bryce Edgmon,NA,I,NA,State legislative leaders,2,0,NA
+NA,minority leader,AK,Tom Begich,NA,D,NA,State legislative leaders,2,0,NA
+NA,minority leader,AL,Bobby Singleton,NA,D,NA,State legislative leaders,2,0,NA
+NA,minority leader,AL,Anthony Daniels,NA,D,NA,State legislative leaders,2,0,NA
+NA,representative,WI,Gwen Moore,NA,D,NA,Representatives,3,0,NA
+NA,representative,WI,Ron Kind,NA,D,NA,Representatives,3,0,NA
+NA,representative,WA,Denny Heck,NA,D,NA,Representatives,3,0,NA
+NA,representative,WA,Adam Smith,NA,D,NA,Representatives,3,0,NA
+NA,representative,WA,Pramila Jayapal,NA,D,NA,Representatives,3,0,NA
+NA,representative,WA,Suzan DelBene,NA,D,NA,Representatives,3,0,NA
+NA,representative,VA,Gerald E. Connolly,NA,D,NA,Representatives,3,0,NA
+NA,representative,VA,Jennifer Wexton,NA,D,NA,Representatives,3,0,NA
+NA,representative,VA,Abigail Spanberger,NA,D,NA,Representatives,3,0,NA
+NA,representative,VA,Robert C. Scott,NA,D,NA,Representatives,3,0,NA
+NA,representative,UT,Ben McAdams,NA,D,NA,Representatives,3,0,NA
+NA,representative,TX,Lloyd Doggett,NA,D,NA,Representatives,3,0,NA
+NA,representative,TX,Sylvia R. Garcia,NA,D,NA,Representatives,3,0,NA
+NA,representative,TX,Henry Cuellar,NA,D,NA,Representatives,3,0,NA
+NA,representative,TX,Sheila Jackson Lee,NA,D,NA,Representatives,3,0,NA
+NA,representative,TX,Lizzie Pannill Fletcher,NA,D,NA,Representatives,3,0,NA
+NA,representative,TN,Steve Cohen,NA,D,NA,Representatives,3,0,NA
+NA,representative,TN,Jim Cooper,NA,D,NA,Representatives,3,0,NA
+NA,representative,SC,Joe Cunningham,NA,D,NA,Representatives,3,0,NA
+NA,representative,RI,Jim Langevin,NA,D,NA,Representatives,3,0,NA
+NA,representative,RI,David Cicilline,NA,D,NA,Representatives,3,0,NA
+NA,representative,PA,Mike Doyle,NA,D,NA,Representatives,3,0,NA
+NA,representative,PA,Susan Wild,NA,D,NA,Representatives,3,0,NA
+NA,representative,PA,Mary Gay Scanlon,NA,D,NA,Representatives,3,0,NA
+NA,representative,PA,Madeleine Dean,NA,D,NA,Representatives,3,0,NA
+NA,representative,OR,Peter DeFazio,NA,D,NA,Representatives,3,0,NA
+NA,representative,OR,Earl Blumenauer,NA,D,NA,Representatives,3,0,NA
+NA,representative,OR,Suzanne Bonamici,NA,D,NA,Representatives,3,0,NA
+NA,representative,OK,Kendra Horn,NA,D,NA,Representatives,3,0,NA
+NA,representative,OH,Marcy Kaptur,NA,D,NA,Representatives,3,0,NA
+NA,representative,OH,Joyce Beatty,NA,D,NA,Representatives,3,0,NA
+NA,delegate,MP,Gregorio Kilili Camacho Sablan,NA,D,NA,Representatives,3,0,NA
+NA,representative,NC,Alma Adams,NA,D,NA,Representatives,3,0,NA
+NA,representative,NC,David Price,NA,D,NA,Representatives,3,0,NA
+NA,representative,NY,Brian Higgins,NA,D,NA,Representatives,3,0,NA
+NA,representative,NY,Joseph D. Morelle,NA,D,NA,Representatives,3,0,NA
+NA,representative,NY,Anthony Brindisi,NA,D,NA,Representatives,3,0,NA
+NA,representative,NY,Paul D. Tonko,NA,D,NA,Representatives,3,0,NA
+NA,representative,NY,Antonio Delgado,NA,D,NA,Representatives,3,0,NA
+NA,representative,NY,Nita Lowey,NA,D,NA,Representatives,3,0,NA
+NA,representative,NY,Eliot Engel,NA,D,NA,Representatives,3,0,NA
+NA,representative,NY,José E. Serrano,NA,D,NA,Representatives,3,0,NA
+NA,representative,NY,Adriano Espaillat,NA,D,NA,Representatives,3,0,NA
+NA,representative,NY,Jerrold Nadler,NA,D,NA,Representatives,3,0,NA
+NA,representative,NY,Yvette D. Clarke,NA,D,NA,Representatives,3,0,NA
+NA,representative,NY,Hakeem Jeffries,NA,D,NA,Representatives,3,0,NA
+NA,representative,NY,Nydia M. Velázquez,NA,D,NA,Representatives,3,0,NA
+NA,representative,NY,Grace Meng,NA,D,NA,Representatives,3,0,NA
+NA,representative,NY,Gregory W. Meeks,NA,D,NA,Representatives,3,0,NA
+NA,representative,NM,Ben R. Lujan,NA,D,NA,Representatives,3,0,NA
+NA,representative,NM,Xochitl Torres Small,NA,D,NA,Representatives,3,0,NA
+NA,representative,NH,Chris Pappas,NA,D,NA,Representatives,3,0,NA
+NA,representative,NV,Steven A. Horsford,NA,D,NA,Representatives,3,0,NA
+NA,representative,NV,Susie Lee,NA,D,NA,Representatives,3,0,NA
+NA,representative,MS,Bennie G. Thompson,NA,D,NA,Representatives,3,0,NA
+NA,representative,MI,Debbie Dingell,NA,D,NA,Representatives,3,0,NA
+NA,representative,MI,Haley Stevens,NA,D,NA,Representatives,3,0,NA
+NA,representative,MI,Elissa Slotkin,NA,D,NA,Representatives,3,0,NA
+NA,representative,MI,Daniel Kildee,NA,D,NA,Representatives,3,0,NA
+NA,representative,MI,Justin Amash,NA,I,NA,Representatives,3,0,NA
+NA,representative,MA,William Keating,NA,D,NA,Representatives,3,0,NA
+NA,representative,MA,Seth Moulton,NA,D,NA,Representatives,3,0,NA
+NA,representative,MA,Richard E. Neal,NA,D,NA,Representatives,3,0,NA
+NA,representative,MD,John P. Sarbanes,NA,D,NA,Representatives,3,0,NA
+NA,representative,MD,C. A. Dutch Ruppersberger,NA,D,NA,Representatives,3,0,NA
+NA,representative,ME,Jared Golden,NA,D,NA,Representatives,3,0,NA
+NA,representative,ME,Chellie Pingree,NA,D,NA,Representatives,3,0,NA
+NA,representative,KY,John A. Yarmuth,NA,D,NA,Representatives,3,0,NA
+NA,representative,KS,Sharice Davids,NA,D,NA,Representatives,3,0,NA
+NA,representative,IA,Cindy Axne,NA,D,NA,Representatives,3,0,NA
+NA,representative,IN,André Carson,NA,D,NA,Representatives,3,0,NA
+NA,representative,IL,Cheri Bustos,NA,D,NA,Representatives,3,0,NA
+NA,representative,IL,Lauren Underwood,NA,D,NA,Representatives,3,0,NA
+NA,representative,IL,Bill Foster,NA,D,NA,Representatives,3,0,NA
+NA,representative,IL,Bradley Schneider,NA,D,NA,Representatives,3,0,NA
+NA,representative,IL,Raja Krishnamoorthi,NA,D,NA,Representatives,3,0,NA
+NA,representative,IL,Sean Casten,NA,D,NA,Representatives,3,0,NA
+NA,representative,IL,Mike Quigley,NA,D,NA,Representatives,3,0,NA
+NA,representative,IL,"Jesus ""Chuy"" Garcia",NA,D,NA,Representatives,3,0,NA
+NA,representative,IL,Daniel Lipinski,NA,D,NA,Representatives,3,0,NA
+NA,representative,IL,Robin Kelly,NA,D,NA,Representatives,3,0,NA
+NA,representative,HI,Ed Case,NA,D,NA,Representatives,3,0,NA
+NA,delegate,GU,Michael San Nicolas,NA,D,NA,Representatives,3,0,NA
+NA,representative,GA,David Scott,NA,D,NA,Representatives,3,0,NA
+NA,representative,GA,Lucy McBath,NA,D,NA,Representatives,3,0,NA
+NA,representative,GA,John Lewis,NA,D,NA,Representatives,3,0,NA
+NA,representative,GA,Hank Johnson,NA,D,NA,Representatives,3,0,NA
+NA,representative,GA,Sanford D. Bishop Jr.,NA,D,NA,Representatives,3,0,NA
+NA,representative,FL,Donna Shalala,NA,D,NA,Representatives,3,0,NA
+NA,representative,FL,Debbie Mucarsel-Powell,NA,D,NA,Representatives,3,0,NA
+NA,representative,FL,Ted Deutch,NA,D,NA,Representatives,3,0,NA
+NA,representative,FL,Lois Frankel,NA,D,NA,Representatives,3,0,NA
+NA,representative,FL,Kathy Castor,NA,D,NA,Representatives,3,0,NA
+NA,representative,FL,Val Demings,NA,D,NA,Representatives,3,0,NA
+NA,representative,FL,Darren Soto,NA,D,NA,Representatives,3,0,NA
+NA,delegate,DC,Eleanor Holmes Norton,NA,D,NA,Representatives,3,0,NA
+NA,representative,CT,Jim Himes,NA,D,NA,Representatives,3,0,NA
+NA,representative,CT,Rosa L. DeLauro,NA,D,NA,Representatives,3,0,NA
+NA,representative,CT,Joe Courtney,NA,D,NA,Representatives,3,0,NA
+NA,representative,CT,John B. Larson,NA,D,NA,Representatives,3,0,NA
+NA,representative,CO,Ed Perlmutter,NA,D,NA,Representatives,3,0,NA
+NA,representative,CO,Jason Crow,NA,D,NA,Representatives,3,0,NA
+NA,representative,CO,Joe Neguse,NA,D,NA,Representatives,3,0,NA
+NA,representative,CO,Diana DeGette,NA,D,NA,Representatives,3,0,NA
+NA,representative,CA,Susan Davis,NA,D,NA,Representatives,3,0,NA
+NA,representative,CA,Scott Peters,NA,D,NA,Representatives,3,0,NA
+NA,representative,CA,Mike Levin,NA,D,NA,Representatives,3,0,NA
+NA,representative,CA,Harley Rouda,NA,D,NA,Representatives,3,0,NA
+NA,representative,CA,Alan Lowenthal,NA,D,NA,Representatives,3,0,NA
+NA,representative,CA,Maxine Waters,NA,D,NA,Representatives,3,0,NA
+NA,representative,CA,Mark Takano,NA,D,NA,Representatives,3,0,NA
+NA,representative,CA,Gil Cisneros,NA,D,NA,Representatives,3,0,NA
+NA,representative,CA,Linda Sánchez,NA,D,NA,Representatives,3,0,NA
+NA,representative,CA,Karen Bass,NA,D,NA,Representatives,3,0,NA
+NA,representative,CA,Raul Ruiz,NA,D,NA,Representatives,3,0,NA
+NA,representative,CA,Norma Torres,NA,D,NA,Representatives,3,0,NA
+NA,representative,CA,Jimmy Gomez,NA,D,NA,Representatives,3,0,NA
+NA,representative,CA,Grace Napolitano,NA,D,NA,Representatives,3,0,NA
+NA,representative,CA,Pete Aguilar,NA,D,NA,Representatives,3,0,NA
+NA,representative,CA,Brad Sherman,NA,D,NA,Representatives,3,0,NA
+NA,representative,CA,Adam Schiff,NA,D,NA,Representatives,3,0,NA
+NA,representative,CA,Judy Chu,NA,D,NA,Representatives,3,0,NA
+NA,representative,CA,TJ Cox,NA,D,NA,Representatives,3,0,NA
+NA,representative,CA,Jimmy Panetta,NA,D,NA,Representatives,3,0,NA
+NA,representative,CA,Zoe Lofgren,NA,D,NA,Representatives,3,0,NA
+NA,representative,CA,Anna G. Eshoo,NA,D,NA,Representatives,3,0,NA
+NA,representative,CA,Jackie Speier,NA,D,NA,Representatives,3,0,NA
+NA,representative,CA,Mark DeSaulnier,NA,D,NA,Representatives,3,0,NA
+NA,representative,CA,Josh Harder,NA,D,NA,Representatives,3,0,NA
+NA,representative,CA,Jerry McNerney,NA,D,NA,Representatives,3,0,NA
+NA,representative,CA,Doris O. Matsui,NA,D,NA,Representatives,3,0,NA
+NA,representative,CA,Mike Thompson,NA,D,NA,Representatives,3,0,NA
+NA,representative,CA,Jared Huffman,NA,D,NA,Representatives,3,0,NA
+NA,representative,AZ,Greg Stanton,NA,D,NA,Representatives,3,0,NA
+NA,representative,AZ,Ann Kirkpatrick,NA,D,NA,Representatives,3,0,NA
+NA,representative,AZ,Tom O'Halleran,NA,D,NA,Representatives,3,0,NA
+NA,representative,AL,Terri A. Sewell,NA,D,NA,Representatives,3,0,NA
+NA,mayor,CA,Rusty Bailey,NA,NA,NA,Mayors,3,0,NA
+NA,mayor,PA,Bill Peduto,NA,D,NA,Mayors,3,0,NA
+NA,mayor,NV,Debra March,NA,D,NA,Mayors,3,0,NA
+NA,mayor,MO,Lyda Krewson,NA,D,NA,Mayors,3,0,NA
+NA,mayor,CA,Miguel A. Pulido,NA,D,NA,Mayors,3,0,NA
+NA,mayor,HI,Kirk Caldwell,NA,D,NA,Mayors,3,0,NA
+NA,mayor,FL,Jane Castor,NA,D,NA,Mayors,3,0,NA
+NA,mayor,OH,Frank G. Jackson,NA,D,NA,Mayors,3,0,NA
+NA,mayor,KS,Brandon Whipple,NA,D,NA,Mayors,3,0,NA
+NA,mayor,LA,LaToya Cantrell,NA,D,NA,Mayors,3,0,NA
+NA,mayor,NC,Mary-Ann Baldwin,NA,D,NA,Mayors,3,0,NA
+NA,mayor,MO,Quinton Lucas,NA,D,NA,Mayors,3,0,NA
+NA,mayor,AZ,Jonathan Rothschild,NA,D,NA,Mayors,3,0,NA
+NA,mayor,NM,Tim Keller,NA,D,NA,Mayors,3,0,NA
+NA,mayor,WI,Tom Barrett,NA,D,NA,Mayors,3,0,NA
+NA,mayor,MD,"Bernard C. ""Jack"" Young",NA,D,NA,Mayors,3,0,NA
+NA,mayor,NV,Carolyn Goodman,NA,NA,NA,Mayors,3,0,NA
+NA,mayor,OR,Ted Wheeler,NA,D,NA,Mayors,3,0,NA
+NA,mayor,TN,John Cooper,NA,D,NA,Mayors,3,0,NA
+NA,mayor,MA,Marty Walsh,NA,D,NA,Mayors,3,0,NA
+NA,mayor,WA,Jenny Durkan,NA,D,NA,Mayors,3,0,NA
+NA,mayor,NC,Vi Lyles,NA,D,NA,Mayors,3,0,NA
+NA,mayor,IN,Joe Hogsett,NA,D,NA,Mayors,3,0,NA
+NA,mayor,OH,Andrew Ginther,NA,D,NA,Mayors,3,0,NA
+NA,mayor,TX,Eric Johnson,NA,D,NA,Mayors,3,0,NA
+NA,mayor,AZ,Kate Gallego,NA,D,NA,Mayors,3,0,NA
+NA,mayor,TX,Sylvester Turner,NA,D,NA,Mayors,3,0,NA
+NA,mayor,IL,Lori Lightfoot,NA,D,NA,Mayors,3,0,NA
+NA,past vice-presidential nominee,CT,Joe Lieberman,NA,D,NA,Past nominees,5,0,NA
+NA,past vice-presidential nominee,NC,John Edwards,NA,D,NA,Past nominees,5,0,NA
+NA,past presidential nominee,NY,Hillary Clinton,NA,D,NA,Past nominees,5,0,NA
+NA,former DNC chair,VA,Terry McAuliffe,NA,D,NA,Former party leaders,5,0,NA
+NA,former DNC chair,VT,Howard Dean,NA,D,NA,Former party leaders,5,0,NA
+NA,former DNC chair,SC,Donald Fowler,NA,D,NA,Former party leaders,5,0,NA
+NA,former DNC chair,OH,David Wilhelm,NA,D,NA,Former party leaders,5,0,NA
+NA,former U.S. Senate majority leader,NY,George Mitchell,NA,D,NA,Former party leaders,5,0,NA
+NA,former DNC chair,NM,Fred Harris,NA,D,NA,Former party leaders,5,0,NA
+NA,former U.S. Senate majority leader,NV,Harry Reid,NA,D,NA,Former party leaders,5,0,NA
+NA,former U.S. House majority leader,MO,Richard Gephardt,NA,D,NA,Former party leaders,5,0,NA
+NA,former DNC chair,MA,Paul Kirk,NA,D,NA,Former party leaders,5,0,NA
+NA,former DNC chair,MA,Debra DeLee,NA,D,NA,Former party leaders,5,0,NA
+NA,former DNC chair,MD,Joe Andrew,NA,D,NA,Former party leaders,5,0,NA
+NA,former DNC chair,FL,Debbie Wasserman Schultz,NA,D,NA,Former party leaders,5,0,NA
+NA,former DNC chair,FL,Kenneth Curtis,NA,D,NA,Former party leaders,5,0,NA
+NA,former DNC chair,DC,Donna Brazile,NA,D,NA,Former party leaders,5,0,NA
+NA,former U.S. House Democratic whip,DE,Tony Coelho,NA,D,NA,Former party leaders,5,0,NA
+NA,Former 2020 candidate,TX,Beto O'Rourke,NA,D,NA,Candidates who have dropped out,5,0,NA
+NA,Former 2020 candidate,NY,Bill de Blasio,NA,D,NA,Candidates who have dropped out,5,0,NA
+NA,Former 2020 candidate,CA,Marianne Williamson,NA,D,NA,Candidates who have dropped out,5,0,NA
+NA,Former 2020 candidate,CA,Eric Swalwell,NA,D,NA,Candidates who have dropped out,5,0,NA
+NA,senator,WI,Tammy Baldwin,NA,D,NA,Senators,6,0,NA
+NA,senator,WV,Joe Manchin III,NA,D,NA,Senators,6,0,NA
+NA,senator,WA,Patty Murray,NA,D,NA,Senators,6,0,NA
+NA,senator,WA,Maria Cantwell,NA,D,NA,Senators,6,0,NA
+NA,senator,VA,Mark R. Warner,NA,D,NA,Senators,6,0,NA
+NA,senator,VA,Tim Kaine,NA,D,NA,Senators,6,0,NA
+NA,senator,RI,Sheldon Whitehouse,NA,D,NA,Senators,6,0,NA
+NA,senator,RI,Jack Reed,NA,D,NA,Senators,6,0,NA
+NA,senator,OR,Ron Wyden,NA,D,NA,Senators,6,0,NA
+NA,senator,OR,Jeff Merkley,NA,D,NA,Senators,6,0,NA
+NA,senator,OH,Sherrod Brown,NA,D,NA,Senators,6,0,NA
+NA,senator,NY,Kirsten Gillibrand,NA,D,NA,Senators,6,0,NA
+NA,senator,NM,Tom Udall,NA,D,NA,Senators,6,0,NA
+NA,senator,NM,Martin Heinrich,NA,D,NA,Senators,6,0,NA
+NA,senator,NJ,Cory Booker,NA,D,NA,Senators,6,0,NA
+NA,senator,NH,Jeanne Shaheen,NA,D,NA,Senators,6,0,NA
+NA,senator,NH,Margaret Wood Hassan,NA,D,NA,Senators,6,0,NA
+NA,senator,NV,Jacky Rosen,NA,D,NA,Senators,6,0,NA
+NA,senator,NV,Catherine Cortez Masto,NA,D,NA,Senators,6,0,NA
+NA,senator,MI,Debbie Stabenow,NA,D,NA,Senators,6,0,NA
+NA,senator,MI,Gary C. Peters,NA,D,NA,Senators,6,0,NA
+NA,senator,MD,Chris Van Hollen,NA,D,NA,Senators,6,0,NA
+NA,senator,MD,Benjamin L. Cardin,NA,D,NA,Senators,6,0,NA
+NA,senator,ME,Angus S. King Jr.,NA,I,NA,Senators,6,0,NA
+NA,senator,IL,Tammy Duckworth,NA,D,NA,Senators,6,0,NA
+NA,senator,HI,Brian Schatz,NA,D,NA,Senators,6,0,NA
+NA,senator,HI,Mazie K. Hirono,NA,D,NA,Senators,6,0,NA
+NA,senator,CT,Christopher Murphy,NA,D,NA,Senators,6,0,NA
+NA,senator,CT,Richard Blumenthal,NA,D,NA,Senators,6,0,NA
+NA,senator,CA,Kamala Harris,NA,D,NA,Senators,6,0,NA
+NA,senator,AZ,Kyrsten Sinema,NA,D,NA,Senators,6,0,NA
+NA,governor,WI,Tony Evers,NA,D,NA,Governors,8,0,NA
+NA,governor,WA,Jay Inslee,NA,D,NA,Governors,8,0,NA
+NA,governor,VA,Ralph Northam,NA,D,NA,Governors,8,0,NA
+NA,governor,VI,Albert Bryan Jr,NA,D,NA,Governors,8,0,NA
+NA,governor,RI,Gina Raimondo,NA,D,NA,Governors,8,0,NA
+NA,governor,PR,Wanda Vázquez Garced,NA,NA,NA,Governors,8,0,NA
+NA,governor,PA,Tom Wolf,NA,D,NA,Governors,8,0,NA
+NA,governor,OR,Kate Brown,NA,D,NA,Governors,8,0,NA
+NA,governor,NC,Roy Cooper,NA,D,NA,Governors,8,0,NA
+NA,governor,NM,Michelle Lujan Grisham,NA,D,NA,Governors,8,0,NA
+NA,governor,NV,Steve Sisolak,NA,D,NA,Governors,8,0,NA
+NA,governor,MT,Steve Bullock,NA,D,NA,Governors,8,0,NA
+NA,governor,MI,Gretchen Whitmer,NA,D,NA,Governors,8,0,NA
+NA,governor,ME,Janet Mills,NA,D,NA,Governors,8,0,NA
+NA,governor,LA,John Bel Edwards,NA,D,NA,Governors,8,0,NA
+NA,governor,KY,Andy Beshear,NA,D,NA,Governors,8,0,NA
+NA,governor,KS,Laura Kelly,NA,D,NA,Governors,8,0,NA
+NA,governor,IL,JB Pritzker,NA,D,NA,Governors,8,0,NA
+NA,governor,HI,David Ige,NA,D,NA,Governors,8,0,NA
+NA,governor,GU,Lou Leon Guerrero,NA,D,NA,Governors,8,0,NA
+NA,mayor,DC,Muriel Bowser,NA,D,NA,Governors,8,0,NA
+NA,governor,CO,Jared Polis,NA,D,NA,Governors,8,0,NA
+NA,governor,AS,Lolo Matalasi Moliga,NA,D,NA,Governors,8,0,NA
+NA,past vice president,TN,Al Gore,NA,D,NA,Past presidents and vice presidents,10,0,NA
+NA,past president,NY,Bill Clinton,NA,D,NA,Past presidents and vice presidents,10,0,NA
+NA,past president,IL,Barack Obama,NA,D,NA,Past presidents and vice presidents,10,0,NA
+NA,past president,GA,Jimmy Carter,NA,D,NA,Past presidents and vice presidents,10,0,NA
+NA,U.S. House Democratic whip,SC,James E. Clyburn,NA,D,NA,Current party leaders,10,0,NA
+NA,U.S. Senate minority leader,NY,Charles E. Schumer,NA,D,NA,Current party leaders,10,0,NA
+NA,DNC chair,MD,Tom Perez,NA,D,NA,Current party leaders,10,0,NA
+NA,U.S. House majority leader,MD,Steny Hoyer,NA,D,NA,Current party leaders,10,0,NA
+NA,U.S. Senate Democratic whip,IL,Richard J. Durbin,NA,D,NA,Current party leaders,10,0,NA
+NA,U.S. House speaker,CA,Nancy Pelosi,NA,D,NA,Current party leaders,10,0,NA
+NA,DNC member,IN,John C. Zody,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,IA,Scott M. Brennan,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,IA,Sandy Opstvedt,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,IA,Andrea Phillips,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,IA,Troy M. Price,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,KS,Vicki Hiatt,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,KS,Brandon Johnson,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,KS,Teresa Garcia Krusor,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,KS,Christopher T. Reeves,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,KY,Cassie Chambers Armstrong,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,KY,Susanna French,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,KY,Charlotte Lundergan,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,KY,Ben Self,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,KY,Nathan Gene Smith,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,LA,Deborah J. Langhoff,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,LA,Michael McHale,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,LA,Arthur Morrell,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,LA,Karen Carter Peterson,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,ME,Diane M. Denk,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,ME,Erik Gundersen,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,ME,Kathleen Marra,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,MD,Maria C. Cordone,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,MD,Tefere Gebre,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,MD,Bel W. Leong-Hong,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,MD,Yvette W. Lewis,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,MD,Robert Martinez Jr.,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,MD,Cory V. McCray,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,MD,Glenard S. Middleton,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,MD,Gregory Pecoraro,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,MD,Marc Perrone,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,MD,Kenneth Rigmaiden,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,MA,Gus Bickford,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,MA,Elaine C. Kamarck,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,MA,Debra Kozikowski,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,MA,David M. O'Brien,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,MA,Melvin Poindexter,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,MA,James Roosevelt Jr.,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,MA,Susan Thomson,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,MI,Lavora R. Barnes,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,MI,Scott Benson,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,MI,Shauna Ryder Diggs,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,MI,Cindy Estrada,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,MI,Paula Herbart,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,MI,Daryl Newman,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,MI,Virgie M. Rollins,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,MI,Alexis Wiley,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,MN,J.P. Barone,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,MN,Debbie Goettel,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,MN,Ron Harris,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,MN,Marge Hoffa,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,MN,Ken Martin,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,MN,Lori A. Sellner,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,MN,Elly Zaragoza,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,MS,Will Colom,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,MS,Rae Shawn Davis,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,MS,Bobby Moak,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,MS,Vicki R. Slater,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,MO,Winston Apple,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,MO,Jean Peters Baker,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,MO,Persephone Dakopolos,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,MO,Clem Smith,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,MO,Ethan Smith,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,MO,Brian Wahby,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,MT,Bryce Bennett,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,MT,Jean Lemire Dahlman,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,MT,Jorge Quintana,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,MT,Mary Sexton,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,NE,Ron Kaminski,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,NE,Jane Erin Fleming Kleeb,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,NE,Frank D. LaMere,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,NE,Patricia A. Zieg,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,NV,Artie Blanco,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,NV,William McCurdy II,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,NV,Marty McGarry,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,NH,Raymond C. Buckley II,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,NH,William H. Shaheen,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,NH,Kathleen Sullivan,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,NJ,Tonio Burgos,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,NJ,Marcia Marley,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,NJ,Marguerite M. Schaffer,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,NM,Marg Elliston,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,NM,Joni Marie Gutierrez,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,NM,Marcus Porter,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,NM,Raymond Sanchez,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,NY,Stuart H. Appelbaum,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,NY,Maria Cuomo Cole,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,NY,Vivian Cook,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,NY,Jennifer Cunningham,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,NY,Hazel Duke,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,NY,Emily Giske,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,NY,Jay S. Jacobs,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,NY,Charlie King,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,NY,Christopher Lowe,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,NY,Ai-Jen Poo,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,NY,Christine Quinn,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,IN,S. Anthony Long,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,NY,Gerard J. Sweeney,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,NY,Randi Weingarten,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,NY,Robert Zimmerman,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,NC,Denise D. Adams,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,NC,Wayne Goodwin,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,NC,Shelia A. Huggins,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,NC,Ray McKinnon,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,NC,Cliff Moone,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,NC,Bobbie Richardson,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,NC,John R. Verdejo,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,ND,Ondine E. Baird,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,ND,Patrick M. Hart,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,ND,Kylie Oversen,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,MP,Nola K. Hix,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,MP,Daniel O. Quitugua,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,MP,Michael A. White,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,OH,Tim Burga,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,OH,Isabel Framer,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,OH,Rebecca L. Higgins,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,OH,Mark Mallory,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,OH,Ronald L. Malone,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,OH,Valarie J. McCall,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,OH,Rhine McLin,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,OH,David A. Pepper,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,OH,Joe Rugola,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,OK,Brian Jones,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,OK,Anna Langthorn,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,OK,Betty McElderry,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,OK,David L. Walters,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,OR,"Carla ""KC"" Hanson",NA,D,NA,DNC members,1,0,NA
+NA,DNC member,OR,Matt K. Keating,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,OR,Peter B. Lee,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,OR,Travis Nelson,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,OR,Tanya Shively,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,PA,Rick Bloomingdale,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,PA,Ronald Donatucci,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,PA,Peggy Grove,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,PA,Murat Guzel,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,PA,Gerald Lawrence,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,PA,Nancy Patton Mills,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,PA,Ian Murray,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,PA,Evie Rafalko-McNulty,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,PA,Sharif T. Street,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,PA,Marian B. Tasco,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,PA,Sylvia C. Wilson,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,PR,Luis D. Davila,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,PR,Andres Lopez,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,PR,Margarita Nolasco,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,PR,Manuel Ortiz,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,PR,Charles A. Rodriguez,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,PR,Johanne M. Velez,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,RI,Grace Diaz,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,RI,Edna O'Neill Mattson,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,RI,Joseph M. McNamara,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,RI,Joseph R. Paolino Jr.,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,SC,Gilda Cobb-Hunter,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,SC,Carol K. Fowler,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,SC,Jaime R. Harrison,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,SC,Lessie Price,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,SC,Travis Robertson Jr.,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,SD,Paula A. Hawks,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,SD,Deb J. Knecht,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,SD,Randy Seiler,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,SD,Bill E. Walsh,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,TN,Gale Jones Carson,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,TN,Will T. Cheek,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,TN,Robert H. Cowan,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,TN,Mary Mancini,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,TN,Marisa Richmond,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,TX,Yvonne Davis,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,TX,AJ Durrani,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,TX,Gilberto Hinojosa,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,TX,Kat Hoang,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,TX,Glen Maxey,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,TX,Lorraine C. Miller,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,TX,John B. Patrick,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,TX,Hasmit R. Popat,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,TX,Betty Z. Richie,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,TX,Dennis D. Speight,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,TX,Jere Talley,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,TX,Senfronia Thompson,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,TX,Royce B. West,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,UT,Marcus Stevenson,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,UT,Charles A. Stormont,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,UT,Daisy Thomas,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,UT,Jenny Wilson,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,VT,Terje Anderson,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,VT,Tim Jerman,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,VT,Tess Taylor,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,VI,Cecil R. Benjamin,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,VI,Carol M. Burke,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,VI,Carla Joseph,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,VI,Ernest Morris,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,VA,Yohannes Abraham,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,VA,Marc Broklawski,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,VA,Steven C. Cochran,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,VA,Doris Crouse-Mays,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,VA,Morgan W. Jameson,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,VA,Frank Leone,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,VA,Christopher P. Lu,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,VA,Jennifer L. McClellan,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,VA,Atima Omara,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,VA,Susan R. Swecker,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,VA,Yasmine P. Taeb,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,VA,Jeion A. Ward,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,WA,Ed S. Cote,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,WA,David Green,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,WA,Juanita G. Luiz,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,WA,Sharon Mast,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,WA,David T. McDonald,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,WA,Nancy E. Monacelli,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,WA,Candace Mumm,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,WA,Tina Podlodowski,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,WV,Belinda J. Biafore,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,WV,Elaine A. Harris,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,WV,William Laird,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,WV,Pat Maroney,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,WI,Janet T. Bewley,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,WI,Martha Marie Love,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,WI,Felesia Martin,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,WI,Mahlon Mitchell,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,WI,Andrew Werthmann,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,WI,Ben Wikler,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,WY,Joseph M. Barbuto,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,WY,Jessica S. Chambers,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,WY,Lucas Fralick,NA,D,NA,DNC members,1,0,NA
+NA,DNC member,WY,Erin O'Doherty,NA,D,NA,DNC members,1,0,NA
