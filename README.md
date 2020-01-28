@@ -16,6 +16,7 @@ The goal of this workshop series is to create a space for faculty and researcher
 
 ### Contact
 Creator and instructor: Therese Anders [(anders@hertie-school.org)](anders@hertie-school.org)
+
 Teaching assistant: Allison Koh. [(kohallison3@gmail.com)](kohallison3@gmail.com)
 
 
